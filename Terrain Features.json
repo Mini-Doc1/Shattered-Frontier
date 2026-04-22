@@ -1,0 +1,350 @@
+{
+  "catalogue": {
+    "sharedSelectionEntries": [
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Lightly Forested Woods",
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead"
+              },
+              {
+                "$text": "Trees, Forest",
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6"
+              },
+              {
+                "$text": "A Model or Unit within this Terrain Feature has +1 to their DEF against any Ballistic Skill-related attacks. Any Model or unit that fights in Melee Combat in Lightly Forested Woods Terrain resolves all attacks at -1 Initiative.",
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea"
+              }
+            ],
+            "name": "Light Forested Woods",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "d951-e092-f4d3-2ecc"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Light Forested Woods",
+        "hidden": false,
+        "id": "3c0e-05db-6d9d-803e"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Densely Forested Woods",
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead"
+              },
+              {
+                "$text": "Forest, Dangerous, Woods",
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6"
+              },
+              {
+                "$text": "Any Ballistic Skill attacks that targets a model/unit inside this terrain feature, or a model/unit being targeted by mode/unit from within the the terrain feature, must be first resolved with an Intelligence Check, if they fail, they suffer a BS Modifier of -2 until the end of the attack. Any Model or unit that fights in Melee Combat in Densely Forested Woods Terrain resolves all attacks at -2 Initiative. \nMedium Cover: Provides a DEF Bonus of +2.",
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea"
+              }
+            ],
+            "name": "Densely Forested Woods",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "e04d-68a6-6f46-6e4c"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Densely Forested Wood",
+        "hidden": false,
+        "id": "87b8-62af-c1ca-db19"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Forest-World",
+                "name": "Map Name",
+                "typeId": "0639-cb4c-b4b7-7460"
+              },
+              {
+                "$text": "Forests, Woods",
+                "name": "Map Type",
+                "typeId": "8105-e4c2-53a4-c814"
+              },
+              {
+                "$text": "Due to the crowded canopy of the trees, all weapons with the Indirect Fire keyword lose Indirect Fire.",
+                "name": "Map Special Rules",
+                "typeId": "9ec7-70bb-e73b-28f9"
+              }
+            ],
+            "name": "Forest-World",
+            "typeId": "cd80-0960-0624-8eba",
+            "typeName": "Map Feature",
+            "hidden": false,
+            "id": "0722-7f08-34ad-c579"
+          },
+          {
+            "characteristics": [
+              {
+                "$text": "A Forest-World is often shrouded with giant trees, forming an impenetrable canopy that stretches for miles, even the most scarce area of trees has a scattering of medium to large sized trees.",
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e"
+              }
+            ],
+            "name": "Forest-World",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "7d66-ecbf-c155-0b08"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ca07-0d20-c957-1957"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d110-8285-1375-62c2"
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "Forest-Worlds are usually dominated by great beasts that roam the planet, their roars and howls being carried by the winds rend the nerves of any poorly-trained survivor. However, some beasts are closer than one may think as stranglers are picked off as soon as they stray too far.",
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e"
+                  }
+                ],
+                "name": "What Lurks in the Forest (Optionable)",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "ef12-43eb-a26e-0a52"
+              },
+              {
+                "characteristics": [
+                  {
+                    "$text": "A model or unit is that does not have line of sight to another friendly model/unit within 12 inches rolls a d6; if it is a unit, roll a d6 for each model. \n1: An unfortunate soul is picked off by a denizen of the forests. Remove a model from the unit.\n2-3: Noticeably shaken by the sounds of horrific creatures lurking in the undergrowth, they must take a suppression test. Do note: If this was rolled multiple times for a unit, only one test must be taken.\n4-5:They earn their nerve once more, seeing the beasts as nothing but mythos. Nothing else happens.\n6: The unit realizes they are lacking behind, and quickly pushes themselves forward. Make a normal movement action for free.Do note: If this was rolled multiple times for a unit, it is only done once.",
+                    "name": "Description",
+                    "typeId": "56ac-09e6-a6ce-498c"
+                  }
+                ],
+                "name": "What Lurks in the Forest (Optionable)",
+                "typeId": "db54-88f2-eb1c-6770",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "cb8f-7226-ce3a-f253"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
+            "name": "What Lurks in the Forest (Optionable)",
+            "hidden": false,
+            "id": "2ee6-d203-1fb0-4932"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Forest-World",
+        "hidden": false,
+        "id": "7b4a-0f37-085d-fcef"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "A City-Complex is often a vast, or at least rather large, grouping of towns and cities within a great stretch of land. Filled with homes, businesses, production factories, and many other civilian businesses, and despite their usual calm nature, City-Complexes are ofte",
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e"
+              }
+            ],
+            "name": "City-Complex",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "4cce-9220-159e-92a9"
+          },
+          {
+            "characteristics": [
+              {
+                "name": "Map Name",
+                "typeId": "0639-cb4c-b4b7-7460"
+              },
+              {
+                "name": "Map Type",
+                "typeId": "8105-e4c2-53a4-c814"
+              },
+              {
+                "name": "Map Special Rules",
+                "typeId": "9ec7-70bb-e73b-28f9"
+              }
+            ],
+            "name": "City-Complex",
+            "typeId": "cd80-0960-0624-8eba",
+            "typeName": "Map Feature",
+            "hidden": false,
+            "id": "663a-e1e3-fc94-e7fb"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "City-Complex",
+        "hidden": false,
+        "id": "906b-7dd5-065e-47b3"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Harrow Spark",
+        "hidden": false,
+        "id": "9b04-1806-03e8-091f"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thief's Poppy",
+        "hidden": false,
+        "id": "c4f1-b467-643b-9c0b"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Farmer's Rot",
+        "hidden": false,
+        "id": "bde8-33f1-d40b-4270"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Popping Weasel",
+        "hidden": false,
+        "id": "326d-d877-f5bc-4775"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "ec4f-7524-af44-7bce"
+              }
+            ],
+            "name": "Silent Field",
+            "typeId": "a43d-8b65-0808-c7b2",
+            "typeName": "Anomalies",
+            "hidden": false,
+            "id": "aca0-053c-77a8-b14e"
+          },
+          {
+            "characteristics": [
+              {
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e"
+              }
+            ],
+            "name": "Silent Field",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "e29c-b3ed-3229-2a1c"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Silent Field",
+        "hidden": false,
+        "id": "b7fa-2796-cf26-54de"
+      }
+    ],
+    "entryLinks": [
+      {
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "2c0e-fde3-c64e-76f1",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ],
+        "import": true,
+        "name": "Light Forested Woods",
+        "hidden": false,
+        "id": "dced-d5c9-3b84-45e9",
+        "type": "selectionEntry",
+        "targetId": "3c0e-05db-6d9d-803e"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "15aa-9b35-7884-3d4b",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ],
+        "import": true,
+        "name": "Densely Forested Wood",
+        "hidden": false,
+        "id": "a386-d80e-e368-3ef9",
+        "type": "selectionEntry",
+        "targetId": "87b8-62af-c1ca-db19"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "bee2-7f3a-709f-786f",
+            "id": "28ab-167e-117e-b8a5",
+            "primary": true,
+            "name": "Map Feature"
+          }
+        ],
+        "import": true,
+        "name": "Forest-World",
+        "hidden": false,
+        "id": "a021-0d35-6b74-ce3d",
+        "type": "selectionEntry",
+        "targetId": "7b4a-0f37-085d-fcef"
+      }
+    ],
+    "library": false,
+    "id": "a440-393c-2e49-bac0",
+    "name": "Terrain Features",
+    "gameSystemId": "sys-3396-9326-565c-5fb6",
+    "gameSystemRevision": 9,
+    "revision": 3,
+    "battleScribeVersion": 2.03,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "rules": [
+      {
+        "name": "Light Fortication",
+        "id": "ea89-51f1-5569-b07e",
+        "hidden": false,
+        "description": "This Fortification may be destroyed and when it is destroyed, use the table below on a d10 for every unit within"
+      }
+    ]
+  }
+}
