@@ -1713,7 +1713,7 @@
         "hidden": false
       },
       {
-        "description": "Vehicle Unit Type Special Rule:\n• A Vehicle can never be the target of Any Mental Statuses.\n• A vehicle may use all of it's (BS) Weapons in a single attack action.\n• A Vehicle may ignore any special rules on it's equipped weapons that would reduce any of it's characteristics.\n• Melee Attacks against a model with Vehicle Unit Sub-Type add their AP value to their Strength Value during the \"To-Wound\" dice rolling.\n• A Vehicle has Hull Points where the amount of damage dealt in a single activation has to be equal or more than the current Hull Point value, and then remove one Hull Point. Attacks against vehicles use the Current Hull Point value as a penalty during the HIT Step and then supplement the Armor Facing Value as Toughness for the second step.\n• All vehicles have directional armor, discuss with your opponent with what sides are what.\n• When a Vehicle loses all of it's Hull Points, takes damage from a weapon that has a weapon that has strength double it's toughness, refer to the Vehicle Damage Table.",
+        "description": "Vehicle Unit Type Special Rule:\n• A Vehicle can never be the target of Any Mental Statuses.\n• A vehicle may use all of it's (BS) Weapons in a single attack action.\n• A Vehicle may ignore any special rules on it's equipped weapons that would reduce any of it's characteristics.\n• Melee Attacks against a model with Vehicle Unit Sub-Type add their AP value to their Strength Value during the \"To-Wound\" dice rolling.\n• A Vehicle has Hull Points where the amount of damage dealt in a single activation has to be equal or more than the current Hull Point value, and then remove one Hull Point. Attacks against vehicles use the Current Hull Point value as a penalty during the HIT Step and then supplement the Armor Facing Value as Toughness for the second step.\n• All vehicles have directional armor, discuss with your opponent with what sides are what.\n• When a Vehicle loses all of it's Hull Points, takes damage from a weapon that has a weapon that has strength double the Armor Value of the Armor Facing being targeted, refer to the Vehicle Damage Table.",
         "name": "Unit Type:Vehicle",
         "id": "5da9-2b79-070d-86c6",
         "hidden": false
@@ -6042,7 +6042,7 @@
     "id": "sys-3396-9326-565c-5fb6",
     "name": "EUWG 3.0",
     "battleScribeVersion": 2.03,
-    "revision": 49,
+    "revision": 50,
     "type": "gameSystem",
     "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema"
   }

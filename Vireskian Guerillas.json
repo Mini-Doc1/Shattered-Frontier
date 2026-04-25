@@ -5,7 +5,7 @@
     "name": "Vireskian Forces",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 39,
-    "revision": 6,
+    "revision": 7,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntryGroups": [
@@ -12578,6 +12578,2511 @@
             "value": 1
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mercenaries/Enforcers",
+        "hidden": false,
+        "id": "315a-e6fd-04ee-b9a2",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Lead Mercenary/Enforcer",
+            "hidden": false,
+            "id": "a9f9-1eb0-6564-a29f",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "08b1-94f7-54bc-445f",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "4928-e2d1-22ce-aeab",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "65b3-a71b-bf54-b4f5"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ed5b-149f-9fd7-a264"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0d90-f25f-cb62-c9b3"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c8a1-972f-dd6b-adb2"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Improvised Melee Weapons",
+                "hidden": false,
+                "id": "adeb-8c95-5881-c9be",
+                "type": "selectionEntryGroup",
+                "targetId": "733f-cea4-23ff-2396",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f46b-a176-df59-461f"
+                  }
+                ],
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Regular",
+                "hidden": false,
+                "id": "f03e-49db-8c5a-6517",
+                "type": "selectionEntry",
+                "targetId": "485d-2cd7-4d79-8cc0",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d69c-4f6b-914a-471c"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c6dc-be82-9f5f-1a0e"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Primary Weapon",
+                "id": "3c4b-43ad-32e8-62d3",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Carbine",
+                    "hidden": false,
+                    "id": "2bab-cfce-47e1-6955",
+                    "type": "selectionEntry",
+                    "targetId": "d7d3-057b-3ee5-1885",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "f8d4-3379-042f-b079",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Rifle",
+                    "hidden": false,
+                    "id": "f0d9-cf15-a10f-0cc2",
+                    "type": "selectionEntry",
+                    "targetId": "e3ec-1a2d-b79e-f8b0",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Semi-Auto Rifle",
+                    "hidden": false,
+                    "id": "7cb2-3e0d-0c21-b108",
+                    "type": "selectionEntry",
+                    "targetId": "f4af-8190-c80a-9ec3",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "cc98-fb39-e4db-517b",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "7bc5-d858-b12c-7c72",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "332d-6d3e-fd69-9f63"
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapon",
+                "id": "de15-357e-ab3b-81f0",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3912-8653-352c-43a3"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Melee Weapons (Proper)",
+                    "hidden": false,
+                    "id": "c0d3-105e-ecd0-4b79",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c1ee-ea3d-3900-414a"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "name": "Pistol",
+                "id": "8842-68e0-4891-7715",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "89d1-c000-d9a9-ab9f",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Infantry Heavy-Pistol",
+                    "hidden": false,
+                    "id": "a419-f409-23c2-aad7",
+                    "type": "selectionEntry",
+                    "targetId": "ad95-3816-1f76-8341",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a512-f008-fbf7-88b4"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "NCO",
+                "id": "86e7-e035-8a31-114a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "4ac7-2231-2a58-b508"
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Mercenaries/Enforcers",
+            "hidden": false,
+            "id": "14aa-2210-0d29-d01a",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "6399-be96-c6ba-3aab",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "e4a5-1c14-4024-7616",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7c6d-22bb-468f-af83"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "43e1-8270-382a-3c61"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2577-117a-fbbc-7dbe"
+              },
+              {
+                "type": "max",
+                "value": 12,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8709-1421-88cb-d0e9"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Regular",
+                "hidden": false,
+                "id": "39e4-bd38-3bf0-5b77",
+                "type": "selectionEntry",
+                "targetId": "485d-2cd7-4d79-8cc0",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d515-b335-4e18-c109"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7208-069e-92a2-d0c6"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Primary Weapon",
+                "id": "fc2a-68be-eea3-59fe",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Carbine",
+                    "hidden": false,
+                    "id": "4c8d-b7bf-4a84-e5e1",
+                    "type": "selectionEntry",
+                    "targetId": "d7d3-057b-3ee5-1885",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "82cd-f785-e612-9e96",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Rifle",
+                    "hidden": false,
+                    "id": "2729-2e9a-6b5f-60c3",
+                    "type": "selectionEntry",
+                    "targetId": "e3ec-1a2d-b79e-f8b0",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Semi-Auto Rifle",
+                    "hidden": false,
+                    "id": "746c-8d77-a566-3098",
+                    "type": "selectionEntry",
+                    "targetId": "f4af-8190-c80a-9ec3",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "f074-b185-095c-f006",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "2992-1955-b1c7-3e7a",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a72b-ff1c-3bc8-34a2"
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapon",
+                "id": "79db-c6d0-cb98-898e",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a8aa-769a-2fbe-0718"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Melee Weapons (Proper)",
+                    "hidden": false,
+                    "id": "8147-dacd-6ef4-4c93",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c1ee-ea3d-3900-414a"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "name": "Pistol",
+                "id": "c32d-48e5-0dda-eb56",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "6025-c040-291a-7ad8",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Infantry Heavy-Pistol",
+                    "hidden": false,
+                    "id": "3348-b917-2012-59c6",
+                    "type": "selectionEntry",
+                    "targetId": "ad95-3816-1f76-8341",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d803-1f17-6a3a-920d"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Enforcers of the Vireskian Underworld",
+            "id": "ff53-1d37-8c60-4f44",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5d58-d9e7-f446-8d11"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1270-1ff9-c935-ef9c",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Vireskian Underworld"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Anti-Vehicle Thug Team",
+        "hidden": false,
+        "id": "f3cb-1ae0-602e-8968",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1270-1ff9-c935-ef9c",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Vireskian Underworld"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Weapon Wielder",
+            "hidden": false,
+            "id": "3b7b-8ebe-d731-5216",
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged Weapons",
+                "id": "9764-abf6-ff1a-a301",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Shotgun",
+                    "hidden": false,
+                    "id": "fcb8-1783-d875-87df",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "202e-a29b-afb1-8a57",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Shotgun",
+                        "id": "e5f8-287a-11c2-573a",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "9c12-adba-e46d-ecb8"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "0094-9c81-f196-e3f3",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "babf-adbc-326a-763d",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Shotgun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "1262-eef6-c647-616a",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "4"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Ballistic, Shotgun"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Pistol",
+                    "hidden": false,
+                    "id": "0242-48c0-e2c7-7713",
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "a2dd-9a70-c5c1-c46b",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Pistol",
+                        "id": "c0cc-20b5-bb6c-e134",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "219a-5748-263e-78bf"
+                      },
+                      {
+                        "name": "One-Handed",
+                        "id": "7afe-8101-d907-f10f",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "f3e5-5ab7-e9a6-a257"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "5779-c517-ec52-f818",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "df0b-7589-8ace-2019",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Pistol",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "c8c8-36fa-2e49-d5c8",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "6"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Pistol, Ballistic,One-Handed"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "c835-8e93-828c-5dc3",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "946e-40ac-fa6a-a6ae",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Submachine Gun",
+                        "id": "70ad-b42b-b691-a53d",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "415e-a0f6-f497-854b"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "41c1-f5ba-b761-854e",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Automatic",
+                        "id": "aec8-66cd-2c55-42c0",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "4b0f-abf5-ab66-261e"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "f781-c5ed-cc15-645c",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Sub-Machine Gun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "240a-a4fd-7362-38ed",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Automatic, Sub-Machine Gun, Ballistic"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "7d5e-83de-a2ff-227e",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "8908-09b9-634e-ac5c",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "bcd5-9f91-0f6f-9b72",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "25fd-fb1b-e55a-4347"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "5920-c1a0-44f9-04f6",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "fed5-d219-970f-6d2d",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f3a7-3c07-4fec-c56d"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "72fd-3ba4-470c-b3bf"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5a5f-3a23-6eab-e6d3"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "25e0-93a1-a821-f3e8"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Improvised Disposable Rocket Launcher",
+                "hidden": false,
+                "id": "0513-4f45-dce3-1518",
+                "type": "selectionEntry",
+                "targetId": "2386-b6d6-ad1e-6394",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 4
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b8fd-4cef-599c-6cba"
+                  }
+                ],
+                "sortIndex": 5
+              },
+              {
+                "import": true,
+                "name": "Tier Level",
+                "hidden": false,
+                "id": "3070-15b7-8950-14aa",
+                "type": "selectionEntryGroup",
+                "targetId": "e87c-43dd-ae66-d973"
+              },
+              {
+                "import": true,
+                "name": "Improvised Melee Weapons",
+                "hidden": false,
+                "id": "4d25-0b82-93d0-53b0",
+                "type": "selectionEntryGroup",
+                "targetId": "733f-cea4-23ff-2396",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5903-1b59-4f1e-8f90"
+                  }
+                ]
+              }
+            ],
+            "collapsible": true
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Loader",
+            "hidden": false,
+            "id": "a3be-731e-9a53-d86c",
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged Weapons",
+                "id": "22f5-a0be-6b7f-7059",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Shotgun",
+                    "hidden": false,
+                    "id": "2bd1-1d90-779d-7923",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "1f7b-a117-0726-fa8d",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Shotgun",
+                        "id": "236f-76f4-9db6-5039",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "9c12-adba-e46d-ecb8"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "6892-5bd1-ffbc-4ce3",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "3d48-bbf8-389b-773d",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Shotgun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "3fa9-6135-00c4-5818",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "4"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Ballistic, Shotgun"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Pistol",
+                    "hidden": false,
+                    "id": "538a-57b2-0362-2a73",
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "239f-2efe-7801-c2e1",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Pistol",
+                        "id": "db0d-48ea-3616-ed14",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "219a-5748-263e-78bf"
+                      },
+                      {
+                        "name": "One-Handed",
+                        "id": "4a53-da9a-dc99-9b71",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "f3e5-5ab7-e9a6-a257"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "a7b4-d40e-3cfd-88f3",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "9982-394e-9229-2607",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Pistol",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "48d7-bbf0-cb5c-47d9",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "6"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Pistol, Ballistic,One-Handed"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "66bb-e383-e86b-7384",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "edd8-8c11-5957-4298",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Submachine Gun",
+                        "id": "0711-d080-0756-3b1f",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "415e-a0f6-f497-854b"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "366e-936f-2d32-8fd9",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Automatic",
+                        "id": "7784-3fae-4979-c0b2",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "4b0f-abf5-ab66-261e"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "9324-1d0b-11e5-3d64",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Sub-Machine Gun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "f5f3-16c5-af05-f1a3",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Automatic, Sub-Machine Gun, Ballistic"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "bf8f-1760-ddb4-7f18",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "192e-47e7-717b-82cb",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "6c76-2d0c-a563-1c37",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "81b0-2b03-7e0e-89a0"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "93c4-3cfa-8e66-1394",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "4c2e-effd-63e0-3524",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f9b8-d917-ab88-1043"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "26bc-2ac1-bad2-71ae"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bd8b-63f0-55a1-2a18"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a385-806f-70d4-1757"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Tier Level",
+                "hidden": false,
+                "id": "4cad-1fe5-3879-c990",
+                "type": "selectionEntryGroup",
+                "targetId": "e87c-43dd-ae66-d973"
+              },
+              {
+                "import": true,
+                "name": "Improvised Melee Weapons",
+                "hidden": false,
+                "id": "1292-7879-c39e-2816",
+                "type": "selectionEntryGroup",
+                "targetId": "733f-cea4-23ff-2396",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b406-ebad-412f-e67c"
+                  }
+                ]
+              }
+            ],
+            "collapsible": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Enforcers of the Vireskian Underworld",
+            "id": "6bd0-1f59-19bb-f38e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5d58-d9e7-f446-8d11"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Improvised Flamethrower Team",
+        "hidden": false,
+        "id": "ad08-8cf2-e093-fe3e",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1270-1ff9-c935-ef9c",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Vireskian Underworld"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Weapon Wielder",
+            "hidden": false,
+            "id": "c8dc-9494-fa51-be26",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "a158-f93d-0174-4de7",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "bf35-be5a-cb06-cfbf",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "268a-f335-9bfe-c536"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "99d8-55ca-2e15-da06"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "73af-96d6-0029-2b34"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3280-bbff-d607-36c6"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Flamethrower",
+                "hidden": false,
+                "id": "3c59-de60-ffe0-7367",
+                "type": "selectionEntry",
+                "targetId": "2e63-ffde-2fa2-0cd6",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 4
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3667-51e8-1d4a-a5f3"
+                  }
+                ],
+                "sortIndex": 5,
+                "infoLinks": [
+                  {
+                    "name": "Low Rate of Fire",
+                    "id": "0fd5-90f6-e208-cb31",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8adf-eb89-d866-8059"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Veteran",
+                "hidden": false,
+                "id": "3c26-3684-049f-d13e",
+                "type": "selectionEntry",
+                "targetId": "bdc6-dc11-50aa-04a7",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "210a-aba0-0a2f-e212"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e380-ae63-fd14-f186"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Tier Level",
+                "hidden": false,
+                "id": "c90c-2180-e940-920b",
+                "type": "selectionEntryGroup",
+                "targetId": "e87c-43dd-ae66-d973"
+              }
+            ],
+            "collapsible": true
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Loader",
+            "hidden": false,
+            "id": "c3da-1954-67c6-cc81",
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged Weapons",
+                "id": "b1f8-aa0c-7b3e-b6fc",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Shotgun",
+                    "hidden": false,
+                    "id": "bf28-5473-e87d-e98d",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "3954-6a7e-e429-fc98",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Shotgun",
+                        "id": "ea4f-d50f-bc78-3117",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "9c12-adba-e46d-ecb8"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "422b-3085-3117-bb83",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "f74d-b963-1262-9774",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Shotgun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "b354-965a-8580-75a6",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "4"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Ballistic, Shotgun"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Pistol",
+                    "hidden": false,
+                    "id": "d02c-b6ed-259d-8d71",
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "7137-8724-7958-89c1",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Pistol",
+                        "id": "ce78-9d35-a1e3-06c5",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "219a-5748-263e-78bf"
+                      },
+                      {
+                        "name": "One-Handed",
+                        "id": "c874-2423-51fa-1ee1",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "f3e5-5ab7-e9a6-a257"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "d722-f91e-0f10-a940",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "a905-1d1e-a85b-97b2",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Pistol",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "79e5-efa8-61be-e9fc",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "6"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Pistol, Ballistic,One-Handed"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Improvised Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "26ef-2ee9-6738-137f",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Low-Quality Machining",
+                        "id": "35c6-1733-0af8-ba53",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "cbf2-b359-5294-412d"
+                      },
+                      {
+                        "name": "Submachine Gun",
+                        "id": "4b79-8f7e-0be8-bff7",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "415e-a0f6-f497-854b"
+                      },
+                      {
+                        "name": "Moving Fire(X)",
+                        "id": "9e62-2753-d711-adb7",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ceeb-ed5b-73cd-7445"
+                      },
+                      {
+                        "name": "Automatic",
+                        "id": "45e7-46a4-1866-233c",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "4b0f-abf5-ab66-261e"
+                      },
+                      {
+                        "name": "Ballistic",
+                        "id": "07c3-154b-24a4-b429",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "09f0-5941-f550-9a12"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon:Sub-Machine Gun",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "5b0a-6a0d-d8bb-d9b6",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "0"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Automatic, Sub-Machine Gun, Ballistic"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "5ee8-80cb-4821-6060",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "bc21-edd8-20df-2a17",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "2075-97b5-0057-39ab",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "edfa-4c21-8c14-9a69"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "aad9-3cf2-2c40-b764",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "b918-06ec-1742-3fcd",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a1a5-a2e1-3b24-1db7"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a084-61bc-cad1-ad96"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "be4f-3fbc-9f0b-0a06"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "56c4-5127-cc6d-4ba8"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Tier Level",
+                "hidden": false,
+                "id": "5e8c-2143-ad98-8ffd",
+                "type": "selectionEntryGroup",
+                "targetId": "e87c-43dd-ae66-d973"
+              },
+              {
+                "import": true,
+                "name": "Improvised Melee Weapons",
+                "hidden": false,
+                "id": "4845-81f7-5800-0952",
+                "type": "selectionEntryGroup",
+                "targetId": "733f-cea4-23ff-2396",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5001-1586-2bf7-1b1f"
+                  }
+                ]
+              }
+            ],
+            "collapsible": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Enforcers of the Vireskian Underworld",
+            "id": "217e-3182-2695-1f12",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5d58-d9e7-f446-8d11"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Elite Mercenaries",
+        "hidden": false,
+        "id": "2ad6-6301-ceda-a61b",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1270-1ff9-c935-ef9c",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Vireskian Underworld"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Elite Mercenaries",
+            "hidden": false,
+            "id": "30a7-fbfb-5863-b62d",
+            "selectionEntryGroups": [
+              {
+                "name": "Primary Weapon",
+                "id": "a909-488d-29dd-997c",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Carbine",
+                    "hidden": false,
+                    "id": "755d-cf82-6671-eb67",
+                    "type": "selectionEntry",
+                    "targetId": "d7d3-057b-3ee5-1885",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "e443-8acf-7921-e694",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Rifle",
+                    "hidden": false,
+                    "id": "a0c3-cad1-7d14-8a02",
+                    "type": "selectionEntry",
+                    "targetId": "e3ec-1a2d-b79e-f8b0",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Semi-Auto Rifle",
+                    "hidden": false,
+                    "id": "313f-c10f-b1ea-3c88",
+                    "type": "selectionEntry",
+                    "targetId": "f4af-8190-c80a-9ec3",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Shotgun",
+                    "hidden": false,
+                    "id": "c991-e3a2-42e2-5949",
+                    "type": "selectionEntry",
+                    "targetId": "da4a-e9ac-ce6e-fbd1",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Sub-Machine Gun",
+                    "hidden": false,
+                    "id": "27cb-a466-71bb-d90d",
+                    "type": "selectionEntry",
+                    "targetId": "25a3-598d-e3c0-235e",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4920-7e06-333d-e66e"
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapon",
+                "id": "d37f-5fac-a1af-840c",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f9d9-9ee6-a580-89f7"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Melee Weapons (Proper)",
+                    "hidden": false,
+                    "id": "f567-8a9c-152a-718f",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c1ee-ea3d-3900-414a"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "name": "Pistol",
+                "id": "8fce-af4d-54f2-6b17",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Pistol",
+                    "hidden": false,
+                    "id": "37f4-aa3e-cf3d-d1e7",
+                    "type": "selectionEntry",
+                    "targetId": "2c52-e650-f82b-c9aa",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Infantry Heavy-Pistol",
+                    "hidden": false,
+                    "id": "52d4-a55a-5b42-91bb",
+                    "type": "selectionEntry",
+                    "targetId": "ad95-3816-1f76-8341",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2443-c40d-7a86-ea39"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "fd9c-c2d3-18fb-8673",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "cf3b-de4f-666b-64e0",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "48a2-0290-6874-12a9"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "da2d-f66a-a4fc-f613"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f739-acb5-5559-10b3"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3828-4f0f-29f9-e7cb"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Veteran",
+                "hidden": false,
+                "id": "0173-1fe9-f471-5a72",
+                "type": "selectionEntry",
+                "targetId": "bdc6-dc11-50aa-04a7"
+              }
+            ],
+            "collapsible": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Enforcers of the Vireskian Underworld",
+            "id": "25c6-8180-57b2-8bc8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5d58-d9e7-f446-8d11"
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -12770,6 +15275,62 @@
             "id": "2877-d85c-7f19-35a2",
             "primary": true,
             "name": "Core Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Mercenaries/Enforcers",
+        "hidden": false,
+        "id": "8f77-2d61-6ee3-417f",
+        "type": "selectionEntry",
+        "targetId": "315a-e6fd-04ee-b9a2",
+        "categoryLinks": [
+          {
+            "targetId": "7ccd-248d-ed09-ff2d",
+            "id": "18bc-4049-1615-9274",
+            "primary": true,
+            "name": "Elite Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Anti-Vehicle Thug Team",
+        "hidden": false,
+        "id": "66c7-1280-761b-eac6",
+        "type": "selectionEntry",
+        "targetId": "f3cb-1ae0-602e-8968",
+        "categoryLinks": [
+          {
+            "targetId": "cca7-d1e3-4cb5-7821",
+            "id": "8af0-3c2a-fe5a-8885",
+            "primary": true,
+            "name": "Infantry Support"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Improvised Flamethrower Team",
+        "hidden": false,
+        "id": "a09e-9463-2e43-49a4",
+        "type": "selectionEntry",
+        "targetId": "ad08-8cf2-e093-fe3e"
+      },
+      {
+        "import": true,
+        "name": "Elite Mercenaries",
+        "hidden": false,
+        "id": "17c8-9964-a5e9-5288",
+        "type": "selectionEntry",
+        "targetId": "2ad6-6301-ceda-a61b",
+        "categoryLinks": [
+          {
+            "targetId": "2a8a-af91-1767-2a1a",
+            "id": "1e0a-9a30-ecca-0e78",
+            "primary": true,
+            "name": "Specialists"
           }
         ]
       }

@@ -5,7 +5,7 @@
     "name": "Alliance Regiments",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 35,
-    "revision": 11,
+    "revision": 13,
     "battleScribeVersion": "2.03",
     "sharedSelectionEntryGroups": [
       {
@@ -2429,34 +2429,6 @@
                     "id": "dfe8-da13-1276-2678"
                   }
                 ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Missile Rack",
-                    "hidden": false,
-                    "id": "69aa-9652-f776-eca1",
-                    "type": "selectionEntry",
-                    "targetId": "3aae-c46d-c39e-e3b6",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "2a93-2138-70a8-dcad-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "2a93-2138-70a8-dcad-max"
-                      }
-                    ]
-                  }
-                ],
                 "rules": [
                   {
                     "name": "Support Carrier",
@@ -2472,20 +2444,6 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "5da9-2b79-070d-86c6"
-                  },
-                  {
-                    "name": "Vehicle Damage Table",
-                    "id": "6b87-526a-e8fd-01a2",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "b285-aa39-ba2f-1976"
-                  },
-                  {
-                    "name": "Vehicle Ramming Action",
-                    "id": "22cd-8f8f-8e4d-4617",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "bd48-bcfa-05cd-dbd3"
                   }
                 ],
                 "costs": [
@@ -2498,6 +2456,95 @@
                     "name": "Requisition",
                     "typeId": "ff33-0eb3-3b78-7829",
                     "value": 0
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "AMSC Missile Rack",
+                    "hidden": false,
+                    "id": "1c72-7c96-7af8-23fb",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "bf95-3e79-27df-ede4"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c1a2-6ddc-f042-61e5"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "AMSC Missile Rack",
+                        "typeId": "d233-0653-f762-e538",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "0023-3113-4f78-c018",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "b3c1-2707-e74d-88f6",
+                            "$text": "72"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "6997-f9f2-6f9b-ef3c",
+                            "$text": "6"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "8c5e-9516-a499-63f5",
+                            "$text": "2"
+                          },
+                          {
+                            "name": "D",
+                            "typeId": "7f27-f5c3-9c54-de65",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Abilities",
+                            "typeId": "cfcb-ec22-834e-7336",
+                            "$text": "Indirect Fire, Blast Radius(4)"
+                          },
+                          {
+                            "name": "WPN Dice",
+                            "typeId": "0255-21c0-4ef7-efa2",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "BS/MS",
+                            "typeId": "b356-3224-2f16-54c7",
+                            "$text": "BS"
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Indirect Fire",
+                        "id": "1772-59d5-7834-4166",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "efbf-0dfb-1a3d-f89c"
+                      },
+                      {
+                        "name": "Blast Radius(X)",
+                        "id": "f16e-4673-3142-5bc4",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "d912-27fd-8843-4efa"
+                      }
+                    ]
                   }
                 ]
               },
@@ -5597,7 +5644,7 @@
                     "entryLinks": [
                       {
                         "import": true,
-                        "name": "Flamethrower",
+                        "name": "Service Flamethrower",
                         "hidden": false,
                         "id": "d736-b323-1afc-bbf8",
                         "type": "selectionEntry",
