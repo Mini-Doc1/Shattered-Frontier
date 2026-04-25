@@ -5,7 +5,7 @@
     "name": "Vireskian Forces",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 39,
-    "revision": 7,
+    "revision": 8,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntryGroups": [
@@ -14308,32 +14308,6 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "8adf-eb89-d866-8059"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Veteran",
-                "hidden": false,
-                "id": "3c26-3684-049f-d13e",
-                "type": "selectionEntry",
-                "targetId": "bdc6-dc11-50aa-04a7",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "210a-aba0-0a2f-e212"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e380-ae63-fd14-f186"
                   }
                 ]
               },
