@@ -1,0 +1,510 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "b22e-4125-1048-51d1",
+    "name": "Objectives",
+    "gameSystemId": "sys-3396-9326-565c-5fb6",
+    "gameSystemRevision": 51,
+    "revision": 2,
+    "battleScribeVersion": "2.03",
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Primary Objective:",
+        "hidden": false,
+        "id": "be96-6526-bdc3-77ee",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Straight Combat(Simple)",
+            "hidden": false,
+            "id": "8215-47e3-41f9-30f5",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7d97-06b7-ec95-d5ba"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Straight Combat",
+                "id": "b816-48f2-7257-aeed",
+                "hidden": false,
+                "description": "At the end of the game:\nYou score 1 Victory Point for every enemy unit destroyed.\n\n\nIf one player scores at least 2 more Victory Points than the other, then that side has won a clear victory. Otherwise, the result is deemed too close to call and honors are shared; a draw!\n"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Vehicular Warfare(Simple)",
+            "hidden": false,
+            "id": "65b6-d63c-2f0c-791c",
+            "rules": [
+              {
+                "name": "Vehicular Warfare",
+                "id": "e79c-8835-c7a9-f392",
+                "hidden": false,
+                "description": "At the end of the game:\nYou score 1 Victory Point for every enemy vehicle destroyed.\n\n\nIf one player scores at least 2 more Victory Points than the other, then that side has won a clear victory. Otherwise, the result is deemed too close to call and honors are shared; a draw!"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Vehicular Warfare",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "7bdc-51ec-5d58-e647",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "As opposing forces meet one another, their vehicles come forth into the fray with the clear intention of wiping each other out, armored columns breaking out and fighting until their last; whoever has armored superiority will win this day."
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9e2c-216a-75e8-f1e5"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Command Removal(Simple)",
+            "hidden": false,
+            "id": "fc67-701f-ebf9-4e98",
+            "rules": [
+              {
+                "name": "Command Removal(Simple)",
+                "id": "eaef-f159-9e98-8a0c",
+                "hidden": false,
+                "description": "At the end of the game:\nYou score 1 Victory Point for every enemy HEADQUARTERS unit destroyed.\nYou score 1 Victory Point for every 2 Enemy non-HEADQUARTERS Units destroyed.\n\n\nIf one player scores at least 1 more Victory Points than the other, then that side has won a clear victory. Otherwise, the result is deemed too close to call and honors are shared; a draw!"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Command Removal(Simple)",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "179a-abd0-8a0a-81c6",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "Almost every force is lead by a leader, or group of leaders that command their troops towards war. Remove the leadership and end a battle before it begins!"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5dd5-d7de-5f0c-2164"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "All-Out Warfare(Advanced)",
+            "hidden": false,
+            "id": "8983-d2d9-d5e6-6cc9",
+            "rules": [
+              {
+                "name": "All-Out Warfare(Advanced)",
+                "id": "31eb-6b98-c7ff-468e",
+                "hidden": false,
+                "description": "At the end of the game:\nEach enemy CORE Unit killed: +1 victory point\nEach enemy ELITE Unit killed: +1 victory point\nEach enemy VEHICLE destroyed:+2 victory point\nEach enemy SPECIALIST Unit killed: +2 victory point\nEach enemy Headquarters Unit killed: +2 victory point \n\n\nIf one player scores at least 3 more Victory Points than the other, then that side has won a clear victory. Otherwise, the result is deemed too close to call and honors are shared; a draw!"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ee18-b3ff-c4b9-b450"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Toppling Towers(Advanced)",
+            "hidden": false,
+            "id": "f1a9-21a7-670f-095b",
+            "rules": [
+              {
+                "name": "Toppling Towers",
+                "id": "6481-14a9-7d89-b2e1",
+                "hidden": false,
+                "description": "Recommended to add a game round limit.\n\n\nAttackers:\nFor every Light Defense Tower that was destroyed:+1 Victory Points,.\nIf all Light Defense Towers were destroyed, Score 5 Victory Points instead.\n(If using Round Limit): If you have more than half of your army's units within the Defender's Deployment Zone:+3 Victory Points\n\nDefenders:\nFor Every Light Defense Tower that has not been destroyed:+1 Victory Point.\nIf all Light Defense Towers have not been destroyed, Score 5 Victory Points instead.\nFor Every Light Defense Tower that has a friendly unit within it: +1 Victory Point.\n(If using Round Limit): If you have more than half of your army's units within your Deployment Zone:+3 Victory Points.\n\n\nIf one player scores at least 2 more Victory Points than the other, then that side has won a clear victory. Otherwise, the result is deemed too close to call and honors are shared; a draw!"
+              },
+              {
+                "name": "Objective Preparation",
+                "id": "5a56-345a-a727-a950",
+                "hidden": false,
+                "description": "Deployment: As you roll off to see who deploys first, whoever goes first can choose between Attacker and Defender. Defenders will always deploy their entire force first, Attackers will deploy second and as normal.\n\n\nTerrain: Set up 3 Light Defense Towers Fortifications in the Defender's Deployment zone. These can be placed anywhere but must be 6 inches or more away from any table edge, must be 6 inches or more away from any other Terrain Features and cannot be outside the deployment zone.\n\n"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3390-27d6-2c0e-e22d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Secondary Objective:",
+        "hidden": false,
+        "id": "04d2-cb06-3269-b40c",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scrap for Parts(Simple)",
+            "hidden": false,
+            "id": "157f-4ef6-fb16-e571",
+            "rules": [
+              {
+                "name": "Scrap for Parts",
+                "id": "74cf-43ce-cf35-cbd6",
+                "hidden": false,
+                "description": "Any friendly INFANTRY Unit within 3 inches of a destroyed vehicle may use an action to \"Scrap it for Parts!\"\n\n\nScrap it for Parts!: The unit performing this action does an Intelligence Test. If they succeed, mark that vehicle as scrapped and cannot be targeted again for \"Scrap it for Parts!\".\n\n\nAt the end of the game, for every scrapped vehicle, earn 1 victory point."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "47e1-f358-2989-1714"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Flawless Assault(Advanced)",
+            "hidden": false,
+            "id": "46fd-17df-d7f9-a3a9",
+            "rules": [
+              {
+                "name": "Flawless Assault",
+                "id": "2992-530c-4bbe-9062",
+                "hidden": false,
+                "description": "At the end of the game, if the amount of friendly units that have died is LESS or equal than half of all enemy units that were killed, earn 1 victory point; and an additional one if there is a differential that is one more than required.\n\n\nExample: if the enemy lost 6 enemy units, you lost 3, you would gain 1 victory point. However if you only lost 2 units, you would gain 2 victory points; 1 from initial scoring and another 1 from having one less than required."
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Flawless Assault",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "334e-86b5-b117-3338",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "This force-albeit pride or skill- has great belief they will not lose this day"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ce92-e918-b49d-ee10"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Assassinate Target(Simple)",
+            "hidden": false,
+            "id": "4e12-56c9-119a-acec",
+            "rules": [
+              {
+                "name": "Assassinate Target",
+                "id": "e28b-9a3b-8eea-48c1",
+                "hidden": false,
+                "description": "During Deployment, select one Headquarters Unit from your opponent's army to be your target. At the end of the game, if that unit was killed, earn 1 Victory Point, if it was their Army Commander, earn 2 Victory Points. If you did not kill that unit, lose 1 Victory Point, if it was their Army Commander; lose 2 Instead."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "db2f-1c86-ccd4-75ba"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Assassinate Target",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "78e1-d841-e268-e735",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "Your force has been charged with killing an enemy leader, with even whispers of them being the very leader of the entire enemy force! However, if you fail, grave consequences could occur..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Witch Hunt(Simple)",
+            "hidden": false,
+            "id": "f2fd-ca4e-bd0d-1f3c",
+            "rules": [
+              {
+                "name": "Witch Hunt",
+                "id": "2fc4-852b-5e7c-e194",
+                "hidden": false,
+                "description": "Kill the Enemy Psyker or Mage with the highest Level. If you cannot kill him, wound them instead. \nMost powerful Enemy Psyker/Mage wounded: 1 Victory Point.\nMost Powerful Enemy Psyker/Mage killed: 3 Victory Points.\nIf the Most Powerful Enemy Psyker/Mage was killed by a friendly Psyker/Mage: 5 Victory Points."
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Witch Hunt",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "5cb2-00e7-7685-73be",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "A powerful user of arcane texts or the uncontained power of one's mind has been spotted. It is imperative to seek out and destroy this dangerous source of unimaginable power."
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6909-6129-2770-1064"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Miscellaneous Objective",
+        "hidden": false,
+        "id": "f6eb-035a-ab87-a248"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Objective Count",
+        "hidden": false,
+        "id": "0b47-d3c6-9c37-61ae",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Total Amount of Primaries",
+            "hidden": false,
+            "id": "f344-ed30-144f-488f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eaec-c520-795f-2ef3"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Total Amount of Misc.",
+                "id": "58b4-979b-f17d-b86b",
+                "hidden": false,
+                "description": "Total Amount of Primary Objectives Agreed upon. This is the same for both players."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Total Amount of Misc.",
+            "hidden": false,
+            "id": "e3eb-9740-fe79-1a89",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bf95-9375-4c51-89c4"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Total Amount of Misc.",
+                "id": "8649-2fd4-a1e0-c2a3",
+                "hidden": false,
+                "description": "Total Amount of Misc. Objectives Agreed upon. "
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Total Amount of Secondaries",
+            "hidden": false,
+            "id": "df3b-c3df-3984-0f2e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "003e-0750-fcfc-3ba0"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Total Amount of Misc.",
+                "id": "eb65-d215-0e56-101a",
+                "hidden": false,
+                "description": "Total Amount of Primary Objectives Agreed upon. Players can have different Secondary Objectives; unless a scenario calls otherwise."
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1d0d-948c-bcf6-2878-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1d0d-948c-bcf6-2878-max"
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Primary Objective:",
+        "hidden": false,
+        "id": "01b3-6e00-b61c-7320",
+        "type": "selectionEntry",
+        "targetId": "be96-6526-bdc3-77ee",
+        "categoryLinks": [
+          {
+            "targetId": "fb12-ab98-541b-ee55",
+            "id": "03dd-5236-8f2a-adf0",
+            "primary": true,
+            "name": "Objective:Primaries"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Secondary Objective:",
+        "hidden": false,
+        "id": "c5f6-608d-645a-7f59",
+        "type": "selectionEntry",
+        "targetId": "04d2-cb06-3269-b40c",
+        "categoryLinks": [
+          {
+            "targetId": "b894-a6d5-1035-e12f",
+            "id": "e723-bfa0-a9bc-228d",
+            "primary": true,
+            "name": "Objective:Secondaries"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Miscellaneous Objective",
+        "hidden": false,
+        "id": "3357-f1d5-9d29-5b09",
+        "type": "selectionEntry",
+        "targetId": "f6eb-035a-ab87-a248",
+        "categoryLinks": [
+          {
+            "targetId": "e6f2-4e0d-41c9-fa3d",
+            "id": "9537-f66e-cb86-eee0",
+            "primary": true,
+            "name": "Objectives:Miscellaneous"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Objective Count",
+        "hidden": false,
+        "id": "063a-9eda-e286-8f0f",
+        "type": "selectionEntry",
+        "targetId": "0b47-d3c6-9c37-61ae"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

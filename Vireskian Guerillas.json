@@ -5,7 +5,7 @@
     "name": "Vireskian Forces",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 39,
-    "revision": 8,
+    "revision": 14,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntryGroups": [
@@ -690,7 +690,7 @@
                   {
                     "name": "Abilities",
                     "typeId": "cfcb-ec22-834e-7336",
-                    "$text": "Heavy, Anti-Armor, Unwieldy Weapon, Blast Radius(2), Limited Use(1)"
+                    "$text": "Heavy, Anti-Armor, Unwieldy Weapon, Blast Radius(2), Low-Quality Machining, Limited Use(1)"
                   },
                   {
                     "name": "WPN Dice",
@@ -787,7 +787,7 @@
                   {
                     "name": "Abilities",
                     "typeId": "cfcb-ec22-834e-7336",
-                    "$text": "Flamethrower, Burning(d3), Unwieldly Weapon"
+                    "$text": "Flamethrower, Burning(d3), Unwieldly Weapon, Low Rate of Fire"
                   },
                   {
                     "name": "WPN Dice",
@@ -823,6 +823,13 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "def8-6fb8-62fd-9dbc"
+              },
+              {
+                "name": "Low Rate of Fire",
+                "id": "51a5-9954-1ec2-6cd8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8adf-eb89-d866-8059"
               }
             ]
           },
@@ -946,7 +953,7 @@
                   {
                     "name": "Abilities",
                     "typeId": "cfcb-ec22-834e-7336",
-                    "$text": "Rifle, Ballistic, Heavy, Anti-Armor, Unwieldy Weapon"
+                    "$text": "Rifle, Ballistic, Heavy, Anti-Armor, Unwieldy Weapon,Low-Quality Machining"
                   },
                   {
                     "name": "WPN Dice",
@@ -1017,16 +1024,6 @@
                 "value": 0
               }
             ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Weapon:Flamethrower",
-            "hidden": false,
-            "id": "56c7-9784-00f0-8066",
-            "type": "selectionEntry",
-            "targetId": "2e63-ffde-2fa2-0cd6"
           }
         ]
       },
@@ -1162,12 +1159,12 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Civilians of Viresk",
+            "name": "Civilian Defenders of Viresk",
             "hidden": false,
             "id": "74e1-ea43-f327-c625",
             "profiles": [
               {
-                "name": "Civilians of Viresk",
+                "name": "Civilian Defenders of Viresk",
                 "typeId": "0d83-d584-6c16-6b6f",
                 "typeName": "Lore",
                 "hidden": false,
@@ -1365,7 +1362,7 @@
             "id": "7674-acc6-2b2c-d547",
             "profiles": [
               {
-                "name": "Heavy-Headed Weapon",
+                "name": "Heavy-Handed Weapon",
                 "typeId": "d233-0653-f762-e538",
                 "typeName": "Weapon",
                 "hidden": false,
@@ -1379,12 +1376,12 @@
                   {
                     "name": "S",
                     "typeId": "6997-f9f2-6f9b-ef3c",
-                    "$text": "User"
+                    "$text": "User+1"
                   },
                   {
                     "name": "AP",
                     "typeId": "8c5e-9516-a499-63f5",
-                    "$text": "0"
+                    "$text": "1"
                   },
                   {
                     "name": "D",
@@ -1399,7 +1396,7 @@
                   {
                     "name": "WPN Dice",
                     "typeId": "0255-21c0-4ef7-efa2",
-                    "$text": "3"
+                    "$text": "2"
                   },
                   {
                     "name": "BS/MS",
@@ -2515,6 +2512,918 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Guerilla Fighter Ranged Weapons",
+        "id": "a5de-3f65-0f80-26e4",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sawed Off-Shotgun",
+            "hidden": false,
+            "id": "491d-d440-c70f-df27",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sawed-Off Shotgun",
+                "hidden": false,
+                "id": "f850-6f63-eafd-0439",
+                "profiles": [
+                  {
+                    "name": "Sawed-Off Shotgun",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "13f2-b018-1fc2-2f2c",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Ballistic, Shotgun"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Ballistic",
+                    "id": "5031-e718-fd62-4a7e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "09f0-5941-f550-9a12"
+                  },
+                  {
+                    "name": "Shotgun",
+                    "id": "3fef-0b36-8188-eaf7",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9c12-adba-e46d-ecb8"
+                  },
+                  {
+                    "name": "Moving Fire(X)",
+                    "id": "cd3d-9f8b-374c-5ccd",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ceeb-ed5b-73cd-7445"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bfc6-fa69-4f4d-6dd2-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bfc6-fa69-4f4d-6dd2-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 4
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sub-Machine Gun",
+            "hidden": false,
+            "id": "0c1a-20e2-45bb-2b77",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Sub-Machine Gun",
+                "hidden": false,
+                "id": "84a1-9f10-74f3-46af",
+                "type": "selectionEntry",
+                "targetId": "25a3-598d-e3c0-235e",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1633-319f-bccd-5234-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1633-319f-bccd-5234-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 5
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Carbine",
+            "hidden": false,
+            "id": "5297-e357-73f3-aa15",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Carbine",
+                "hidden": false,
+                "id": "e205-c842-bc5e-0b1e",
+                "type": "selectionEntry",
+                "targetId": "d7d3-057b-3ee5-1885",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f2f8-3124-6bc6-602c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f2f8-3124-6bc6-602c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "805d-56c6-67c2-14cd",
+                "type": "selectionEntry",
+                "targetId": "779d-76c3-4788-299b",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Infantry Auto-Pistol",
+            "hidden": false,
+            "id": "f4f5-6261-3b96-070c",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Infantry Auto-Pistol",
+                "hidden": false,
+                "id": "211a-71b5-039b-465a",
+                "type": "selectionEntry",
+                "targetId": "634f-e5ea-5154-0a54",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c060-1bf4-4ed4-f223"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "204a-bc45-4bcc-2075"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 6
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pistol",
+            "hidden": false,
+            "id": "b601-1b92-9bc7-0acc",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Pistol",
+                "hidden": false,
+                "id": "41b2-1502-5894-508d",
+                "type": "selectionEntry",
+                "targetId": "2c52-e650-f82b-c9aa",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "432c-6f10-e2ca-e8f8"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8cae-fe85-c62c-84b3"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Revolver",
+            "hidden": false,
+            "id": "e767-ff3f-892e-108d",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Revolver",
+                "hidden": false,
+                "id": "d015-fb83-35fe-62b4",
+                "type": "selectionEntry",
+                "targetId": "44b2-6065-e1d3-b499",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a6a7-2ade-1448-a684-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a6a7-2ade-1448-a684-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Shotgun",
+            "hidden": false,
+            "id": "9479-2a09-0a07-e22f",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Shotgun",
+                "hidden": false,
+                "id": "985d-0979-3243-059a",
+                "type": "selectionEntry",
+                "targetId": "da4a-e9ac-ce6e-fbd1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "90ca-f3f2-b62d-5bd0-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "90ca-f3f2-b62d-5bd0-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 7
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d9b5-ccb3-5776-f076"
+          },
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "50e7-3aaa-51d9-e933"
+          }
+        ]
+      },
+      {
+        "name": "Guerilla Fighter Melee Weapons",
+        "id": "48cd-c774-8f9c-878c",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Truncheon",
+            "hidden": false,
+            "id": "9319-4b4f-54de-1f16",
+            "type": "selectionEntry",
+            "targetId": "9558-f7b0-9026-8eb0",
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Dagger",
+            "hidden": false,
+            "id": "2b95-5adf-3686-fedb",
+            "type": "selectionEntry",
+            "targetId": "bdee-b80c-6ae5-a526",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Sword",
+            "hidden": false,
+            "id": "df12-7350-ed0e-d43f",
+            "type": "selectionEntry",
+            "targetId": "024a-58d2-e2cf-1f81",
+            "sortIndex": 4,
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Heavy-Handed Weapon",
+            "hidden": false,
+            "id": "c8db-6526-b502-dcb1",
+            "type": "selectionEntry",
+            "targetId": "7674-acc6-2b2c-d547",
+            "sortIndex": 3,
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3043-38f9-d580-4ef1"
+          }
+        ]
+      },
+      {
+        "name": "Guerilla Organziation",
+        "id": "f2a0-c101-c8de-ce8b",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Council Executioners",
+            "hidden": false,
+            "id": "f3a4-b803-3513-ffd2",
+            "rules": [
+              {
+                "name": "Off with their heads!",
+                "id": "a32f-05f2-6d1d-0565",
+                "hidden": false,
+                "description": ""
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Council Executioners",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "3cb1-c901-59ec-a98a",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "From the rough translation from the Vireskian language, the council executioners were those who carried out their namesake, hunting down and killing any Vireskian tied to the High Council they could find. The group was not the first to form, however they were the first to commit the great atrocities that the Guerillas would be recognized for."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Chain-Breaker",
+            "hidden": false,
+            "id": "bfb3-1a03-c0b4-4f7b",
+            "rules": [
+              {
+                "name": "Fragile Demonizing",
+                "id": "7679-c0c7-13b9-898e",
+                "hidden": false,
+                "description": "To represent the propaganda spouted, Chainbreaker INFANTRY Units have +2 Discipline and Willpower, however when they fail their first test using their Discipline or Willpower, they lose this bonus. If the unit is Regular or Veteran, it is instead reduce to +1.\n\n\nAn army that is fully composed of Chain-Breakers Units may have an allied Organization Chart of \"Civilian Defenders of Viresk\""
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Chain-Breakers",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "9da8-bf1f-7a3a-9199",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "Chain-Breakers are those who inspired uprisings and freeing their own kin from captivity to gain more fighters for their cause. They were the first to form out of the three majorly known organizations, dehumanizing both the High Council and Valerius Alliance to be seen as two greater evils, this propaganda would spur them further; their leadership preying on the emotions of their fighters.\n"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "People's Torch",
+            "hidden": false,
+            "id": "d811-89a2-3c7b-fc11",
+            "rules": [
+              {
+                "name": "Proper Training",
+                "id": "c49b-ef67-3c5b-799b",
+                "hidden": false,
+                "description": "To represent the training by the Valerius Alliance, this unit has +1 to Ballistic Skill and +1 to Melee Skill.\n\n\nAn army that is fully composed of People's Torch Units may be taken as an allied army organization chart."
+              }
+            ],
+            "profiles": [
+              {
+                "name": "People's Torch",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "be59-68c3-bb37-98b9",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "The People's Torch are partisans and fighters alike that allied themselves with the Valerius Alliance and the High Council against the growing unrest that the Vireskian Underworld and other Guerilla Fighters were causing. While not supplied by the Valerius Alliance, they were given additional training so that both groups could coordinate more effectively."
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8159-cacb-80a9-24ed"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Grenades",
+        "id": "0bee-ef62-b6f0-630c",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Equipment:Anti-Tank Grenade",
+            "hidden": false,
+            "id": "1ac0-6f5b-0e1c-4786",
+            "type": "selectionEntry",
+            "targetId": "414d-b3ac-76a0-b6d3",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Equipment:Fragmentation Grenade",
+            "hidden": false,
+            "id": "a897-5a12-7a58-00e1",
+            "type": "selectionEntry",
+            "targetId": "d46e-e849-00dd-c616",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Equipment:Smoke Grenade",
+            "hidden": false,
+            "id": "6c8d-126f-36ae-d7e9",
+            "type": "selectionEntry",
+            "targetId": "7350-8564-3e20-99d0",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Equipment: Molotov Cocktails",
+            "hidden": false,
+            "id": "a19c-ba05-9566-6c25",
+            "type": "selectionEntry",
+            "targetId": "55b5-73bf-1965-2bb5",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "id": "a2c5-11a5-c119-1a67",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Basic Clothing",
+            "hidden": false,
+            "id": "c451-0ba7-93e5-16c5",
+            "rules": [
+              {
+                "name": "Basic Clothing",
+                "id": "83ef-17b4-fddc-4c12",
+                "hidden": false,
+                "description": "This armor provides a 10+ Primary Save against Ballistic and Melee Weapons."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a027-1ac5-ee81-09fb"
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Armored Clothing",
+            "hidden": false,
+            "id": "7032-e861-5199-80d5",
+            "rules": [
+              {
+                "name": "Armored Clothing",
+                "id": "71e9-3459-7284-1ab6",
+                "hidden": false,
+                "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "821b-ecee-293c-b4cb"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Guerilla Suit",
+            "hidden": false,
+            "id": "ef76-aa32-a02f-a40b",
+            "rules": [
+              {
+                "name": "Guerilla Suit",
+                "id": "371a-59f6-66c6-6531",
+                "hidden": false,
+                "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons and Reinforced Position(1), even in Terrain Features that do not provide Cover."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "045f-2865-37e3-909d"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 3,
+            "infoLinks": [
+              {
+                "name": "Reinforced Position(X)",
+                "id": "3f60-1642-739b-d65c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b67b-54da-f723-e735"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2403-a90e-364c-4bf2"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Special Weapons",
+        "id": "99ab-c6d5-f4e8-9e29",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Improvised Disposable Flamethrower",
+            "hidden": false,
+            "id": "a359-b4b9-07ca-c151",
+            "profiles": [
+              {
+                "name": "Improvised Disposable Flamethrower",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "1663-7ad2-a6f2-1355",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "0"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Flamethrower, Burning(d3), Unwieldly Weapon, Low Rate of Fire, Limited Use(1)"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "d12"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Burning(X)",
+                "id": "29aa-44d2-617a-d525",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3264-2bf7-448b-70a2"
+              },
+              {
+                "name": "Flamethrower",
+                "id": "d0b6-0337-61b9-6c9a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b0bb-076b-6de4-ce2b"
+              },
+              {
+                "name": "Unwieldy Weapon",
+                "id": "b677-4a4a-aadc-941f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "def8-6fb8-62fd-9dbc"
+              },
+              {
+                "name": "Limited Use(X)",
+                "id": "a0ac-3f55-1258-96c6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6485-96d5-df66-3fe6"
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntries": [
@@ -3592,6 +4501,171 @@
                     "id": "b42a-0490-28a2-2d2a",
                     "hidden": false,
                     "description": "A Unit with this special rule has the following effects below:\n• A Unit with this special rule cannot have their movement reduced below their native value.\n• A unit with this special rule does not suffer negative modifiers to Initiative in Melee Combat."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Guerilla Fighters",
+            "id": "20fa-401e-72ea-6d0a",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Guerilla Fighter",
+                "hidden": false,
+                "id": "4649-423a-6825-2367",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 4,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "14f0-d737-8ff7-b05e"
+                  },
+                  {
+                    "type": "max",
+                    "value": 8,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c4aa-69e6-a947-865b"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Tier Level",
+                    "id": "93e9-1f11-df0a-8349",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Regular",
+                        "hidden": false,
+                        "id": "b2c6-cd4f-6712-e741",
+                        "type": "selectionEntry",
+                        "targetId": "485d-2cd7-4d79-8cc0"
+                      },
+                      {
+                        "import": true,
+                        "name": "Inexperienced",
+                        "hidden": false,
+                        "id": "c33a-509d-4c0d-38d5",
+                        "type": "selectionEntry",
+                        "targetId": "a64a-41ce-4a1c-8c91"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "5b85-e208-9cf9-ed35"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7b80-f3f8-a912-680d"
+                      }
+                    ],
+                    "collapsible": true
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Guerilla Fighter Melee Weapons",
+                    "hidden": false,
+                    "id": "458a-d311-094a-9939",
+                    "type": "selectionEntryGroup",
+                    "targetId": "48cd-c774-8f9c-878c",
+                    "collapsible": true
+                  },
+                  {
+                    "import": true,
+                    "name": "Guerilla Fighter Ranged Weapons",
+                    "hidden": false,
+                    "id": "9c3e-f480-08b9-4b9d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "a5de-3f65-0f80-26e4",
+                    "collapsible": true
+                  },
+                  {
+                    "import": true,
+                    "name": "Grenades",
+                    "hidden": false,
+                    "id": "3ae1-4e38-8c9c-adf5",
+                    "type": "selectionEntryGroup",
+                    "targetId": "0bee-ef62-b6f0-630c",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "20fa-401e-72ea-6d0a",
+                        "shared": true,
+                        "id": "121a-1f70-3745-4162",
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "121a-1f70-3745-4162",
+                        "conditions": [
+                          {
+                            "type": "equalTo",
+                            "value": 8,
+                            "field": "selections",
+                            "scope": "20fa-401e-72ea-6d0a",
+                            "childId": "20fa-401e-72ea-6d0a",
+                            "shared": true,
+                            "percentValue": false,
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "childName": "Guerilla Fighters"
+                          }
+                        ]
+                      }
+                    ],
+                    "collapsible": true
+                  },
+                  {
+                    "import": true,
+                    "name": "Armor",
+                    "hidden": false,
+                    "id": "3cfa-6cda-4ccd-d58b",
+                    "type": "selectionEntryGroup",
+                    "targetId": "a2c5-11a5-c119-1a67"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "0a77-fe0f-9658-a5db",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "childName": "Guerilla Fighters of Viresk"
                   }
                 ]
               }
@@ -5523,6 +6597,15 @@
                           }
                         ]
                       }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Headquarters:Improvised Command",
+                        "id": "3de5-74f6-0363-3a0f",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "d5da-fa4d-de71-f7d5"
+                      }
                     ]
                   },
                   {
@@ -6443,7 +7526,764 @@
                     "id": "ba51-2f76-299e-03ab-max"
                   }
                 ],
-                "sortIndex": 6
+                "sortIndex": 6,
+                "selectionEntries": [
+                  {
+                    "type": "model",
+                    "import": true,
+                    "name": "Partisan Leader",
+                    "hidden": false,
+                    "id": "3db1-29c1-6525-4fd5",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6018-179b-98dd-fc48"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "099b-6a65-b5ce-7626"
+                      }
+                    ],
+                    "collapsible": true,
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Tier Level",
+                        "id": "7683-f1a3-ec29-729b",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Command:Inexperienced",
+                            "hidden": false,
+                            "id": "9f77-ec9c-433e-f43d",
+                            "type": "selectionEntry",
+                            "targetId": "6f53-b654-5a07-fee2",
+                            "costs": [
+                              {
+                                "name": "Pts",
+                                "typeId": "points",
+                                "value": 10
+                              }
+                            ]
+                          },
+                          {
+                            "import": true,
+                            "name": "Command:Regular",
+                            "hidden": false,
+                            "id": "fb86-cf10-e0ba-14bb",
+                            "type": "selectionEntry",
+                            "targetId": "31ff-b038-c62d-d648"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "ba95-999a-f142-a6e8"
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "29c3-4b6f-d9be-7c70"
+                          }
+                        ],
+                        "sortIndex": 1
+                      },
+                      {
+                        "name": "Armor",
+                        "id": "93c1-b61c-e6c8-1b8e",
+                        "hidden": false,
+                        "selectionEntries": [
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Basic Clothing",
+                            "hidden": false,
+                            "id": "00e2-f396-1e29-b7c4",
+                            "rules": [
+                              {
+                                "name": "Basic Clothing",
+                                "id": "f460-1242-542a-4d06",
+                                "hidden": false,
+                                "description": "This armor provides a 10+ Primary Save against Ballistic and Melee Weapons."
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a163-f35c-48f9-875b"
+                              }
+                            ],
+                            "sortIndex": 1
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Armored Clothing",
+                            "hidden": false,
+                            "id": "2543-ff0d-ef5c-53e1",
+                            "rules": [
+                              {
+                                "name": "Armored Clothing",
+                                "id": "3cf2-7a69-7667-ef9b",
+                                "hidden": false,
+                                "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "4f57-a8f7-197b-396d"
+                              }
+                            ],
+                            "costs": [
+                              {
+                                "name": "Pts",
+                                "typeId": "points",
+                                "value": 1
+                              },
+                              {
+                                "name": "Requisition",
+                                "typeId": "ff33-0eb3-3b78-7829",
+                                "value": 0
+                              }
+                            ],
+                            "sortIndex": 2
+                          },
+                          {
+                            "type": "upgrade",
+                            "import": true,
+                            "name": "Guerilla Suit",
+                            "hidden": false,
+                            "id": "5dc3-1278-6980-3dff",
+                            "rules": [
+                              {
+                                "name": "Guerilla Suit",
+                                "id": "9f32-c1b3-b2ef-bf4f",
+                                "hidden": false,
+                                "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons and Reinforced Position(1), even in Terrain Features that do not provide Cover."
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "3741-b787-2957-b806"
+                              }
+                            ],
+                            "costs": [
+                              {
+                                "name": "Pts",
+                                "typeId": "points",
+                                "value": 2
+                              },
+                              {
+                                "name": "Requisition",
+                                "typeId": "ff33-0eb3-3b78-7829",
+                                "value": 0
+                              }
+                            ],
+                            "sortIndex": 3,
+                            "infoLinks": [
+                              {
+                                "name": "Reinforced Position(X)",
+                                "id": "ac9e-677e-fd0d-8bd1",
+                                "hidden": false,
+                                "type": "rule",
+                                "targetId": "b67b-54da-f723-e735"
+                              }
+                            ]
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "3d27-e5e8-f0ee-daf0"
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Headquarters:Improvised Command",
+                        "id": "ba72-85e6-f7be-5b07",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "d5da-fa4d-de71-f7d5"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Guerilla Fighter Ranged Weapons",
+                        "hidden": false,
+                        "id": "5cd2-4495-c45f-88eb",
+                        "type": "selectionEntryGroup",
+                        "targetId": "a5de-3f65-0f80-26e4"
+                      },
+                      {
+                        "import": true,
+                        "name": "Guerilla Fighter Melee Weapons",
+                        "hidden": false,
+                        "id": "cdef-d32c-072a-c4ce",
+                        "type": "selectionEntryGroup",
+                        "targetId": "48cd-c774-8f9c-878c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Grenades",
+                        "hidden": false,
+                        "id": "4366-727b-3284-07dd",
+                        "type": "selectionEntryGroup",
+                        "targetId": "0bee-ef62-b6f0-630c",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "4037-b6ad-d962-cd53"
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 2
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Unruly Rebels",
+                    "id": "b2f2-7b1e-118f-2853",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5daa-00b5-802f-3adf"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Guerilla Organziation",
+                    "hidden": false,
+                    "id": "74a2-6591-22cc-2d83",
+                    "type": "selectionEntryGroup",
+                    "targetId": "f2a0-c101-c8de-ce8b",
+                    "sortIndex": 1
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Guerilla Retinue",
+                    "id": "e20a-ce3b-94c9-1182",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "unit",
+                        "import": true,
+                        "name": "Guerilla Veterans",
+                        "hidden": false,
+                        "id": "7c03-fe66-13a0-d244",
+                        "selectionEntries": [
+                          {
+                            "type": "model",
+                            "import": true,
+                            "name": "Guerilla Veteran",
+                            "hidden": false,
+                            "id": "6973-8926-cf47-abcd",
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "0b3f-ceb0-5554-c61c"
+                              },
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b27a-a35e-c557-8bac"
+                              }
+                            ],
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Veteran",
+                                "hidden": false,
+                                "id": "26d6-bf6a-8cce-34cf",
+                                "type": "selectionEntry",
+                                "targetId": "bdc6-dc11-50aa-04a7",
+                                "constraints": [
+                                  {
+                                    "type": "min",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "156c-a9ab-5fb9-99a1-min"
+                                  },
+                                  {
+                                    "type": "max",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "156c-a9ab-5fb9-99a1-max"
+                                  }
+                                ]
+                              },
+                              {
+                                "import": true,
+                                "name": "Guerilla Fighter Melee Weapons",
+                                "hidden": false,
+                                "id": "8c60-c060-f3a4-d308",
+                                "type": "selectionEntryGroup",
+                                "targetId": "48cd-c774-8f9c-878c"
+                              },
+                              {
+                                "import": true,
+                                "name": "Guerilla Fighter Ranged Weapons",
+                                "hidden": false,
+                                "id": "78f1-77b4-debe-406e",
+                                "type": "selectionEntryGroup",
+                                "targetId": "a5de-3f65-0f80-26e4"
+                              },
+                              {
+                                "import": true,
+                                "name": "Grenades",
+                                "hidden": false,
+                                "id": "10e1-efec-1be8-2dbb",
+                                "type": "selectionEntryGroup",
+                                "targetId": "0bee-ef62-b6f0-630c",
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "unit",
+                                    "shared": true,
+                                    "id": "0953-449b-b0ba-f336",
+                                    "includeChildSelections": true
+                                  }
+                                ]
+                              }
+                            ],
+                            "selectionEntryGroups": [
+                              {
+                                "name": "Armor",
+                                "id": "fce3-436e-4784-c96c",
+                                "hidden": false,
+                                "selectionEntries": [
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Basic Clothing",
+                                    "hidden": false,
+                                    "id": "a726-9f17-bd40-a71d",
+                                    "rules": [
+                                      {
+                                        "name": "Basic Clothing",
+                                        "id": "ffeb-f8ed-6e24-bf6d",
+                                        "hidden": false,
+                                        "description": "This armor provides a 10+ Primary Save against Ballistic and Melee Weapons."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "9c82-fb72-2f82-ec72"
+                                      }
+                                    ],
+                                    "sortIndex": 1
+                                  },
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Armored Clothing",
+                                    "hidden": false,
+                                    "id": "fa8e-167a-96e7-65be",
+                                    "rules": [
+                                      {
+                                        "name": "Armored Clothing",
+                                        "id": "2a99-7fc9-9b02-d2e4",
+                                        "hidden": false,
+                                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "4ca6-8792-94b2-5ef8"
+                                      }
+                                    ],
+                                    "costs": [
+                                      {
+                                        "name": "Pts",
+                                        "typeId": "points",
+                                        "value": 1
+                                      },
+                                      {
+                                        "name": "Requisition",
+                                        "typeId": "ff33-0eb3-3b78-7829",
+                                        "value": 0
+                                      }
+                                    ],
+                                    "sortIndex": 2
+                                  },
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Guerilla Suit",
+                                    "hidden": false,
+                                    "id": "93fa-7c49-a26d-3dd5",
+                                    "rules": [
+                                      {
+                                        "name": "Guerilla Suit",
+                                        "id": "e860-42aa-5bd0-558a",
+                                        "hidden": false,
+                                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons and Reinforced Position(1), even in Terrain Features that do not provide Cover."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "b253-9241-c20c-c1d8"
+                                      }
+                                    ],
+                                    "costs": [
+                                      {
+                                        "name": "Pts",
+                                        "typeId": "points",
+                                        "value": 2
+                                      },
+                                      {
+                                        "name": "Requisition",
+                                        "typeId": "ff33-0eb3-3b78-7829",
+                                        "value": 0
+                                      }
+                                    ],
+                                    "sortIndex": 3,
+                                    "infoLinks": [
+                                      {
+                                        "name": "Reinforced Position(X)",
+                                        "id": "7289-ef6f-4281-8a19",
+                                        "hidden": false,
+                                        "type": "rule",
+                                        "targetId": "b67b-54da-f723-e735"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "820e-2ea3-4181-b15f"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "50e2-6dd1-77a6-76fe"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "unit",
+                        "import": true,
+                        "name": "Guerilla Fighters",
+                        "hidden": false,
+                        "id": "b28e-6696-01b8-c5fe",
+                        "selectionEntries": [
+                          {
+                            "type": "model",
+                            "import": true,
+                            "name": "Guerilla Fighter",
+                            "hidden": false,
+                            "id": "774c-99c0-46c2-b6de",
+                            "selectionEntryGroups": [
+                              {
+                                "name": "Armor",
+                                "id": "3259-ff78-c2c3-1477",
+                                "hidden": false,
+                                "selectionEntries": [
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Basic Clothing",
+                                    "hidden": false,
+                                    "id": "a787-8d9a-cc25-9574",
+                                    "rules": [
+                                      {
+                                        "name": "Basic Clothing",
+                                        "id": "c3a1-9696-b4df-fc4c",
+                                        "hidden": false,
+                                        "description": "This armor provides a 10+ Primary Save against Ballistic and Melee Weapons."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "e0af-ec5f-eed5-92d0"
+                                      }
+                                    ],
+                                    "sortIndex": 1
+                                  },
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Armored Clothing",
+                                    "hidden": false,
+                                    "id": "839e-9c05-b68a-f1a3",
+                                    "rules": [
+                                      {
+                                        "name": "Armored Clothing",
+                                        "id": "0e7c-68cd-06f3-1d9f",
+                                        "hidden": false,
+                                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "32a7-3ad6-c80d-c33d"
+                                      }
+                                    ],
+                                    "costs": [
+                                      {
+                                        "name": "Pts",
+                                        "typeId": "points",
+                                        "value": 1
+                                      },
+                                      {
+                                        "name": "Requisition",
+                                        "typeId": "ff33-0eb3-3b78-7829",
+                                        "value": 0
+                                      }
+                                    ],
+                                    "sortIndex": 2
+                                  },
+                                  {
+                                    "type": "upgrade",
+                                    "import": true,
+                                    "name": "Guerilla Suit",
+                                    "hidden": false,
+                                    "id": "2e6d-aa36-f602-a6f2",
+                                    "rules": [
+                                      {
+                                        "name": "Guerilla Suit",
+                                        "id": "5d7c-ba6d-088d-f2c3",
+                                        "hidden": false,
+                                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons and Reinforced Position(1), even in Terrain Features that do not provide Cover."
+                                      }
+                                    ],
+                                    "constraints": [
+                                      {
+                                        "type": "max",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "shared": true,
+                                        "id": "4c20-7380-3fe6-26cf"
+                                      }
+                                    ],
+                                    "costs": [
+                                      {
+                                        "name": "Pts",
+                                        "typeId": "points",
+                                        "value": 2
+                                      },
+                                      {
+                                        "name": "Requisition",
+                                        "typeId": "ff33-0eb3-3b78-7829",
+                                        "value": 0
+                                      }
+                                    ],
+                                    "sortIndex": 3,
+                                    "infoLinks": [
+                                      {
+                                        "name": "Reinforced Position(X)",
+                                        "id": "33fc-dc59-b485-5475",
+                                        "hidden": false,
+                                        "type": "rule",
+                                        "targetId": "b67b-54da-f723-e735"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "9cac-931e-cdde-ce28"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Tier Level",
+                                "id": "c00e-c859-7894-e4b0",
+                                "hidden": false,
+                                "entryLinks": [
+                                  {
+                                    "import": true,
+                                    "name": "Regular",
+                                    "hidden": false,
+                                    "id": "36bc-da03-308e-b1bc",
+                                    "type": "selectionEntry",
+                                    "targetId": "485d-2cd7-4d79-8cc0"
+                                  },
+                                  {
+                                    "import": true,
+                                    "name": "Inexperienced",
+                                    "hidden": false,
+                                    "id": "0f1c-cb7f-e7ff-e3c4",
+                                    "type": "selectionEntry",
+                                    "targetId": "a64a-41ce-4a1c-8c91"
+                                  }
+                                ],
+                                "constraints": [
+                                  {
+                                    "type": "max",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "653d-94bf-eb26-bf5d"
+                                  },
+                                  {
+                                    "type": "min",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "shared": true,
+                                    "id": "3258-7d81-2ed4-1c6d"
+                                  }
+                                ]
+                              }
+                            ],
+                            "entryLinks": [
+                              {
+                                "import": true,
+                                "name": "Guerilla Fighter Melee Weapons",
+                                "hidden": false,
+                                "id": "4558-fb66-eefb-af33",
+                                "type": "selectionEntryGroup",
+                                "targetId": "48cd-c774-8f9c-878c"
+                              },
+                              {
+                                "import": true,
+                                "name": "Guerilla Fighter Ranged Weapons",
+                                "hidden": false,
+                                "id": "19ed-16ea-e290-4dfe",
+                                "type": "selectionEntryGroup",
+                                "targetId": "a5de-3f65-0f80-26e4"
+                              }
+                            ],
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 5,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "8b66-f3eb-c6a6-d0a8"
+                              },
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "21bd-9d97-9be6-59db"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6b35-b370-99c5-50e3"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -6542,7 +8382,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Vireskian Defender Anti-Tank",
         "hidden": false,
@@ -8181,7 +10021,7 @@
                   {
                     "type": "upgrade",
                     "import": true,
-                    "name": "Heavy-Headed Weapon",
+                    "name": "Heavy-Handed Weapon",
                     "hidden": false,
                     "id": "ec7e-0c63-5d6e-a3e6",
                     "profiles": [
@@ -11105,7 +12945,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Vireskian Naval Boarders",
         "hidden": false,
@@ -11511,7 +13351,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Guhlimhurian Warriors",
         "hidden": false,
@@ -11930,7 +13770,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Guhlimhurian Rangers",
         "hidden": false,
@@ -12360,10 +14200,22 @@
               }
             ]
           }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Guhlimhurian Warrior",
         "hidden": false,
@@ -12592,7 +14444,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Mercenaries/Enforcers",
         "hidden": false,
@@ -14170,7 +16022,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Improvised Flamethrower Team",
         "hidden": false,
@@ -15144,6 +16996,1750 @@
             "targetId": "5d58-d9e7-f446-8d11"
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Stolen Vehicle",
+        "hidden": false,
+        "id": "80e7-cb6b-6f5d-1d03",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Crew",
+            "hidden": false,
+            "id": "bee4-f7e7-f021-44e0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9afd-2fa7-4592-0f48-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9afd-2fa7-4592-0f48-max"
+              }
+            ],
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "e244-6c1f-0d0f-f92a",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "e555-b758-82ac-4a29",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ebaf-77d0-e372-ad8b"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bb14-3455-081d-36d1"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Shank Weapon",
+                "hidden": false,
+                "id": "c5ab-cf22-e51f-fcb9",
+                "profiles": [
+                  {
+                    "name": "Shank",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "610a-befd-95f3-e516",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "User"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Melee",
+                    "id": "83b2-7354-f278-d698",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  },
+                  {
+                    "name": "Concealed Weapon",
+                    "id": "d8a8-0878-f43f-4879",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "05b5-1042-6428-fc94"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5962-0dbf-679a-62c4"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Crewmen(X)",
+                "id": "a46a-3eff-aa4e-c33c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e967-c565-eb09-bce2"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Inexperienced",
+                "hidden": false,
+                "id": "5205-8c97-855a-a67d",
+                "type": "selectionEntry",
+                "targetId": "a64a-41ce-4a1c-8c91",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7cc7-7569-8136-f137"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf9e-0541-c7ff-1f7e"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Pistol",
+                "hidden": false,
+                "id": "cccc-752a-316d-23e5",
+                "type": "selectionEntry",
+                "targetId": "2c52-e650-f82b-c9aa",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3c8e-db26-6a74-5210"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Stolen Vehicle",
+            "hidden": false,
+            "id": "30c2-949a-643e-192b",
+            "profiles": [
+              {
+                "name": "Stolen Vehicle",
+                "typeId": "19f2-ad80-cde0-f446",
+                "typeName": "Vehicle",
+                "hidden": false,
+                "id": "fc79-1088-c3cd-139c",
+                "characteristics": [
+                  {
+                    "name": "Unit Type",
+                    "typeId": "afd5-717f-3f8b-54c8",
+                    "$text": "VEHICLE"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "e07a-44d5-a28b-fccb",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "ee8f-5935-2369-292c",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "2e18-0c17-d5ef-a03c",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "dda7-ef77-4f5b-4ec7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "d9e7-69e3-7001-3608",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "2035-0779-92cc-5b4c",
+                    "$text": "Crew"
+                  },
+                  {
+                    "name": "M",
+                    "typeId": "829c-7788-38cb-e413",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "1aa8-f234-622f-e75f",
+                    "$text": "Crew(1), Transport(10)"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0e02-1202-7026-ffc8"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4640-2deb-b022-0a87"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Unit Type:Vehicle",
+                "id": "edb4-ec8c-648b-d470",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5da9-2b79-070d-86c6"
+              },
+              {
+                "name": "Transport(X)",
+                "id": "6324-6b21-6019-0a47",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a4a3-37b1-97e7-1704"
+              },
+              {
+                "name": "Embarking/Disembarking",
+                "id": "5ef1-8726-8956-cc69",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "14a8-26e1-aca6-718d"
+              }
+            ],
+            "collapsible": true,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Main Armanent(360)",
+                "hidden": false,
+                "id": "ca4e-9b26-6f5e-423f",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Light Machine Gun",
+                    "hidden": false,
+                    "id": "4868-b25a-1601-193d",
+                    "type": "selectionEntry",
+                    "targetId": "05e3-0d76-2036-d653",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "570f-4e82-cf3e-9052"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 20
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "98d6-7f76-dea7-14cc-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "98d6-7f76-dea7-14cc-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 10
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1270-1ff9-c935-ef9c",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Vireskian Underworld"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Stolen Transport",
+        "hidden": false,
+        "id": "3d20-2ae6-c129-ab27",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Thug Crew",
+            "hidden": false,
+            "id": "d57a-aca8-cb4a-aa7e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4a9d-204a-6178-deb7"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cffa-d441-a0d1-648d"
+              }
+            ],
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armored Clothing",
+                "hidden": false,
+                "id": "74ac-706e-953d-ea38",
+                "rules": [
+                  {
+                    "name": "Armred Clothing",
+                    "id": "47a2-c2c6-a49d-8c25",
+                    "hidden": false,
+                    "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "939d-f1bb-d4c8-1d24"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3647-d72c-c798-301f"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Shank Weapon",
+                "hidden": false,
+                "id": "9d06-582b-e8fe-4740",
+                "profiles": [
+                  {
+                    "name": "Shank",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "80e1-e44f-647e-7473",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "User"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Melee",
+                    "id": "0c8a-63bf-1f12-fda4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  },
+                  {
+                    "name": "Concealed Weapon",
+                    "id": "106a-822d-73c0-ef2d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "05b5-1042-6428-fc94"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ea69-12ac-c651-e578"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Crewmen(X)",
+                "id": "a6be-94e8-f710-9796",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e967-c565-eb09-bce2"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Inexperienced",
+                "hidden": false,
+                "id": "5310-17d0-dcbf-ab01",
+                "type": "selectionEntry",
+                "targetId": "a64a-41ce-4a1c-8c91",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6658-d591-4a15-a369"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4952-4721-325a-c68b"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Pistol",
+                "hidden": false,
+                "id": "8e6d-3778-fe57-ac9c",
+                "type": "selectionEntry",
+                "targetId": "2c52-e650-f82b-c9aa",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "87f9-4c56-56d8-19b4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Stolen Vehicle",
+            "hidden": false,
+            "id": "2de5-6945-059b-245f",
+            "profiles": [
+              {
+                "name": "Stolen Vehicle",
+                "typeId": "19f2-ad80-cde0-f446",
+                "typeName": "Vehicle",
+                "hidden": false,
+                "id": "1e4e-63c7-c12a-f63d",
+                "characteristics": [
+                  {
+                    "name": "Unit Type",
+                    "typeId": "afd5-717f-3f8b-54c8",
+                    "$text": "VEHICLE"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "e07a-44d5-a28b-fccb",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "ee8f-5935-2369-292c",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "2e18-0c17-d5ef-a03c",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "dda7-ef77-4f5b-4ec7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "d9e7-69e3-7001-3608",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "2035-0779-92cc-5b4c",
+                    "$text": "Crew"
+                  },
+                  {
+                    "name": "M",
+                    "typeId": "829c-7788-38cb-e413",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "1aa8-f234-622f-e75f",
+                    "$text": "Crew(1), Transport(10)"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "77cd-34ba-35b3-c626"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e066-fcb0-b871-c488"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Unit Type:Vehicle",
+                "id": "7c4d-c96f-e2fb-08af",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5da9-2b79-070d-86c6"
+              },
+              {
+                "name": "Transport(X)",
+                "id": "af7d-7e12-8118-0c17",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a4a3-37b1-97e7-1704"
+              },
+              {
+                "name": "Embarking/Disembarking",
+                "id": "bc81-4c11-4782-d2fa",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "14a8-26e1-aca6-718d"
+              }
+            ],
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Main Armanent(360)",
+                "hidden": false,
+                "id": "d21b-501a-6a9e-e027",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Light Machine Gun",
+                    "hidden": false,
+                    "id": "995a-e5a6-c807-5bda",
+                    "type": "selectionEntry",
+                    "targetId": "05e3-0d76-2036-d653",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6adf-1030-895a-b8be"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 20
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4189-5744-a2c0-2563"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4ccd-5cf1-8fac-2178"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 10
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Transport Type",
+            "id": "c11b-e265-b6c7-5b93",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Car",
+                "hidden": false,
+                "id": "07ef-1bcd-9297-431b",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 10
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Upgrades",
+                    "id": "de1d-4ba7-f313-2dc3",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Reinforced Armor",
+                        "hidden": false,
+                        "id": "3ee6-5a2a-4817-0680",
+                        "rules": [
+                          {
+                            "name": "Reinforced Armor",
+                            "id": "9b9a-6284-5d70-6da1",
+                            "hidden": false,
+                            "description": "Add +1 to the Armor Facing Value of all sides."
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 10
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "d82f-86a5-14da-2e03"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Reinforced Hull",
+                        "hidden": false,
+                        "id": "8402-3b99-5c7b-27e0",
+                        "rules": [
+                          {
+                            "name": "Reinforced Hull",
+                            "id": "5f8d-6d97-c073-8326",
+                            "hidden": false,
+                            "description": "Add +1 to Hitpoints and +1 to Hull Points."
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 5
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "2810-1964-cf8d-8d8a"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Car",
+                    "typeId": "19f2-ad80-cde0-f446",
+                    "typeName": "Vehicle",
+                    "hidden": false,
+                    "id": "5c22-8550-b540-1dce",
+                    "characteristics": [
+                      {
+                        "name": "Unit Type",
+                        "typeId": "afd5-717f-3f8b-54c8",
+                        "$text": "VEHICLE"
+                      },
+                      {
+                        "name": "HP",
+                        "typeId": "e07a-44d5-a28b-fccb",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Hull",
+                        "typeId": "ee8f-5935-2369-292c",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Front",
+                        "typeId": "2e18-0c17-d5ef-a03c",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Side",
+                        "typeId": "dda7-ef77-4f5b-4ec7",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Rear",
+                        "typeId": "d9e7-69e3-7001-3608",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "2035-0779-92cc-5b4c",
+                        "$text": "Crew"
+                      },
+                      {
+                        "name": "M",
+                        "typeId": "829c-7788-38cb-e413",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Transport Capacity",
+                        "typeId": "1aa8-f234-622f-e75f",
+                        "$text": "Crew(2), Transport(4)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Embarking/Disembarking",
+                    "id": "05a2-6102-f8d3-753f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "14a8-26e1-aca6-718d"
+                  },
+                  {
+                    "name": "Transport(X)",
+                    "id": "ff1c-d55e-8d36-80cf",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a4a3-37b1-97e7-1704"
+                  },
+                  {
+                    "name": "Unit Type:Vehicle",
+                    "id": "ad79-3fd7-f1f9-4b3b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5da9-2b79-070d-86c6"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Wagon",
+                "hidden": false,
+                "id": "47fb-cb4b-4f28-9db9",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Truck",
+                "hidden": false,
+                "id": "e28e-615d-27a9-c9a1",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Truck",
+                    "typeId": "19f2-ad80-cde0-f446",
+                    "typeName": "Vehicle",
+                    "hidden": false,
+                    "id": "5033-f60b-d287-2fd4",
+                    "characteristics": [
+                      {
+                        "name": "Unit Type",
+                        "typeId": "afd5-717f-3f8b-54c8",
+                        "$text": "VEHICLE"
+                      },
+                      {
+                        "name": "HP",
+                        "typeId": "e07a-44d5-a28b-fccb",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Hull",
+                        "typeId": "ee8f-5935-2369-292c",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Front",
+                        "typeId": "2e18-0c17-d5ef-a03c",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Side",
+                        "typeId": "dda7-ef77-4f5b-4ec7",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Rear",
+                        "typeId": "d9e7-69e3-7001-3608",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "2035-0779-92cc-5b4c",
+                        "$text": "Crew"
+                      },
+                      {
+                        "name": "M",
+                        "typeId": "829c-7788-38cb-e413",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Transport Capacity",
+                        "typeId": "1aa8-f234-622f-e75f",
+                        "$text": "Crew(1), Transport(10)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Embarking/Disembarking",
+                    "id": "af77-3663-4911-9784",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "14a8-26e1-aca6-718d"
+                  },
+                  {
+                    "name": "Transport(X)",
+                    "id": "7396-c08a-aebd-8570",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a4a3-37b1-97e7-1704"
+                  },
+                  {
+                    "name": "Unit Type:Vehicle",
+                    "id": "c51f-f940-79eb-522a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5da9-2b79-070d-86c6"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Upgrades",
+                    "id": "217a-ae15-a2fb-5b93",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Reinforced Armor",
+                        "hidden": false,
+                        "id": "5040-7748-1815-952d",
+                        "rules": [
+                          {
+                            "name": "Reinforced Armor",
+                            "id": "6489-f43d-5e09-cc56",
+                            "hidden": false,
+                            "description": "Add +1 to the Armor Facing Value of all sides."
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 10
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "94b2-378e-54c4-27b2"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Reinforced Hull",
+                        "hidden": false,
+                        "id": "f503-977d-8778-b525",
+                        "rules": [
+                          {
+                            "name": "Reinforced Hull",
+                            "id": "5712-3c0a-f075-1c59",
+                            "hidden": false,
+                            "description": "Add +1 to Hitpoints and +1 to Hull Points."
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 5
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "c737-84a1-44c2-249e"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Personnel Carrier",
+                "hidden": false,
+                "id": "d94a-a788-2502-9d0f",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 20
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 1
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Personnel Carrier",
+                    "typeId": "19f2-ad80-cde0-f446",
+                    "typeName": "Vehicle",
+                    "hidden": false,
+                    "id": "823c-7a31-2341-e411",
+                    "characteristics": [
+                      {
+                        "name": "Unit Type",
+                        "typeId": "afd5-717f-3f8b-54c8",
+                        "$text": "VEHICLE"
+                      },
+                      {
+                        "name": "HP",
+                        "typeId": "e07a-44d5-a28b-fccb",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Hull",
+                        "typeId": "ee8f-5935-2369-292c",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Front",
+                        "typeId": "2e18-0c17-d5ef-a03c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Side",
+                        "typeId": "dda7-ef77-4f5b-4ec7",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Rear",
+                        "typeId": "d9e7-69e3-7001-3608",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "2035-0779-92cc-5b4c",
+                        "$text": "Crew"
+                      },
+                      {
+                        "name": "M",
+                        "typeId": "829c-7788-38cb-e413",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Transport Capacity",
+                        "typeId": "1aa8-f234-622f-e75f",
+                        "$text": "Crew(2), Transport(10)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Embarking/Disembarking",
+                    "id": "58bb-48b9-9758-1f55",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "14a8-26e1-aca6-718d"
+                  },
+                  {
+                    "name": "Transport(X)",
+                    "id": "6a8b-857d-457d-ff12",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a4a3-37b1-97e7-1704"
+                  },
+                  {
+                    "name": "Unit Type:Vehicle",
+                    "id": "9f4b-a1c6-4fb0-5003",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5da9-2b79-070d-86c6"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Main Armanent(360)",
+                    "id": "f626-6a89-b3e6-2072",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Weapon:Light Machine Gun",
+                        "hidden": false,
+                        "id": "c05b-5f88-f0ed-6a1a",
+                        "type": "selectionEntry",
+                        "targetId": "05e3-0d76-2036-d653",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "19e7-3253-9607-7cb2"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 20
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Weapon:Medium Machine Gun",
+                        "hidden": false,
+                        "id": "1e0b-6033-b2a7-0701",
+                        "type": "selectionEntry",
+                        "targetId": "935b-f0cf-5a8b-1147",
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 30
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "2517-7064-78c1-8574"
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "09d4-7756-9303-6e5f"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1367-bb28-125a-f78d"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c6e9-cf34-738d-c33a"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Stolen Vehicle",
+                "typeId": "19f2-ad80-cde0-f446",
+                "typeName": "Vehicle",
+                "hidden": false,
+                "id": "c754-a0f8-169e-8c1b",
+                "characteristics": [
+                  {
+                    "name": "Unit Type",
+                    "typeId": "afd5-717f-3f8b-54c8",
+                    "$text": "VEHICLE"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "e07a-44d5-a28b-fccb",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "ee8f-5935-2369-292c",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "2e18-0c17-d5ef-a03c",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "dda7-ef77-4f5b-4ec7",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "d9e7-69e3-7001-3608",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "2035-0779-92cc-5b4c",
+                    "$text": "Crew"
+                  },
+                  {
+                    "name": "M",
+                    "typeId": "829c-7788-38cb-e413",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "1aa8-f234-622f-e75f",
+                    "$text": "Crew(1), Transport(10)"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Embarking/Disembarking",
+                "id": "a79f-0934-1ce2-8bb0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "14a8-26e1-aca6-718d"
+              },
+              {
+                "name": "Transport(X)",
+                "id": "c48e-047a-dd0e-de12",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a4a3-37b1-97e7-1704"
+              },
+              {
+                "name": "Unit Type:Vehicle",
+                "id": "5dff-6595-eeb1-1281",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5da9-2b79-070d-86c6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Guerilla Veterans",
+        "hidden": false,
+        "id": "976b-a153-10c5-04a9",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Guerilla Veteran",
+            "hidden": false,
+            "id": "f2dd-68f0-6680-1145",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Veteran",
+                "hidden": false,
+                "id": "e74f-22db-0377-0cd3",
+                "type": "selectionEntry",
+                "targetId": "bdc6-dc11-50aa-04a7",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f0f9-ca05-bd62-dcae-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f0f9-ca05-bd62-dcae-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Guerilla Fighter Melee Weapons",
+                "hidden": false,
+                "id": "b1f2-f5ec-3579-49d8",
+                "type": "selectionEntryGroup",
+                "targetId": "48cd-c774-8f9c-878c"
+              },
+              {
+                "import": true,
+                "name": "Guerilla Fighter Ranged Weapons",
+                "hidden": false,
+                "id": "1bdc-c6d7-5c35-3176",
+                "type": "selectionEntryGroup",
+                "targetId": "a5de-3f65-0f80-26e4"
+              },
+              {
+                "import": true,
+                "name": "Grenades",
+                "hidden": false,
+                "id": "ab0a-939a-0cf9-b4ee",
+                "type": "selectionEntryGroup",
+                "targetId": "0bee-ef62-b6f0-630c",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 3,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "2076-ab66-005f-1caa",
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Armor",
+                "id": "d293-edf5-9960-c347",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Basic Clothing",
+                    "hidden": false,
+                    "id": "4448-65dd-e4c7-5a5c",
+                    "rules": [
+                      {
+                        "name": "Basic Clothing",
+                        "id": "c8db-ce3f-5b8b-e622",
+                        "hidden": false,
+                        "description": "This armor provides a 10+ Primary Save against Ballistic and Melee Weapons."
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ff48-1716-dd34-260f"
+                      }
+                    ],
+                    "sortIndex": 1
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Armored Clothing",
+                    "hidden": false,
+                    "id": "c7f7-0967-b744-1798",
+                    "rules": [
+                      {
+                        "name": "Armored Clothing",
+                        "id": "b206-4c32-2ea5-35e0",
+                        "hidden": false,
+                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2059-cda4-88f4-534b"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "sortIndex": 2
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Guerilla Suit",
+                    "hidden": false,
+                    "id": "715f-5419-2852-6b8e",
+                    "rules": [
+                      {
+                        "name": "Guerilla Suit",
+                        "id": "7c42-fff8-1291-0241",
+                        "hidden": false,
+                        "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons and Reinforced Position(1), even in Terrain Features that do not provide Cover."
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c6dc-9249-1f3e-5f2a"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 2
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ],
+                    "sortIndex": 3,
+                    "infoLinks": [
+                      {
+                        "name": "Reinforced Position(X)",
+                        "id": "a4f1-a9a5-0c96-0177",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "b67b-54da-f723-e735"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9ee6-fa13-a2d7-40d1"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "af5f-e02e-e2fc-963f",
+                "automatic": false
+              },
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a3db-ecf3-2e2b-b9ac",
+                "automatic": false
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "0a77-fe0f-9658-a5db",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Guerilla Fighters of Viresk"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -15400,6 +18996,54 @@
             "id": "1e0a-9a30-ecca-0e78",
             "primary": true,
             "name": "Specialists"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Stolen Vehicle",
+        "hidden": false,
+        "id": "7d6a-c1aa-4618-d0fa",
+        "type": "selectionEntry",
+        "targetId": "80e7-cb6b-6f5d-1d03",
+        "categoryLinks": [
+          {
+            "targetId": "2165-0890-2d9d-cc2e",
+            "id": "447f-02f9-14fd-b62d",
+            "primary": true,
+            "name": "Transports"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Stolen Transport",
+        "hidden": false,
+        "id": "2364-efe5-1e5e-6c49",
+        "type": "selectionEntry",
+        "targetId": "3d20-2ae6-c129-ab27",
+        "categoryLinks": [
+          {
+            "targetId": "2165-0890-2d9d-cc2e",
+            "id": "8fef-976c-c2f7-dbf2",
+            "primary": true,
+            "name": "Transports"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Guerilla Veterans",
+        "hidden": false,
+        "id": "a0ec-ee3a-4c3c-6b9f",
+        "type": "selectionEntry",
+        "targetId": "976b-a153-10c5-04a9",
+        "categoryLinks": [
+          {
+            "targetId": "7ccd-248d-ed09-ff2d",
+            "id": "8bec-b063-b811-55f9",
+            "primary": true,
+            "name": "Elite Troops"
           }
         ]
       }

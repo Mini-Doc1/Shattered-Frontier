@@ -5,7 +5,7 @@
     "name": "Sarpenton",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 34,
-    "revision": 2,
+    "revision": 5,
     "battleScribeVersion": "2.03",
     "sharedSelectionEntryGroups": [
       {
@@ -499,7 +499,7 @@
                       {
                         "name": "Abilities",
                         "typeId": "cfcb-ec22-834e-7336",
-                        "$text": "Energy, Rifle"
+                        "$text": "Energy, Carbine"
                       },
                       {
                         "name": "WPN Dice",
@@ -528,6 +528,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "d442-54dc-7844-d5b1"
+                  },
+                  {
+                    "name": "Moving Fire(X)",
+                    "id": "2b39-e39e-b39a-c519",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ceeb-ed5b-73cd-7445"
                   }
                 ],
                 "constraints": [
@@ -1817,6 +1824,25 @@
                 "type": "rule",
                 "targetId": "d65b-de79-21c9-7ed0"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "70a3-801a-ce8b-688f",
+                    "shared": true,
+                    "childName": "Early: Sarpenton Conflict",
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -2992,6 +3018,12 @@
         "id": "3b09-6fc4-87b1-4b87",
         "hidden": false,
         "description": "To represent the extensive training this unit has gone under through the Sarpenton Military, their Willpower, Discipline and Intelligence."
+      },
+      {
+        "name": "Sarpenta's Guidance",
+        "id": "ae31-7d62-b1e8-d39c",
+        "hidden": true,
+        "description": "Sarpenta's Guidance: For every OFFICER, VETERAN OFFICER, DYNASTY OFFICER and CORPO-MARSHALL, LEAD SERGEANT, do the following:\nAt the start of the round, select one unit that is within true line of sight of a Officer/Officer Variant, which then takes an Intelligence Check, if they succeed, that selected unit gains +1 to Ballistic Skill, Melee Skill and Initiative until end of the round.\n\n\n\n\nHowever, if no Officer/Officer Variants are present, at the start of the round, select one INFANTRY Unit, which then takes an Intelligence Check, if they succeed, that selected unit gains +1 to Ballistic Skill, Melee Skill and Initiative until end of the round."
       }
     ],
     "type": "catalogue",
@@ -4792,6 +4824,117 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Sarpenton Officer",
+        "hidden": false,
+        "id": "eb23-db4d-ec4c-a658",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Army Commander",
+            "hidden": false,
+            "id": "9d52-a5b2-9a3b-5339",
+            "type": "selectionEntry",
+            "targetId": "fe23-355a-9744-a453"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Sarpenton Lead Sergeant",
+        "hidden": false,
+        "id": "70ab-2345-ec68-3c05",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Army Commander",
+            "hidden": false,
+            "id": "d9f7-49a3-19f6-6cb5",
+            "type": "selectionEntry",
+            "targetId": "fe23-355a-9744-a453"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Sarpenton Dynasty Officer",
+        "hidden": false,
+        "id": "4a38-438d-c1d3-22e5",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dynasty Houses",
+            "hidden": false,
+            "id": "639c-8187-4445-5c4e",
+            "type": "selectionEntryGroup",
+            "targetId": "c513-169f-4320-52a8"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Pee Poo",
+        "hidden": false,
+        "id": "7b79-6bd7-2c1f-839c",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "any",
+                "shared": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -4808,6 +4951,120 @@
             "id": "3498-9dac-77f2-be61",
             "primary": true,
             "name": "Core Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Sarpenton Lead Sergeant",
+        "hidden": false,
+        "id": "7ea3-d3c2-b88e-0637",
+        "type": "selectionEntry",
+        "targetId": "70ab-2345-ec68-3c05",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "9d39-b768-94bf-970b",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Sarpenton Officer",
+        "hidden": false,
+        "id": "109a-2da6-1f58-f77a",
+        "type": "selectionEntry",
+        "targetId": "eb23-db4d-ec4c-a658",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "c45d-fcb9-7750-b2e9",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Sarpenton Dynasty Officer",
+        "hidden": false,
+        "id": "abcb-ae91-de6b-cc40",
+        "type": "selectionEntry",
+        "targetId": "4a38-438d-c1d3-22e5",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "05b2-c811-a5cd-ea84",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "War-Period",
+        "hidden": false,
+        "id": "a5e7-cddb-1fd9-10fe",
+        "selectionEntryGroups": [
+          {
+            "name": "War-Period",
+            "id": "a633-acc8-cf01-5ba7",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Custom",
+                "hidden": false,
+                "id": "676d-7fd3-748a-1da8"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Conflict: Early",
+                "hidden": false,
+                "id": "70a3-801a-ce8b-688f",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Conflict: Early",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "5321-94ab-d78e-c763",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "In the Year of 150, the Sarpenton Conglomerate were nothing more but experienced at civil strife, expansion and above all else; warfare. Due to the pact made between the Dynasties of Sarpenton and the Sarpenton Industries, a standing army was created, formed from members of both parties, trained and overseen by the officers of old and even the Dynasties. Their arsenal matched their training, as they utilized the energy-charged crystals mined from Marandak to supply their troops; to the point where every soldier was armed with an Energy-Based Weapon.\n\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5c45-b83a-df6c-686f"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fd7a-1e89-4775-b08a"
+              }
+            ]
           }
         ]
       }

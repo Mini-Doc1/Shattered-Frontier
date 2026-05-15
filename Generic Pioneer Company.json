@@ -125,6 +125,55 @@
         "name": "Pioneer Support Team",
         "hidden": false,
         "id": "5845-379f-5fe2-4027"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pee Poo",
+        "hidden": false,
+        "id": "a77c-4043-a418-3ad3",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "greaterThan",
+                "value": 0,
+                "field": "selections",
+                "scope": "self",
+                "childId": "7fea-3f45-9b5b-6c69",
+                "shared": true,
+                "childName": "Poo Pee",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "7fea-3f45-9b5b-6c69",
+                "shared": true,
+                "childName": "Poo Pee"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Poo Pee",
+        "hidden": false,
+        "id": "7fea-3f45-9b5b-6c69"
       }
     ],
     "sharedRules": [
@@ -154,7 +203,7 @@
     "name": "Generic Pioneer Company",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 11,
-    "revision": 5,
+    "revision": 6,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
@@ -181,6 +230,24 @@
             ]
           }
         ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Pee Poo",
+        "hidden": false,
+        "id": "bbb4-e82d-b0a1-982a",
+        "type": "selectionEntry",
+        "targetId": "a77c-4043-a418-3ad3"
+      },
+      {
+        "import": true,
+        "name": "Poo Pee",
+        "hidden": false,
+        "id": "4e34-ae61-f860-00e4",
+        "type": "selectionEntry",
+        "targetId": "7fea-3f45-9b5b-6c69"
       }
     ]
   }

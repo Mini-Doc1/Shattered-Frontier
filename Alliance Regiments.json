@@ -5,7 +5,7 @@
     "name": "Alliance Regiments",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 35,
-    "revision": 13,
+    "revision": 17,
     "battleScribeVersion": "2.03",
     "sharedSelectionEntryGroups": [
       {
@@ -781,7 +781,25 @@
                 "hidden": false,
                 "id": "101d-885e-ecd7-b4b3",
                 "type": "selectionEntry",
-                "targetId": "0662-d2f6-fa6d-5b0d"
+                "targetId": "0662-d2f6-fa6d-5b0d",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bf1e-01bf-3149-be20-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bf1e-01bf-3149-be20-max"
+                  }
+                ]
               },
               {
                 "import": true,
@@ -810,6 +828,18 @@
                 "type": "rule",
                 "targetId": "404d-dc2d-ffa5-83b5"
               }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 10
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
             ]
           },
           {
@@ -836,37 +866,6 @@
                     "id": "ef3d-847f-b1b5-a7d4"
                   }
                 ]
-              },
-              {
-                "import": true,
-                "name": "Weapon:Semi-Auto Rifle",
-                "hidden": false,
-                "id": "2307-65e6-52eb-d33d",
-                "type": "selectionEntry",
-                "targetId": "f4af-8190-c80a-9ec3",
-                "infoLinks": [
-                  {
-                    "name": "Heavy",
-                    "id": "6cca-3310-be01-f037",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "621b-e546-879e-9c41"
-                  },
-                  {
-                    "name": "Precision",
-                    "id": "958b-5ad5-cf7c-3724",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "4cdb-6787-de2a-2c6d"
-                  },
-                  {
-                    "name": "Unwieldy Weapon",
-                    "id": "10bc-9e0b-08af-f97e",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "def8-6fb8-62fd-9dbc"
-                  }
-                ]
               }
             ],
             "infoLinks": [
@@ -876,6 +875,128 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "404d-dc2d-ffa5-83b5"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Standard-Issue DMR",
+                "hidden": false,
+                "id": "3f15-0219-0047-77d6",
+                "infoLinks": [
+                  {
+                    "name": "Unwieldy Weapon",
+                    "id": "3070-f4c1-bbf8-1f80",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "def8-6fb8-62fd-9dbc"
+                  },
+                  {
+                    "name": "Ballistic",
+                    "id": "03f1-5a6a-2d62-1caa",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "09f0-5941-f550-9a12"
+                  },
+                  {
+                    "name": "Rifle",
+                    "id": "3429-ec98-6dc3-43ea",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d608-bce2-cf48-716c"
+                  },
+                  {
+                    "name": "Heavy",
+                    "id": "a05e-e50a-0406-f8d2",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "621b-e546-879e-9c41"
+                  },
+                  {
+                    "name": "Precision",
+                    "id": "032a-654c-101f-64db",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4cdb-6787-de2a-2c6d"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Standard-Issue DMR",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "7a91-6dff-fc92-aaa2",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "48"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Rifle, Ballistic, Heavy, Precision, Unwieldy Weapon"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7557-cce9-2d6c-4455-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7557-cce9-2d6c-4455-max"
+                  }
+                ]
               }
             ]
           }
@@ -2450,7 +2571,7 @@
                   {
                     "name": "Pts",
                     "typeId": "points",
-                    "value": 50
+                    "value": 30
                   },
                   {
                     "name": "Requisition",
@@ -2543,6 +2664,18 @@
                         "hidden": false,
                         "type": "rule",
                         "targetId": "d912-27fd-8843-4efa"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 20
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
                       }
                     ]
                   }
@@ -2767,7 +2900,7 @@
                         "name": "Radial Anomaly Detector",
                         "id": "272f-5862-a336-9ebf",
                         "hidden": false,
-                        "description": ""
+                        "description": "To use the Radial Anomaly Detector, it costs One Action.\nSelect a Terrain Piece that within Line of Sight and Range(in inches) equal to the Highest Intelligence Value in this Unit is one of the following types: ANOMALOUS, DANGEROUS, VERY DANGEROUS or ANOMALOUS FIELD/ZONE. and take an intelligence test. If that intelligence test is passed, this unit and any other friendly units may traverse that Terrain piece without harm; Disabling that terrain piece's special rule and their respective test(s) until the start of the next round. Any friendly units that are within a Terrain Piece when the Radial Anomaly Detector expires, must take a Test respective of that Terrain Piece at the start of their activation."
                       }
                     ]
                   }
@@ -2775,8 +2908,191 @@
                 "selectionEntryGroups": [
                   {
                     "name": "Field Equipment",
-                    "id": "0a6b-8b1d-476e-f35d",
-                    "hidden": false
+                    "id": "078e-ec91-10f5-b26f",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Radial Anomaly Detector Mk.2",
+                        "hidden": false,
+                        "id": "733e-e27b-744f-7632",
+                        "rules": [
+                          {
+                            "name": "Radial Anomaly Detector Mk.2",
+                            "id": "8b8e-bf35-d4ad-86bd",
+                            "hidden": false,
+                            "description": "When using the Radial Anomaly Detector Special Rule, the range is instead double of the Highest Intelligence Value in the Unit."
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 5
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Hazardous Material Removal Equipment",
+                        "hidden": false,
+                        "id": "43a1-c891-6c67-68bd",
+                        "infoLinks": [
+                          {
+                            "name": "Mine Sweeper",
+                            "id": "548f-63d0-80a1-92fc",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "e410-038c-0cdd-873d"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 5
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "rules": [
+                          {
+                            "name": "Hazardous Material Removal Equipment",
+                            "id": "4a97-14a7-7fb6-697f",
+                            "hidden": false,
+                            "description": "This model is granted the Mine Sweeper Special Rule."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Shovel",
+                        "hidden": false,
+                        "id": "c989-69dd-fbf9-57ed",
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 2
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Shovel",
+                            "typeId": "d233-0653-f762-e538",
+                            "typeName": "Weapon",
+                            "hidden": false,
+                            "id": "b21c-ba6c-3eb7-82fa",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "typeId": "b3c1-2707-e74d-88f6",
+                                "$text": "3"
+                              },
+                              {
+                                "name": "S",
+                                "typeId": "6997-f9f2-6f9b-ef3c",
+                                "$text": "User"
+                              },
+                              {
+                                "name": "AP",
+                                "typeId": "8c5e-9516-a499-63f5",
+                                "$text": "0"
+                              },
+                              {
+                                "name": "D",
+                                "typeId": "7f27-f5c3-9c54-de65",
+                                "$text": "1"
+                              },
+                              {
+                                "name": "Abilities",
+                                "typeId": "cfcb-ec22-834e-7336",
+                                "$text": "Melee, Crushing Blow"
+                              },
+                              {
+                                "name": "WPN Dice",
+                                "typeId": "0255-21c0-4ef7-efa2",
+                                "$text": "3"
+                              },
+                              {
+                                "name": "BS/MS",
+                                "typeId": "b356-3224-2f16-54c7",
+                                "$text": "MS"
+                              }
+                            ]
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Melee",
+                            "id": "b287-8b44-c84a-7198",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "d484-a2b1-938d-1274"
+                          },
+                          {
+                            "name": "Crushing Blow",
+                            "id": "0fd1-49a3-ae06-8b13",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "5973-4ebd-6d2c-2666"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Environmental Analysis Equipment",
+                        "hidden": false,
+                        "id": "18ec-f142-1533-fffe",
+                        "rules": [
+                          {
+                            "name": "Environmental Analysis Equipment",
+                            "id": "c4ca-5561-4c8b-fda9",
+                            "hidden": false,
+                            "description": "To use the Environmental Analysis Equipment, it costs One Action.\nSelect a Terrain Piece that within Line of Sight and Range(in inches) equal to this model's Intelligence Value, and is of the COVER variety, take an intelligence test. If that intelligence test is passed, The Benefit of that Terrain Piece's Cover is ignored until end of the Round"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Pts",
+                            "typeId": "points",
+                            "value": 5
+                          },
+                          {
+                            "name": "Requisition",
+                            "typeId": "ff33-0eb3-3b78-7829",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "74af-ebaa-3636-600c"
+                      }
+                    ]
                   }
                 ],
                 "rules": [
@@ -2790,16 +3106,6 @@
               }
             ],
             "collapsible": true
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "280b-5159-413b-215c"
           }
         ],
         "modifiers": [
@@ -2851,6 +3157,18 @@
                 "$text": "Field Ecologists were gathered from all sorts of budding scientists, from veterans of their craft to the young perky apprentice, with the sole goal of investigating and checking the environment around them for any anomalies; studying any that they got into contact with."
               }
             ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
           }
         ]
       },
@@ -2907,6 +3225,30 @@
                     "type": "selectionEntryGroup",
                     "targetId": "5b38-ad25-5e72-c6fb"
                   }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Field Equipment",
+                    "id": "6ce2-5125-25b2-5dcb",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Anomaly Radial Detector Mk.2",
+                        "hidden": false,
+                        "id": "4221-0d52-947b-35d1",
+                        "rules": [
+                          {
+                            "name": "New Rule",
+                            "id": "0380-8ce4-0cc6-80c8",
+                            "hidden": false,
+                            "description": "When using the Anomaly Radial Detector Special Rule, the range is instead double of the Highest Intelligence Value in the Unit rather"
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ],
@@ -2927,34 +3269,19 @@
           {
             "type": "set",
             "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "equalTo",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "4984-7e33-8a39-dc2d",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
+            "field": "hidden"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
           },
           {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "equalTo",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "815e-c635-f10b-a055",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
           }
         ]
       },
@@ -3649,6 +3976,42 @@
                 "name": "Lore",
                 "typeId": "8f51-2099-f67c-300e",
                 "$text": "Upon early contact with dug-in resistance of aggressive species, tribals or even the Sarpenton forces themselves, it became obviously clear that the Standard Issue Bolt-Action Rifles and Carbines could not match the suppressive fire that a Light Machine Gun could offer. Due to expenses and demand, the Light Machine Gun known as the "
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "greaterThan",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "4984-7e33-8a39-dc2d",
+                "shared": true,
+                "includeChildForces": false,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "greaterThan",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "815e-c635-f10b-a055",
+                "shared": true,
+                "includeChildForces": false,
+                "includeChildSelections": true
               }
             ]
           }
@@ -5739,6 +6102,540 @@
             "typeId": "ff33-0eb3-3b78-7829",
             "value": 1
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Star-Clan Rangers",
+            "id": "c6ed-220e-3b6b-f9b7",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "model",
+                "import": true,
+                "name": "Star-Clan Ranger",
+                "hidden": false,
+                "id": "0e74-a061-8a61-4ac3",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Veteran",
+                    "hidden": false,
+                    "id": "1235-0c6f-91be-4010",
+                    "type": "selectionEntry",
+                    "targetId": "bdc6-dc11-50aa-04a7",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b433-f374-c640-36a0-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b433-f374-c640-36a0-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Sidearms",
+                    "hidden": false,
+                    "id": "1219-c88d-54ce-4982",
+                    "type": "selectionEntryGroup",
+                    "targetId": "5b38-ad25-5e72-c6fb",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "28f2-3d94-538f-eff0"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Bayonet",
+                    "hidden": false,
+                    "id": "1b57-385a-518c-3e5d",
+                    "type": "selectionEntry",
+                    "targetId": "62ce-7a6c-e6cc-5895",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 0
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e712-9ad6-7769-aaf7-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e712-9ad6-7769-aaf7-max"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 4,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f28e-12a8-833f-fc5a"
+                  },
+                  {
+                    "type": "max",
+                    "value": 9,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5896-706b-7cac-fb40"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Alliance Light Armor",
+                    "typeId": "85c6-4a1e-d9b1-8d7f",
+                    "typeName": "Wargear Item",
+                    "hidden": false,
+                    "id": "f6f0-de34-8e31-4501",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "7494-924d-d974-76f8",
+                        "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Primary Weapon",
+                    "id": "d584-2b4f-cf6c-47bc",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Semi-Auto Rifles",
+                        "hidden": false,
+                        "id": "b19c-bdb7-395f-10ae",
+                        "type": "selectionEntryGroup",
+                        "targetId": "9591-dea9-c675-89b3"
+                      },
+                      {
+                        "import": true,
+                        "name": "Standard-Issue Sub-Machine Gun",
+                        "hidden": false,
+                        "id": "499d-9105-079a-7a5b",
+                        "type": "selectionEntry",
+                        "targetId": "04cd-0133-f6c0-6e5e"
+                      },
+                      {
+                        "import": true,
+                        "name": "Rifles",
+                        "hidden": false,
+                        "id": "1a8d-6dd3-e671-4c0a",
+                        "type": "selectionEntryGroup",
+                        "targetId": "63d2-d9a8-68e0-0bd4"
+                      },
+                      {
+                        "import": true,
+                        "name": "Standard-Issue Pump Shotgun",
+                        "hidden": false,
+                        "id": "f1be-4437-b715-b1d6",
+                        "type": "selectionEntry",
+                        "targetId": "025f-7b07-d0e7-c577"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1f39-2224-7020-9463"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fd5f-88f5-d365-b483"
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "826c-b362-af6a-74cf",
+                    "profiles": [
+                      {
+                        "name": "Alliance Light Armor",
+                        "typeId": "85c6-4a1e-d9b1-8d7f",
+                        "typeName": "Wargear Item",
+                        "hidden": false,
+                        "id": "00d7-235f-dd93-b516",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "7494-924d-d974-76f8",
+                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "cd1d-5767-bb41-f03f"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "cf07-07fa-3494-dc56"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2
+              },
+              {
+                "type": "model",
+                "import": true,
+                "name": "Star-Clan Hunter",
+                "hidden": false,
+                "id": "998c-e8a0-11cf-e458",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Veteran",
+                    "hidden": false,
+                    "id": "ebad-a8f8-0b27-680a",
+                    "type": "selectionEntry",
+                    "targetId": "bdc6-dc11-50aa-04a7",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d068-7b0c-e44b-541d-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d068-7b0c-e44b-541d-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Sidearms",
+                    "hidden": false,
+                    "id": "9b25-426e-a888-9a5d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "5b38-ad25-5e72-c6fb",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9617-ba3b-5b11-3750"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Bayonet",
+                    "hidden": false,
+                    "id": "38a6-fe9a-96b0-0df9",
+                    "type": "selectionEntry",
+                    "targetId": "62ce-7a6c-e6cc-5895",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 0
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9061-eebe-7ad4-0ba6-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9061-eebe-7ad4-0ba6-max"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "adf7-72cc-8694-d8b6-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "adf7-72cc-8694-d8b6-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Alliance Light Armor",
+                    "typeId": "85c6-4a1e-d9b1-8d7f",
+                    "typeName": "Wargear Item",
+                    "hidden": false,
+                    "id": "cc18-6e8a-f8e2-0d5a",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "7494-924d-d974-76f8",
+                        "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Primary Weapon",
+                    "id": "d44e-6f3d-bfcb-1a01",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Sniper Rifles",
+                        "hidden": false,
+                        "id": "59ce-6c24-ce8d-07ce",
+                        "type": "selectionEntryGroup",
+                        "targetId": "52e5-c3e0-9e76-37c5"
+                      },
+                      {
+                        "import": true,
+                        "name": "Rifles",
+                        "hidden": false,
+                        "id": "f32d-6cc8-efae-d7bf",
+                        "type": "selectionEntryGroup",
+                        "targetId": "63d2-d9a8-68e0-0bd4"
+                      },
+                      {
+                        "import": true,
+                        "name": "Semi-Auto Rifles",
+                        "hidden": false,
+                        "id": "5cd6-867b-cae0-efd6",
+                        "type": "selectionEntryGroup",
+                        "targetId": "9591-dea9-c675-89b3"
+                      },
+                      {
+                        "import": true,
+                        "name": "Standard-Issue Sub-Machine Gun",
+                        "hidden": false,
+                        "id": "960e-5ece-792f-1c6d",
+                        "type": "selectionEntry",
+                        "targetId": "04cd-0133-f6c0-6e5e"
+                      },
+                      {
+                        "import": true,
+                        "name": "Standard-Issue Pump Shotgun",
+                        "hidden": false,
+                        "id": "a7e9-bfad-29d0-92ad",
+                        "type": "selectionEntry",
+                        "targetId": "025f-7b07-d0e7-c577"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "cc15-33c4-4429-0b76"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "a6b2-3b79-6efb-f654"
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "428f-aa0e-768a-268b",
+                    "profiles": [
+                      {
+                        "name": "Alliance Light Armor",
+                        "typeId": "85c6-4a1e-d9b1-8d7f",
+                        "typeName": "Wargear Item",
+                        "hidden": false,
+                        "id": "5f83-a2e0-e10a-1e50",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "7494-924d-d974-76f8",
+                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9f38-c667-285f-c03a"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d5e5-cbe7-a3ac-69b9"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "NCO",
+                    "id": "8bcf-3099-7cb3-28a2",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4ac7-2231-2a58-b508"
+                  }
+                ],
+                "sortIndex": 1
+              }
+            ],
+            "collapsible": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Reconnaissance Deployment",
+            "id": "867f-7175-b94f-517f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7754-6762-135e-b23f"
+          },
+          {
+            "name": "Reinforcement Coordination",
+            "id": "c152-d3b0-eef4-1834",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8fbe-21fa-2358-2b4d"
+          },
+          {
+            "name": "Warriors of the Star-Clan",
+            "id": "be85-0af9-bd3c-b29a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d45b-ae18-ed90-1486"
+          }
         ]
       }
     ],
@@ -6021,6 +6918,12 @@
         "id": "1061-f111-a533-b15e",
         "hidden": false,
         "description": "When a Non-Headquarters INFANTRY Unit is within Line of Sight and 12 inches of a HEADQUARTERs Unit, they gain +1 to their Willpower and Discipline until the end of the round or until the Headquarters Unit is removed from play."
+      },
+      {
+        "name": "Warriors of the Star-Clan",
+        "id": "d45b-ae18-ed90-1486",
+        "hidden": false,
+        "description": "A Unit with this Special Rule gains several benefits from performing combat actions:\n•This unit and the target of their Melee Attack or Charge does not suffer any Mental Statuses/Tests if they were to suffer any after the end of that action and neither unit can leave Melee Combat until one unit is completely destroyed;excluding the one caused by Overwhelming Assault.\n•If this Unit has equal or more models than the unit targeted by their Melee Attack or Charge, they gain the Overwhelming Assault Special Rule until the end of the attack action.\n•If this unit had an amount of WPN Dice during the Wound Step that is equal or more than to the amount of models in that targeted unit prior to any models being removed in that unit, that unit suffers from Suppressive Fire(1)."
       }
     ]
   }

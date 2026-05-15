@@ -47,11 +47,6 @@
         "hidden": false
       },
       {
-        "name": "Luptal Wolves-Pioneer Force Organization",
-        "id": "82d5-7f5d-03bb-e4e0",
-        "hidden": false
-      },
-      {
         "name": "Terrain Feature",
         "id": "e002-128d-6b64-ee7c",
         "hidden": false
@@ -67,11 +62,6 @@
         "hidden": false
       },
       {
-        "name": "Army Commander Traits",
-        "id": "ede0-ba06-67ad-5d40",
-        "hidden": false
-      },
-      {
         "name": "Faction Special Rules",
         "id": "e4c8-5238-f1d0-f461",
         "hidden": false
@@ -79,6 +69,21 @@
       {
         "name": "Reference Guide",
         "id": "0498-9b29-311f-4058",
+        "hidden": false
+      },
+      {
+        "name": "Objective:Primaries",
+        "id": "fb12-ab98-541b-ee55",
+        "hidden": false
+      },
+      {
+        "name": "Objective:Secondaries",
+        "id": "b894-a6d5-1035-e12f",
+        "hidden": false
+      },
+      {
+        "name": "Objectives:Miscellaneous",
+        "id": "e6f2-4e0d-41c9-fa3d",
         "hidden": false
       }
     ],
@@ -717,6 +722,31 @@
         "name": "Skirmish Organization Chart",
         "hidden": false,
         "id": "2d01-621d-01c3-282e"
+      },
+      {
+        "name": "Objectives",
+        "id": "32a4-3b60-47d4-217d",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Objective:Primaries",
+            "hidden": false,
+            "id": "2ee8-f7ff-4d96-367b",
+            "targetId": "fb12-ab98-541b-ee55"
+          },
+          {
+            "name": "Objective:Secondaries",
+            "hidden": false,
+            "id": "1927-0e5d-5d12-5464",
+            "targetId": "b894-a6d5-1035-e12f"
+          },
+          {
+            "name": "Objectives:Miscellaneous",
+            "hidden": false,
+            "id": "9075-7cdc-7474-d4c3",
+            "targetId": "e6f2-4e0d-41c9-fa3d"
+          }
+        ]
       }
     ],
     "selectionEntries": [
@@ -1396,14 +1426,6 @@
           {
             "name": "Transport Capacity",
             "id": "349e-b068-411d-f8ff"
-          },
-          {
-            "name": "Hull",
-            "id": "e652-a26c-e664-2301"
-          },
-          {
-            "name": "Firing Points",
-            "id": "828a-b128-e2bc-b4e3"
           }
         ],
         "name": "Fortification/Buildings",
@@ -2136,6 +2158,12 @@
         "id": "1a89-78c3-eed8-c149",
         "hidden": false,
         "description": "Any remaining damage from an attack from a weapon with this special rule is not lost. Instead, subtract the destroyed model's remaining HP from the attack's total Damage. The remaining damage must then be allocated to another model within the same unit. This process continues until all damage has been applied or no models remain in the target unit.\n\n\nNote: This rule overrides the standard damage allocation process for this specific weapon/model"
+      },
+      {
+        "name": "Smoke Cloud(X)",
+        "id": "3879-3c53-6690-3907",
+        "hidden": false,
+        "description": "Rather than targeting an enemy unit, you instead target a place on the Map that is within range and line of sight. When you use this weapon/equipment, you only proceed with the \"To-Hit\" process, rolling equal or below to the model's Ballistic Skill. Then place a 25/28mm token where you chose to hit. \n\n\nThat Token has a Radius equal to the (X) Value. No Line of sight or Shooting Actions can be done through the Radius and units wholly within the radius cannot be targeted. Any charges that go through this Radius or any Melee Attacks that occur within the Radius happens at Initiative 1. \n\n\nAt the start of the each round, roll a d6, on a roll of a 1-2, remove the Smoke Cloud token, 3-4, it is removed by next round, 5-6 it remains in play for next round.\n\n\n\n\nA Unit that is armed with multiple weapons or equipment with the Smoke Cloud(X) can only use one out of all weapons and equipment per action. \n\n\nExample: A 10-model strong unit has 1 Smoke Grenade each. However, only one member can use their grenade per action."
       }
     ],
     "sharedSelectionEntries": [
@@ -5259,6 +5287,227 @@
             "description": "Level 4 Psykers can have four Psychic Spell from a Chosen Discipline and can dispel two Psychic Spell for free per round."
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Equipment:Smoke Grenade",
+        "hidden": false,
+        "id": "7350-8564-3e20-99d0",
+        "profiles": [
+          {
+            "name": "Smoke Grenade",
+            "typeId": "d233-0653-f762-e538",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "4d83-7a73-385f-5762",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "b3c1-2707-e74d-88f6",
+                "$text": "12"
+              },
+              {
+                "name": "S",
+                "typeId": "6997-f9f2-6f9b-ef3c",
+                "$text": "X"
+              },
+              {
+                "name": "AP",
+                "typeId": "8c5e-9516-a499-63f5",
+                "$text": "X"
+              },
+              {
+                "name": "D",
+                "typeId": "7f27-f5c3-9c54-de65",
+                "$text": "X"
+              },
+              {
+                "name": "Abilities",
+                "typeId": "cfcb-ec22-834e-7336",
+                "$text": "Limited Use(1), Smoke Cloud(3)"
+              },
+              {
+                "name": "WPN Dice",
+                "typeId": "0255-21c0-4ef7-efa2",
+                "$text": "1"
+              },
+              {
+                "name": "BS/MS",
+                "typeId": "b356-3224-2f16-54c7",
+                "$text": "BS"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Limited Use(X)",
+            "id": "62dc-678b-536e-d99f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6485-96d5-df66-3fe6"
+          },
+          {
+            "name": "Smoke Cloud(X)",
+            "id": "26b1-0add-5839-5c27",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3879-3c53-6690-3907"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Equipment:Fragmentation Grenade",
+        "hidden": false,
+        "id": "d46e-e849-00dd-c616",
+        "profiles": [
+          {
+            "name": "Fragmentation Grenade",
+            "typeId": "d233-0653-f762-e538",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e5f7-57b8-f571-6be7",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "b3c1-2707-e74d-88f6",
+                "$text": "12"
+              },
+              {
+                "name": "S",
+                "typeId": "6997-f9f2-6f9b-ef3c",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "8c5e-9516-a499-63f5",
+                "$text": "1"
+              },
+              {
+                "name": "D",
+                "typeId": "7f27-f5c3-9c54-de65",
+                "$text": "1"
+              },
+              {
+                "name": "Abilities",
+                "typeId": "cfcb-ec22-834e-7336",
+                "$text": "Blast Radius (2), Limited Use(1), Suppressive Fire(1)"
+              },
+              {
+                "name": "WPN Dice",
+                "typeId": "0255-21c0-4ef7-efa2",
+                "$text": "1"
+              },
+              {
+                "name": "BS/MS",
+                "typeId": "b356-3224-2f16-54c7",
+                "$text": "BS"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast Radius(X)",
+            "id": "ca74-ab16-e524-61d8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d912-27fd-8843-4efa"
+          },
+          {
+            "name": "Limited Use(X)",
+            "id": "1231-6920-ad27-f1ee",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6485-96d5-df66-3fe6"
+          },
+          {
+            "name": "Suppressive Fire(X)",
+            "id": "4018-a7ed-3d16-f795",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8793-0569-5fad-8e67"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Equipment:Thermite Grenades",
+        "hidden": false,
+        "id": "4d0b-46a7-cded-2e63",
+        "profiles": [
+          {
+            "name": "Equipment: Thermite Grenade",
+            "typeId": "d233-0653-f762-e538",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "9e14-9bbf-d371-61ca",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "b3c1-2707-e74d-88f6",
+                "$text": "8"
+              },
+              {
+                "name": "S",
+                "typeId": "6997-f9f2-6f9b-ef3c",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "8c5e-9516-a499-63f5",
+                "$text": "2"
+              },
+              {
+                "name": "D",
+                "typeId": "7f27-f5c3-9c54-de65",
+                "$text": "1"
+              },
+              {
+                "name": "Abilities",
+                "typeId": "cfcb-ec22-834e-7336",
+                "$text": "Burning(1), Limited Use(1), Anti-Armor"
+              },
+              {
+                "name": "WPN Dice",
+                "typeId": "0255-21c0-4ef7-efa2",
+                "$text": "1"
+              },
+              {
+                "name": "BS/MS",
+                "typeId": "b356-3224-2f16-54c7",
+                "$text": "BS"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Burning(X)",
+            "id": "ab73-2fa5-5abf-c0ac",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3264-2bf7-448b-70a2"
+          },
+          {
+            "name": "Limited Use(X)",
+            "id": "a186-9701-8d62-00d7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6485-96d5-df66-3fe6"
+          },
+          {
+            "name": "Anti-Armor",
+            "id": "56c8-df3f-d625-ce2e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "43d0-3077-ff51-00c4"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -6042,7 +6291,7 @@
     "id": "sys-3396-9326-565c-5fb6",
     "name": "EUWG 3.0",
     "battleScribeVersion": 2.03,
-    "revision": 50,
+    "revision": 54,
     "type": "gameSystem",
     "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema"
   }
