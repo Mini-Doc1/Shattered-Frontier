@@ -1,0 +1,2961 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "78d1-8342-6e17-a4d8",
+    "name": "Sarpenton Conglomerate: Skirmish",
+    "gameSystemId": "sys-3396-9326-565c-5fb6",
+    "gameSystemRevision": 29,
+    "revision": 5,
+    "battleScribeVersion": "2.03",
+    "type": "catalogue",
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Armor",
+        "id": "985b-0817-b52e-af7b",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Last-Ditch Armor",
+            "hidden": false,
+            "id": "6b5a-2299-ebf8-4f8c",
+            "profiles": [
+              {
+                "name": "Sarpenton Mesh Armour",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "e586-2ed1-1bfd-a432",
+                "characteristics": [
+                  {
+                    "$text": "This armor provides a 10+ Primary Save against Melee and Ballistic Weapons.",
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Mesh Armor",
+            "hidden": false,
+            "id": "7e11-09bf-d9a0-e8af",
+            "profiles": [
+              {
+                "name": "Sarpenton Mesh Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "156a-e45c-423c-541b",
+                "characteristics": [
+                  {
+                    "$text": "This armor provides a 9+ Primary Save against Energy and Ballistic Weapons.",
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Mesh Medium Armor",
+            "hidden": false,
+            "id": "b766-4eee-2786-e697",
+            "profiles": [
+              {
+                "name": "Sarpenton Mesh Medium Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "1dfd-160c-8ec0-31c6",
+                "characteristics": [
+                  {
+                    "$text": "This armor provides a 8+ Primary Save against Energy and Ballistic Weapons.",
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dynasty House Armor",
+        "id": "525d-a352-4563-9ade",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton House Heavy Armor",
+            "hidden": false,
+            "id": "b4e1-1cc9-226f-e9c4",
+            "profiles": [
+              {
+                "name": "Sarpenton House Heavy Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "ee82-2d6b-b621-c801",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8",
+                    "$text": "This armor provides a 7+ Primary Save against Melee and Ballistic Weapons, however the model equipped suffers a -1 to their Initiative."
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton House Light Armor",
+            "hidden": false,
+            "id": "ae55-6f6f-da66-8690",
+            "profiles": [
+              {
+                "name": "Sarpenton House Light Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "7a49-a733-1adc-2608",
+                "characteristics": [
+                  {
+                    "$text": "This armor provides a +1 to their Movement Characteristic and a 9+ Primary Save against Melee and Ballistic Weapons.",
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dynasty Houses",
+        "id": "db16-d42d-75a0-f5f5",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "House Masufai",
+            "hidden": false,
+            "id": "f6b9-4f00-26f6-2b69",
+            "profiles": [
+              {
+                "name": "House Masufai",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "ea18-d22b-ce37-b110",
+                "characteristics": [
+                  {
+                    "$text": "House Masufai is known for it's ability to rally grand amounts of soldiers from even the most inexperienced populace, utilizing the same punishment as the enemy would inflict upon them; death. However, being killed by one from House Masufai is one of great honor as the House has stood alongside the ruling Dynastic House and never once has inspired disloyalty, and never will.",
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fd6c-627a-9579-2f9d"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "House Masufai",
+                "id": "f5d3-b9c9-8c7a-178a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f99b-8e34-c018-a2cc"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "House Fumitae",
+            "hidden": false,
+            "id": "6224-431e-74f3-8fd5",
+            "profiles": [
+              {
+                "name": "House Fumitae",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "440c-91e4-f904-b3c8",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "House Fumitae was once a great house, loyal to the throne and anyone who sat upon it, it's loyalty and well-trained reserves were unmatched until one day, their lord brought upon a coup against the Ruling Dynasty of the Second Era. After failing and those traitors being executed, those spared or given a second chance now seek redemption as unmarked and unbeloved by those who they wish forgiveness from."
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "adb6-8a88-82f0-4924"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "House Fumitae",
+                "id": "7d71-baf5-c43c-9c19",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d65b-de79-21c9-7ed0"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "House Gansuu",
+            "hidden": false,
+            "id": "d69b-688c-53a0-81d6",
+            "profiles": [
+              {
+                "name": "House Gansuu",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "4f01-0089-77cb-f999",
+                "characteristics": [
+                  {
+                    "$text": "House Gansuu (Gan-Suu) is a proud house of Duelists that utilize pistols in their sword-fighting, unlike other houses that simply use a variety of melee weapons. However, rather than utilizing Pistols as a cheap trick, they use them to target weakpoints and fatigue the enemy with precision fire.",
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "377d-8a5c-f5e9-be14"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "House Gansuu",
+                "id": "1191-002c-5587-f3f5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e80b-4785-e5c2-4bef"
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Dynasty Melee Weapons",
+        "id": "7b04-02af-c9b3-45a1",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Fumitae Flensing Blade",
+            "hidden": false,
+            "id": "1c03-b9e0-7719-f2fc",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Fumitae Flensing Blade",
+                "hidden": false,
+                "id": "abf7-2104-8648-7a0e",
+                "profiles": [
+                  {
+                    "name": "Fumitae Flensing Blade",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "fc21-4572-38bf-9a81",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Duelist (2), Precision, Serrated(1)"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "02fe-f591-f84a-e4b7",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": false
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 8
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Serrated",
+                    "id": "a2cd-a612-6b0c-4e49",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2f0f-327b-d2b7-504e"
+                  },
+                  {
+                    "name": "Precision",
+                    "id": "f4d9-37ff-37c1-6899",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4cdb-6787-de2a-2c6d"
+                  },
+                  {
+                    "name": "Duelist(X)",
+                    "id": "b032-7b50-ac31-e3c9",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d652-33fa-4a79-e232"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Gansuu Gun-Blade",
+            "hidden": false,
+            "id": "5ae8-a77e-75ef-dd5b",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gansuu Gun-Blade",
+                "hidden": false,
+                "id": "8b3c-48a4-a361-7a54",
+                "profiles": [
+                  {
+                    "name": "Gansuu Blade",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ab1b-6f53-cf01-eb2b",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Duelist (1)"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gansuu Blade-Shot",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "6f81-088f-eadf-3d64",
+                    "characteristics": [
+                      {
+                        "$text": "3",
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65"
+                      },
+                      {
+                        "$text": "Pistol",
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2"
+                      },
+                      {
+                        "$text": "BS",
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gansuu Gun-Blade",
+                    "typeId": "85c6-4a1e-d9b1-8d7f",
+                    "typeName": "Wargear Item",
+                    "hidden": false,
+                    "id": "9112-6171-4335-6e21",
+                    "characteristics": [
+                      {
+                        "$text": "At the start of Melee Combat, you use the Gansuu Blade-Shot at Initiative 10 for no additional costs, then proceed as normal.",
+                        "name": "Description",
+                        "typeId": "7494-924d-d974-76f8"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "bc3b-4ba2-98b8-882f",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": false
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 8
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton House Tabar",
+            "hidden": false,
+            "id": "5784-be9b-6e7b-343c",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton House Tabar",
+                "hidden": false,
+                "id": "8685-75db-d32a-7a57",
+                "profiles": [
+                  {
+                    "name": "Sarpenton House Glaive",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "758a-11ab-636e-dbbd",
+                    "characteristics": [
+                      {
+                        "$text": "4",
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6"
+                      },
+                      {
+                        "$text": "User+2",
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65"
+                      },
+                      {
+                        "$text": "Melee, Crushing Blow",
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2"
+                      },
+                      {
+                        "$text": "MS",
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Crushing Blow",
+                    "id": "3ffb-3fec-8d5e-eefc",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5973-4ebd-6d2c-2666"
+                  },
+                  {
+                    "name": "Melee",
+                    "id": "6a04-8606-5ec7-8746",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 6
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Masufai Honor-Blade",
+            "hidden": false,
+            "id": "3331-cbd7-c422-2b09",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Masufai Honor-Blade",
+                "hidden": false,
+                "id": "ce4b-5d47-a04c-fe2c",
+                "profiles": [
+                  {
+                    "name": "Masufai Honor-Blade",
+                    "typeId": "85c6-4a1e-d9b1-8d7f",
+                    "typeName": "Wargear Item",
+                    "hidden": false,
+                    "id": "1f16-26fc-6fe4-cd81",
+                    "characteristics": [
+                      {
+                        "$text": "This model (And the unit it joins) gains the Challenger Keyword. If this model/unit already had Challenger, it gains Glory in Combat (1), or Glory in Combat(+1) if it already had that as well.",
+                        "name": "Description",
+                        "typeId": "7494-924d-d974-76f8"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Masufai Honor-Blade",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "9591-1383-203a-d00d",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Duelist (2), Crushing Blow, Glory in Combat (1)"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Glory in Combat (X)",
+                    "id": "968e-ef71-299b-8aa4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "da71-7b63-a1bc-127f"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "7852-85d9-f196-27e0",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": false
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 9
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton House Glaive",
+            "hidden": false,
+            "id": "0393-d89c-e73f-7107",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton House Glaive",
+                "hidden": false,
+                "id": "1960-c4c8-5742-6a99",
+                "profiles": [
+                  {
+                    "name": "Sarpenton House Glaive",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "bde8-b15e-aebf-b8a7",
+                    "characteristics": [
+                      {
+                        "$text": "4",
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6"
+                      },
+                      {
+                        "$text": "User+2",
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65"
+                      },
+                      {
+                        "$text": "Reach, Melee",
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2"
+                      },
+                      {
+                        "$text": "MS",
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton House Saber",
+            "hidden": false,
+            "id": "af40-34a8-c111-4c3b",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton House Saber",
+                "hidden": false,
+                "id": "e254-ac51-eccb-0012",
+                "profiles": [
+                  {
+                    "name": "Sarpenton House Saber",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2252-e7f1-2d50-acb2",
+                    "characteristics": [
+                      {
+                        "$text": "3",
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65"
+                      },
+                      {
+                        "$text": "Duelist (2), Melee",
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2"
+                      },
+                      {
+                        "$text": "MS",
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Melee",
+                    "id": "f5ae-56c0-9ef5-fa35",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  },
+                  {
+                    "name": "Duelist(X)",
+                    "id": "9d2c-48a4-ce32-e6fd",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d652-33fa-4a79-e232"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Flamethrowers",
+        "id": "f1e7-e0cf-857d-9933",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "New Entry",
+            "hidden": false,
+            "id": "a14f-d920-ce02-92d1",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy-Incinerator",
+                "hidden": false,
+                "id": "aa5e-15ac-1a41-42e3",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 30
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy-Incinerator",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "b1fd-ca8d-0485-29b9",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "12"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Energy, Burning(2), Flamethrower, Unwieldy Weapon"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "d6"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "1704-30e7-1e9f-81c6",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Flamethrower",
+                    "id": "a4b6-2c45-00a1-8fb0",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "b0bb-076b-6de4-ce2b"
+                  },
+                  {
+                    "name": "Unwieldy Weapon",
+                    "id": "d383-8ca5-6533-f27a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "def8-6fb8-62fd-9dbc"
+                  },
+                  {
+                    "name": "Burning(X)",
+                    "id": "7c3c-b424-cd90-df30",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3264-2bf7-448b-70a2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "New Entry",
+            "hidden": false,
+            "id": "5786-0638-a201-80f9",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Flamethrower",
+                "hidden": false,
+                "id": "4008-b182-3483-0680",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Flamethrower",
+                    "hidden": false,
+                    "id": "bc23-e391-dd79-97c3",
+                    "type": "selectionEntry",
+                    "targetId": "2e63-ffde-2fa2-0cd6",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "5449-a469-8de4-8425"
+                      },
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3a17-fd34-6ad6-552a"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Melee Weapons",
+        "id": "826f-42c1-b48d-b3db",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Energy Hatchet",
+            "hidden": false,
+            "id": "51c0-1fe4-57a3-f620",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Hatchet",
+                "hidden": false,
+                "id": "dff8-6f89-ad97-68d4",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy Hatchet",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2c01-3877-8259-5353",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Energy, Melee, Crushing Blow"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Crushing Blow",
+                    "id": "5666-d09a-e8ca-e087",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5973-4ebd-6d2c-2666"
+                  },
+                  {
+                    "name": "Melee",
+                    "id": "f38d-c49f-fcec-7f7e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  },
+                  {
+                    "name": "Energy",
+                    "id": "0aa4-0cb2-efc0-ffce",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Energy Knife",
+            "hidden": false,
+            "id": "dff0-14b7-68c3-92f4",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Knife",
+                "hidden": false,
+                "id": "54f8-296b-d70f-c11c",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy Knife",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "d39c-4de5-58d5-2cc6",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "User"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Concealed Weapon, Melee, Energy"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "d8d4-a180-2a41-0c21",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Melee",
+                    "id": "d34f-9b72-b0dd-4ffa",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  },
+                  {
+                    "name": "Concealed Weapon",
+                    "id": "41dd-6a12-6208-1d54",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "05b5-1042-6428-fc94"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Energy Saber",
+            "hidden": false,
+            "id": "5249-4782-3d2a-386a",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Saber",
+                "hidden": false,
+                "id": "d260-bb82-d465-cd2e",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy Saber",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "5dd8-45b4-5ce9-b3e1",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Duelist (1), Energy, Melee"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "MS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "6132-6250-fa85-bf84",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Duelist(X)",
+                    "id": "a500-86bb-c1ce-dd50",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d652-33fa-4a79-e232"
+                  },
+                  {
+                    "name": "Melee",
+                    "id": "c249-6c9d-11a8-ab6b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d484-a2b1-938d-1274"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Rifles",
+        "id": "0308-7149-b970-f293",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Energy Lock",
+            "hidden": false,
+            "id": "7cf8-5388-413c-7059",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "c780-0ddd-5d1e-56f5",
+                "type": "selectionEntry",
+                "targetId": "779d-76c3-4788-299b"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Lock",
+                "hidden": false,
+                "id": "07e4-fddc-d1e3-1bd5",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Lock",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "dd4a-57a6-fcbc-011b",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "24"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Energy, Rifle"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "f043-b50e-a4f1-b37a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Rifle",
+                    "id": "8f7e-a0ca-ec76-000c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d608-bce2-cf48-716c"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8606-c2e6-7fc0-6c4c"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0295-dbd0-ca36-b2e8"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ed44-8d70-25f3-8d42"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Energy Carbine",
+            "hidden": false,
+            "id": "fbf3-577f-ab1a-54c5",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "dba4-295b-339a-062f",
+                "type": "selectionEntry",
+                "targetId": "779d-76c3-4788-299b"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Carbine",
+                "hidden": false,
+                "id": "8140-837d-2026-031d",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Carbine",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "5fa1-7b96-93c7-00d8",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "24"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Energy, Rifle"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "d30d-dfaa-32f1-575c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Carbine",
+                    "id": "5f74-abe5-eb80-ba1a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d442-54dc-7844-d5b1"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8a55-9f10-45d5-2c78"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "10e2-c55c-c84f-28c1"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d7f3-d0e7-f14e-dc4d"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Masufai-Forged Rifle",
+            "hidden": false,
+            "id": "3a44-a48e-1bfb-91b8",
+            "profiles": [
+              {
+                "name": "Masufai-Forged Rifle",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "32f7-0512-0a97-40f0",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "0"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Gunline(2), Rifle, Ballistic"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Ballistic",
+                "id": "6bcf-9293-4fd4-e4b8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "09f0-5941-f550-9a12"
+              },
+              {
+                "name": "Rifle",
+                "id": "cd10-2548-a3e6-bf61",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d608-bce2-cf48-716c"
+              },
+              {
+                "name": "Gunline (X)",
+                "id": "76bd-0e3f-b725-003a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1837-df5b-704d-71a1"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "f6b9-4f00-26f6-2b69",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": false
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5a17-0522-8acc-ea75"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Last-Ditch Rifle",
+            "hidden": false,
+            "id": "4898-f127-715c-1913",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Rifle",
+                "hidden": false,
+                "id": "48e0-22a7-516a-347f",
+                "type": "selectionEntry",
+                "targetId": "e3ec-1a2d-b79e-f8b0",
+                "infoLinks": [
+                  {
+                    "name": "Low Caliber",
+                    "id": "f9c5-0ac5-fd3a-b94f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9c96-0116-2e69-7543"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8cc2-2d01-6dd9-b43d"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b8ab-c3c9-3cc2-2432"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Sarpenton Sidearms",
+        "id": "da04-240a-c80c-9a18",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Ballistic Pistol",
+            "hidden": false,
+            "id": "f799-07b3-a41c-8fe8",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Pistol",
+                "hidden": false,
+                "id": "dc21-79ad-77e4-dbb3",
+                "type": "selectionEntry",
+                "targetId": "2c52-e650-f82b-c9aa",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e136-49e3-74af-a055"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "de9e-ce7d-e2de-ce04"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Energy Pistol",
+            "hidden": false,
+            "id": "a3fe-d266-583e-210f",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Pistol",
+                "hidden": false,
+                "id": "ed31-fcc6-572e-0db4",
+                "profiles": [
+                  {
+                    "name": "Weapon:Pistol",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "957d-a4d9-4c13-09e9",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Pistol, Energy ,One-Handed"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "929a-e5c1-b180-9ce3",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Moving Fire(X)",
+                    "id": "09f0-0381-00b7-bed2",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ceeb-ed5b-73cd-7445"
+                  },
+                  {
+                    "name": "One-Handed",
+                    "id": "4ebb-5f0a-7c79-9d66",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "f3e5-5ab7-e9a6-a257"
+                  },
+                  {
+                    "name": "Pistol",
+                    "id": "9eb3-b6fc-46bb-40df",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "219a-5748-263e-78bf"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2d49-969e-0d3a-8366"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "540e-2bf0-c872-5d0b"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Deflagration Pistol",
+            "hidden": false,
+            "id": "f530-ca0b-7270-dea0",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Sarpenton Deflagration Pistol",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "4ee7-87d1-9d9d-0422",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "0"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Deflagration, Pistol, One-Handed"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Deflagration",
+                "id": "0a81-1cb5-b46d-5db4",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "32cd-62dc-faa7-e40c"
+              },
+              {
+                "name": "Pistol",
+                "id": "3505-e3f5-98a5-ee85",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "219a-5748-263e-78bf"
+              },
+              {
+                "name": "One-Handed",
+                "id": "bb3a-ad98-3c96-468a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f3e5-5ab7-e9a6-a257"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4b25-4eb2-9a6c-1465"
+              }
+            ]
+          }
+        ],
+        "collapsible": true,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ec05-31ef-a2f0-af46"
+          }
+        ]
+      },
+      {
+        "name": "Sarpenton Special Rifles",
+        "id": "4650-1164-44ee-487a",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Masufai-Forged Long Rifle",
+            "hidden": false,
+            "id": "a258-659c-b096-9315",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Masufai-Forged Long Rifle",
+                "hidden": false,
+                "id": "c0c5-04d6-d968-d98d",
+                "profiles": [
+                  {
+                    "name": "Masufai-Forged Long Rifle",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "92d6-346e-7038-6766",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "48"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Rifle, Ballistic, Precision, Suppressive Fire(1)"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Ballistic",
+                    "id": "2971-92e7-60af-f2d8",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "09f0-5941-f550-9a12"
+                  },
+                  {
+                    "name": "Rifle",
+                    "id": "5d97-f958-5cb9-cea4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d608-bce2-cf48-716c"
+                  },
+                  {
+                    "name": "Precision",
+                    "id": "6e8b-ea86-1913-3b19",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4cdb-6787-de2a-2c6d"
+                  },
+                  {
+                    "name": "Suppressive Fire(X)",
+                    "id": "2a0d-5a0e-5e47-5129",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8793-0569-5fad-8e67"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "7852-85d9-f196-27e0",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": false
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 8
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Deflagration Rifle",
+            "hidden": false,
+            "id": "b891-4516-915f-a520",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Deflagration Rifle",
+                "hidden": false,
+                "id": "6265-5406-1779-6d06",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Deflagration Rifle",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "12dd-4e44-eac0-da0c",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "24"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Deflagration, Rifle, Unwieldly Weapon"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Deflagration",
+                    "id": "8dc9-da8c-9c64-d754",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "32cd-62dc-faa7-e40c"
+                  },
+                  {
+                    "name": "Rifle",
+                    "id": "4224-8acd-5d53-6b17",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d608-bce2-cf48-716c"
+                  },
+                  {
+                    "name": "Unwieldy Weapon",
+                    "id": "3664-36bf-a094-5b0e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "def8-6fb8-62fd-9dbc"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 6
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Anti-Armor Rifle",
+            "hidden": false,
+            "id": "4a1f-207d-4423-cf9d",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Anti-Tank Rifle",
+                "hidden": false,
+                "id": "6d37-2ffc-8d59-368b",
+                "type": "selectionEntry",
+                "targetId": "6f7a-9b3c-41d8-eefc"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Rail Rifle",
+            "hidden": false,
+            "id": "088c-7f15-984f-0e6d",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Rail Rifle",
+                "hidden": false,
+                "id": "0b45-aece-1401-f7ee",
+                "costs": [
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Sarpenton Rail Rifle",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2792-be2d-d78f-1108",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "72"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Overheat (1), Energy, Unwieldy, Heavy"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Overheat",
+                    "id": "ad45-a10b-758e-355b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ec51-d389-9c3e-c552"
+                  },
+                  {
+                    "name": "Unwieldy Weapon",
+                    "id": "c952-b5fe-d5c7-4028",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "def8-6fb8-62fd-9dbc"
+                  },
+                  {
+                    "name": "Energy",
+                    "id": "534c-6647-a673-a2e7",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Heavy",
+                    "id": "4c3c-7bc4-a9ff-43f4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "621b-e546-879e-9c41"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 10
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Energy Repeater",
+            "hidden": false,
+            "id": "95ab-2386-d194-d2c6",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Energy Repeater",
+                "hidden": false,
+                "id": "1c51-f3ab-6086-cb80",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy Repeater",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2ef7-3a89-ad8c-d73b",
+                    "characteristics": [
+                      {
+                        "$text": "24",
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6"
+                      },
+                      {
+                        "$text": "5",
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65"
+                      },
+                      {
+                        "$text": "Overheat(6), Rifle, Energy",
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336"
+                      },
+                      {
+                        "$text": "X",
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2"
+                      },
+                      {
+                        "$text": "BS",
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Energy",
+                    "id": "4ad7-6a40-524f-8a94",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Rifle",
+                    "id": "e1e6-460d-3773-b48f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d608-bce2-cf48-716c"
+                  },
+                  {
+                    "name": "Overheat",
+                    "id": "481d-e8ec-7056-0fe6",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ec51-d389-9c3e-c552"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 5
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Sarpenton Suppression Guns",
+        "id": "34e8-4e3e-9e75-30d9",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Last-Ditch Suppress Gun",
+            "hidden": false,
+            "id": "e917-5c6c-f6c6-6610",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Light Machine Gun",
+                "hidden": false,
+                "id": "2977-e3f9-d00c-1487",
+                "type": "selectionEntry",
+                "targetId": "05e3-0d76-2036-d653",
+                "infoLinks": [
+                  {
+                    "name": "Low Rate of Fire",
+                    "id": "194d-68d7-16d5-449a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8adf-eb89-d866-8059"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Light Suppress Gun",
+            "hidden": false,
+            "id": "71d1-0082-672b-379e",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 20
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Light Machine Gun",
+                "hidden": false,
+                "id": "d8ab-791e-5cc3-8617",
+                "type": "selectionEntry",
+                "targetId": "05e3-0d76-2036-d653",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0e13-e129-0410-285d"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "af86-c68e-e9ac-881d"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Medium Suppress Gun",
+            "hidden": false,
+            "id": "885a-a211-623f-5c43",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 30
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Medium Machine Gun",
+                "hidden": false,
+                "id": "a626-69e8-f048-36e4",
+                "type": "selectionEntry",
+                "targetId": "935b-f0cf-5a8b-1147",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e39d-a02e-906d-8291"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "08e6-d333-c9b7-9085"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Heavy Suppress Gun",
+            "hidden": false,
+            "id": "73f7-578d-12cc-ad84",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 40
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Heavy Machine Gun",
+                "hidden": false,
+                "id": "7812-32cd-9f83-666f",
+                "type": "selectionEntry",
+                "targetId": "913e-0a10-131e-6632"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sub-Machine Guns",
+        "id": "94c1-ff96-b0df-e4ee",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Energy PDW",
+            "hidden": false,
+            "id": "6445-8e0a-e3c1-e55f",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Energy PDW",
+                "hidden": false,
+                "id": "34e0-18ef-4747-2d57",
+                "profiles": [
+                  {
+                    "name": "Sarpenton Energy PDW",
+                    "typeId": "d233-0653-f762-e538",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "96b8-07e3-ae54-bf45",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "b3c1-2707-e74d-88f6",
+                        "$text": "12"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "6997-f9f2-6f9b-ef3c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "8c5e-9516-a499-63f5",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "D",
+                        "typeId": "7f27-f5c3-9c54-de65",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Abilities",
+                        "typeId": "cfcb-ec22-834e-7336",
+                        "$text": "Automatic, Energy, Sub-Machine Gun"
+                      },
+                      {
+                        "name": "WPN Dice",
+                        "typeId": "0255-21c0-4ef7-efa2",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "BS/MS",
+                        "typeId": "b356-3224-2f16-54c7",
+                        "$text": "BS"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Automatic",
+                    "id": "7faa-fa95-ea8a-5e87",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4b0f-abf5-ab66-261e"
+                  },
+                  {
+                    "name": "Energy",
+                    "id": "cd2d-fe15-dae0-8349",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0f48-2fbf-a744-86f6"
+                  },
+                  {
+                    "name": "Submachine Gun",
+                    "id": "5ff1-76e0-e140-f22e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "415e-a0f6-f497-854b"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4617-09c0-c776-3a50"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a2c5-f824-0876-3e4c"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

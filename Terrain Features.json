@@ -1,0 +1,1146 @@
+{
+  "catalogue": {
+    "sharedSelectionEntries": [
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Lightly Forested Woods"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Woods, Forest, Light Cover"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "A Model or Unit within this Terrain Feature has +1 to their DEF against any Ballistic Skill-related attacks. Any Model or unit that fights in Melee Combat in Lightly Forested Woods Terrain resolves all attacks at -1 Initiative."
+              }
+            ],
+            "name": "Light Forested Woods",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "d951-e092-f4d3-2ecc"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Light Forested Woods",
+        "hidden": false,
+        "id": "3c0e-05db-6d9d-803e"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Densely Forested Woods"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Forest, Woods, Medium Cover"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "Any Ballistic Skill attacks that targets a model/unit inside this terrain feature, or a model/unit being targeted by mode/unit from within the the terrain feature, must be first resolved with an Intelligence Check, if they fail, they suffer a BS Modifier of -2 until the end of the attack. Any Model or unit that fights in Melee Combat in Densely Forested Woods Terrain resolves all attacks at -2 Initiative. \nMedium Cover: Provides a DEF Bonus of +2."
+              }
+            ],
+            "name": "Densely Forested Woods",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "e04d-68a6-6f46-6e4c"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Densely Forested Wood",
+        "hidden": false,
+        "id": "87b8-62af-c1ca-db19"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "Forest-World",
+                "name": "Map Name",
+                "typeId": "0639-cb4c-b4b7-7460"
+              },
+              {
+                "$text": "Forests, Woods",
+                "name": "Map Type",
+                "typeId": "8105-e4c2-53a4-c814"
+              },
+              {
+                "$text": "Due to the crowded canopy of the trees, all weapons with the Indirect Fire keyword lose Indirect Fire.",
+                "name": "Map Special Rules",
+                "typeId": "9ec7-70bb-e73b-28f9"
+              }
+            ],
+            "name": "Forest-World",
+            "typeId": "cd80-0960-0624-8eba",
+            "typeName": "Map Feature",
+            "hidden": false,
+            "id": "0722-7f08-34ad-c579"
+          },
+          {
+            "characteristics": [
+              {
+                "$text": "A Forest-World is often shrouded with giant trees, forming an impenetrable canopy that stretches for miles, even the most scarce area of trees has a scattering of medium to large sized trees.",
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e"
+              }
+            ],
+            "name": "Forest-World",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "7d66-ecbf-c155-0b08"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ca07-0d20-c957-1957"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d110-8285-1375-62c2"
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "Forest-Worlds are usually dominated by great beasts that roam the planet, their roars and howls being carried by the winds rend the nerves of any poorly-trained survivor. However, some beasts are closer than one may think as stranglers are picked off as soon as they stray too far.",
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e"
+                  }
+                ],
+                "name": "What Lurks in the Forest (Optionable)",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "ef12-43eb-a26e-0a52"
+              },
+              {
+                "characteristics": [
+                  {
+                    "$text": "A model or unit is that does not have line of sight to another friendly model/unit within 12 inches rolls a d6; if it is a unit, roll a d6 for each model. \n1: An unfortunate soul is picked off by a denizen of the forests. Remove a model from the unit.\n2-3: Noticeably shaken by the sounds of horrific creatures lurking in the undergrowth, they must take a suppression test. Do note: If this was rolled multiple times for a unit, only one test must be taken.\n4-5:They earn their nerve once more, seeing the beasts as nothing but mythos. Nothing else happens.\n6: The unit realizes they are lacking behind, and quickly pushes themselves forward. Make a normal movement action for free.Do note: If this was rolled multiple times for a unit, it is only done once.",
+                    "name": "Description",
+                    "typeId": "56ac-09e6-a6ce-498c"
+                  }
+                ],
+                "name": "What Lurks in the Forest (Optionable)",
+                "typeId": "db54-88f2-eb1c-6770",
+                "typeName": "Abilities",
+                "hidden": false,
+                "id": "cb8f-7226-ce3a-f253"
+              }
+            ],
+            "type": "upgrade",
+            "import": true,
+            "name": "What Lurks in the Forest (Optionable)",
+            "hidden": false,
+            "id": "2ee6-d203-1fb0-4932"
+          }
+        ],
+        "type": "model",
+        "import": true,
+        "name": "Forest-World",
+        "hidden": false,
+        "id": "7b4a-0f37-085d-fcef"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e",
+                "$text": "A City-Complex is often a vast, or at least rather large, grouping of well-kept advanced towns and cities within a great stretch of land. Filled with homes, businesses, production factories, and many other civilian businesses. Despite their calm and innocent nature, warfare has no bounds, and such places are found under assault."
+              }
+            ],
+            "name": "City-Complex",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "4cce-9220-159e-92a9"
+          },
+          {
+            "characteristics": [
+              {
+                "name": "Map Name",
+                "typeId": "0639-cb4c-b4b7-7460",
+                "$text": "City-Complex"
+              },
+              {
+                "name": "Map Type",
+                "typeId": "8105-e4c2-53a4-c814",
+                "$text": "Urban, Destroyed Buildings/Undestroyed Buildings"
+              },
+              {
+                "name": "Map Special Rules",
+                "typeId": "9ec7-70bb-e73b-28f9",
+                "$text": "With the advanced nature of City Complexes, forces are able to coordinate without hindrance. Ignore the-1 penalty from Reinforcement Reserves for the first time each round you bring a unit from Reinforcements."
+              }
+            ],
+            "name": "City-Complex",
+            "typeId": "cd80-0960-0624-8eba",
+            "typeName": "Map Feature",
+            "hidden": false,
+            "id": "663a-e1e3-fc94-e7fb"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "City-Complex",
+        "hidden": false,
+        "id": "906b-7dd5-065e-47b3"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Harrow Spark",
+        "hidden": false,
+        "id": "9b04-1806-03e8-091f"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thief's Poppy",
+        "hidden": false,
+        "id": "c4f1-b467-643b-9c0b"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Farmer's Rot",
+        "hidden": false,
+        "id": "bde8-33f1-d40b-4270"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Popping Weasel",
+        "hidden": false,
+        "id": "326d-d877-f5bc-4775"
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "ec4f-7524-af44-7bce"
+              }
+            ],
+            "name": "Silent Field",
+            "typeId": "a43d-8b65-0808-c7b2",
+            "typeName": "Anomalies",
+            "hidden": false,
+            "id": "aca0-053c-77a8-b14e"
+          },
+          {
+            "characteristics": [
+              {
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e"
+              }
+            ],
+            "name": "Silent Field",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "e29c-b3ed-3229-2a1c"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Silent Field",
+        "hidden": false,
+        "id": "b7fa-2796-cf26-54de"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Light Defense Tower",
+        "hidden": false,
+        "id": "d29d-a970-b3d6-1234",
+        "profiles": [
+          {
+            "name": "Light Defense Tower",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "ab05-4b45-08bd-cfef",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Light Defense Tower"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Building, Fortification,Unaligned Terrain"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "Medium Cover, Battlements"
+              }
+            ]
+          },
+          {
+            "name": "Light Defense Tower",
+            "typeId": "0ae8-9878-0abc-a394",
+            "typeName": "Fortification/Buildings",
+            "hidden": false,
+            "id": "9bc1-7a86-2776-5d0e",
+            "characteristics": [
+              {
+                "name": "Unit Type",
+                "typeId": "93c2-909e-369d-e424",
+                "$text": "Fortification"
+              },
+              {
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "10"
+              },
+              {
+                "name": "DEF",
+                "typeId": "5837-7ca6-f841-56f1",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "1149-443e-9dc2-b81b",
+                "$text": "6"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "349e-b068-411d-f8ff",
+                "$text": "10"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Medium Cover",
+            "id": "558a-e12b-3acc-b09d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "439a-9b6a-bd20-de21"
+          },
+          {
+            "name": "Battlements ",
+            "id": "903a-0267-5620-746a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b5c-2d12-59cb-61cd"
+          },
+          {
+            "name": "Transport(X)",
+            "id": "7bfd-be22-c776-deb6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a4a3-37b1-97e7-1704"
+          },
+          {
+            "name": "Embarking/Disembarking",
+            "id": "85a9-cfb4-6a48-d01c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "14a8-26e1-aca6-718d"
+          },
+          {
+            "name": "Firing Points",
+            "id": "d2fa-89ba-4ef6-e169",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd3b-6219-a2c1-7951"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Medium Defense Tower",
+        "hidden": false,
+        "id": "0991-6950-58b1-fdf6",
+        "profiles": [
+          {
+            "name": "Medium Defense Tower",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "0e09-1150-4df5-2c62",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Medium Defense Tower"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Building, Fortification, Unaligned Terrain"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "Medium Cover, Battlements"
+              }
+            ]
+          },
+          {
+            "name": "Medium Defense Tower",
+            "typeId": "0ae8-9878-0abc-a394",
+            "typeName": "Fortification/Buildings",
+            "hidden": false,
+            "id": "28ba-6083-48cc-a9ed",
+            "characteristics": [
+              {
+                "name": "Unit Type",
+                "typeId": "93c2-909e-369d-e424",
+                "$text": "Fortification"
+              },
+              {
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "15"
+              },
+              {
+                "name": "DEF",
+                "typeId": "5837-7ca6-f841-56f1",
+                "$text": "6"
+              },
+              {
+                "name": "T",
+                "typeId": "1149-443e-9dc2-b81b",
+                "$text": "8"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "349e-b068-411d-f8ff",
+                "$text": "15"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battlements ",
+            "id": "5c4d-1b77-40e0-3480",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b5c-2d12-59cb-61cd"
+          },
+          {
+            "name": "Embarking/Disembarking",
+            "id": "dab3-1c60-4a9e-141a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "14a8-26e1-aca6-718d"
+          },
+          {
+            "name": "Medium Cover",
+            "id": "78aa-26fb-f045-3413",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "439a-9b6a-bd20-de21"
+          },
+          {
+            "name": "Transport(X)",
+            "id": "25df-6df9-6c0d-807e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a4a3-37b1-97e7-1704"
+          },
+          {
+            "name": "Firing Points",
+            "id": "f1a1-aaec-2d94-51f8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd3b-6219-a2c1-7951"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Heavy Defense Tower",
+        "hidden": false,
+        "id": "4a5c-8fa4-fef5-0c38",
+        "profiles": [
+          {
+            "name": "Heavy Defense Tower",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "fe16-cb8d-5793-379c",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Heavy Defense Tower"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Building, Fortification, Unaligned Terrain"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "Heavy Cover, Battlements, Firing Points"
+              }
+            ]
+          },
+          {
+            "name": "Heavy Defense Tower",
+            "typeId": "0ae8-9878-0abc-a394",
+            "typeName": "Fortification/Buildings",
+            "hidden": false,
+            "id": "d44c-3f89-eee8-9f58",
+            "characteristics": [
+              {
+                "name": "Unit Type",
+                "typeId": "93c2-909e-369d-e424",
+                "$text": "Fortification"
+              },
+              {
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "20"
+              },
+              {
+                "name": "DEF",
+                "typeId": "5837-7ca6-f841-56f1",
+                "$text": "8"
+              },
+              {
+                "name": "T",
+                "typeId": "1149-443e-9dc2-b81b",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "349e-b068-411d-f8ff",
+                "$text": "25"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battlements ",
+            "id": "1dfd-3e8b-594e-4e4c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b5c-2d12-59cb-61cd"
+          },
+          {
+            "name": "Embarking/Disembarking",
+            "id": "3282-3053-62ee-c9ca",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "14a8-26e1-aca6-718d"
+          },
+          {
+            "name": "Transport(X)",
+            "id": "1d61-97bd-02bb-4294",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a4a3-37b1-97e7-1704"
+          },
+          {
+            "name": "Heavy Cover",
+            "id": "204e-58e4-b029-d5a7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b8cf-8f0c-f148-dbe3"
+          },
+          {
+            "name": "Firing Points",
+            "id": "d4a7-9a52-fee3-4c6f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd3b-6219-a2c1-7951"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Ruined Housing",
+        "hidden": false,
+        "id": "1330-8690-6e57-73d2",
+        "profiles": [
+          {
+            "name": "Destroyed Housing",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "1ed9-f372-afd7-33d2",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Destroyed Housing"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Destroyed Building, Unaligned"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "All Units that perform melee attacks in this terrain do so at -1 Initiative."
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Medium Cover",
+            "id": "c9c5-488e-27a7-dcb2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "439a-9b6a-bd20-de21"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pile of Rubble",
+        "hidden": false,
+        "id": "a941-6afc-7ae0-8675",
+        "rules": [
+          {
+            "name": "Pile of Rubble",
+            "id": "a879-56ab-daa8-b833",
+            "hidden": false,
+            "description": "Any units within this terrain feature suffer -1 to their initiative, Charges cannot be done through or into this Terrain Feature and counts as Light Cover for units within."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Light Cover",
+            "id": "ca0b-070b-0f5b-1cff",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "25a9-ff6d-ef26-b2a6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pond",
+        "hidden": false,
+        "id": "697b-3ae7-414b-53fd"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Swamp",
+        "hidden": false,
+        "id": "9a35-5180-9348-ab6d",
+        "profiles": [
+          {
+            "name": "Swamp",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "e636-603a-e666-fd6b",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Swamp"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Swamp, Forest, Trees"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Reinforced Building",
+        "hidden": false,
+        "id": "b447-fd2c-90c0-8e71"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Marsh-Land",
+        "hidden": false,
+        "id": "68e9-3b87-484a-17c1",
+        "profiles": [
+          {
+            "name": "Marsh-Land",
+            "typeId": "cd80-0960-0624-8eba",
+            "typeName": "Map Feature",
+            "hidden": false,
+            "id": "1f80-ef40-016f-ccb3",
+            "characteristics": [
+              {
+                "name": "Map Name",
+                "typeId": "0639-cb4c-b4b7-7460",
+                "$text": "Marsh-Land"
+              },
+              {
+                "name": "Map Type",
+                "typeId": "8105-e4c2-53a4-c814",
+                "$text": "Marsh, Woods, Forests, Swamps"
+              },
+              {
+                "name": "Map Special Rules",
+                "typeId": "9ec7-70bb-e73b-28f9",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Flashing Dodger ",
+        "hidden": false,
+        "id": "a5f4-13bb-b9d2-3cbb",
+        "profiles": [
+          {
+            "name": "Flashing Dodger ",
+            "typeId": "a43d-8b65-0808-c7b2",
+            "typeName": "Anomalies",
+            "hidden": false,
+            "id": "9b82-8aa9-cece-b168",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "ec4f-7524-af44-7bce",
+                "$text": "At the start of each round, roll 3d6 and a scatter dice for the direction and the amount of inches that the Flashing Dodger. Any unit that ends within 6 inches of a Flashing Dodger must take an Initiative Test. If they fail, they perform a movement action towards the Flashing Dodger; even if they have no actions left. If there is any models within 6 inches of the Flashing Dodger at the start of the round, each model is dealt 1 damage; which cannot be saved."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Housing",
+        "hidden": false,
+        "id": "6f4c-b2bf-a100-212e",
+        "profiles": [
+          {
+            "name": "Housing",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "1d41-7b07-88b8-18d4",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Housing"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Building, Unaligned, Medium Cover"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "When this Terrain Feature is destroyed, replace it with the \"Ruined Housing\" Terrain Feature instead of the Pile of Rubble Terrain Feature."
+              }
+            ]
+          },
+          {
+            "name": "Housing",
+            "typeId": "0ae8-9878-0abc-a394",
+            "typeName": "Fortification/Buildings",
+            "hidden": false,
+            "id": "a387-5e22-06d6-740a",
+            "characteristics": [
+              {
+                "name": "Unit Type",
+                "typeId": "93c2-909e-369d-e424",
+                "$text": "Fortification, Building, Medium Cover"
+              },
+              {
+                "name": "DEF",
+                "typeId": "5837-7ca6-f841-56f1",
+                "$text": "4"
+              },
+              {
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "349e-b068-411d-f8ff",
+                "$text": "1 Unit"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Medium Cover",
+            "id": "3ae6-0da3-22c8-cb45",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "439a-9b6a-bd20-de21"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Medium-Sized Housing",
+        "hidden": false,
+        "id": "e874-d662-b893-419e",
+        "profiles": [
+          {
+            "name": "Housing",
+            "typeId": "fed3-9148-5258-a028",
+            "typeName": "Terrain Feature",
+            "hidden": false,
+            "id": "5441-8be8-59a8-3914",
+            "characteristics": [
+              {
+                "name": "Terrain Name",
+                "typeId": "aa90-71fa-e8fb-2ead",
+                "$text": "Housing"
+              },
+              {
+                "name": "Terrain Type",
+                "typeId": "6451-8783-55cc-50f6",
+                "$text": "Building, Unaligned"
+              },
+              {
+                "name": "Terrain Special Rules",
+                "typeId": "85de-dbe8-2f67-10ea",
+                "$text": "If able to be modeled, this terrain feature has two floors."
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Medium Cover",
+            "id": "8813-aabe-1679-a693",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "439a-9b6a-bd20-de21"
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "2c0e-fde3-c64e-76f1",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ],
+        "import": true,
+        "name": "Light Forested Woods",
+        "hidden": false,
+        "id": "dced-d5c9-3b84-45e9",
+        "type": "selectionEntry",
+        "targetId": "3c0e-05db-6d9d-803e"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "15aa-9b35-7884-3d4b",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ],
+        "import": true,
+        "name": "Densely Forested Wood",
+        "hidden": false,
+        "id": "a386-d80e-e368-3ef9",
+        "type": "selectionEntry",
+        "targetId": "87b8-62af-c1ca-db19"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "bee2-7f3a-709f-786f",
+            "id": "28ab-167e-117e-b8a5",
+            "primary": true,
+            "name": "Map Feature"
+          }
+        ],
+        "import": true,
+        "name": "Forest-World",
+        "hidden": false,
+        "id": "a021-0d35-6b74-ce3d",
+        "type": "selectionEntry",
+        "targetId": "7b4a-0f37-085d-fcef"
+      },
+      {
+        "import": true,
+        "name": "Heavy Defense Tower",
+        "hidden": false,
+        "id": "88f9-a461-8c9b-4b3e",
+        "type": "selectionEntry",
+        "targetId": "4a5c-8fa4-fef5-0c38",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "4b19-6d7b-e9fe-51b2",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Medium Defense Tower",
+        "hidden": false,
+        "id": "6af6-0ec9-085d-e0c3",
+        "type": "selectionEntry",
+        "targetId": "0991-6950-58b1-fdf6",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "e820-824c-948b-9282",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Light Defense Tower",
+        "hidden": false,
+        "id": "b465-f199-b2eb-1b04",
+        "type": "selectionEntry",
+        "targetId": "d29d-a970-b3d6-1234",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "fa2a-308c-9a4d-25ec",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "City-Complex",
+        "hidden": false,
+        "id": "2c1b-14cb-6186-2ff8",
+        "type": "selectionEntry",
+        "targetId": "906b-7dd5-065e-47b3",
+        "categoryLinks": [
+          {
+            "targetId": "bee2-7f3a-709f-786f",
+            "id": "776e-e1ea-6451-77b8",
+            "primary": true,
+            "name": "Map Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Destroyed Housing",
+        "hidden": false,
+        "id": "21f7-f1e0-165a-59e8",
+        "type": "selectionEntry",
+        "targetId": "1330-8690-6e57-73d2",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "3c5d-2019-438c-523e",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Pile of Rubble",
+        "hidden": false,
+        "id": "7291-e815-7462-f204",
+        "type": "selectionEntry",
+        "targetId": "a941-6afc-7ae0-8675",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "9acb-aae0-64b2-fe3f",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Housing",
+        "hidden": false,
+        "id": "d4ff-30fb-2032-581e",
+        "type": "selectionEntry",
+        "targetId": "6f4c-b2bf-a100-212e",
+        "categoryLinks": [
+          {
+            "targetId": "e002-128d-6b64-ee7c",
+            "id": "7cca-04d8-2259-dfa7",
+            "primary": true,
+            "name": "Terrain Feature"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Flashing Dodger ",
+        "hidden": false,
+        "id": "d044-6b7b-f71e-9fb9",
+        "type": "selectionEntry",
+        "targetId": "a5f4-13bb-b9d2-3cbb",
+        "categoryLinks": [
+          {
+            "targetId": "3c73-0f76-239e-2710",
+            "id": "6fb4-089d-3f7b-e9e0",
+            "primary": true,
+            "name": "Anomaly"
+          }
+        ]
+      }
+    ],
+    "library": false,
+    "id": "a440-393c-2e49-bac0",
+    "name": "Terrain Features",
+    "gameSystemId": "sys-3396-9326-565c-5fb6",
+    "gameSystemRevision": 9,
+    "revision": 5,
+    "battleScribeVersion": 2.03,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "rules": [
+      {
+        "name": "Light Fortification ",
+        "id": "ea89-51f1-5569-b07e",
+        "hidden": false,
+        "description": "This Fortification may be destroyed and when it is destroyed, use the table below on a d10 for every unit within. When this Fortification is destroyed, it is removed from play.\n\n1-3:All Models within this Fortification suffer 1 Damage; which can be saved; treated as whatever weapon type they can save against.\n4-6:The Fortification is destroyed, all units within perform a fall back action away from the Fortification and must take a Suppression Test; losing an action for their next activation.\n7-9:The Fortification is destroyed, all units within perform a standard movement action away from the Fortification; losing an action for their next activation.\n10: The Building holds together somehow! Instead of being destroyed, it is placed at 1 HP."
+      },
+      {
+        "name": "Light Cover",
+        "id": "25a9-ff6d-ef26-b2a6",
+        "hidden": false,
+        "description": "Provides +1 DEF to a Unit within this Terrain Feature."
+      },
+      {
+        "name": "Medium Cover",
+        "id": "439a-9b6a-bd20-de21",
+        "hidden": false,
+        "description": "Provides +2 DEF to a Unit within this Terrain Feature."
+      },
+      {
+        "name": "Heavy Cover",
+        "id": "b8cf-8f0c-f148-dbe3",
+        "hidden": false,
+        "description": "Provides +3 DEF to a Unit within this Terrain Feature."
+      },
+      {
+        "name": "Landing Pad",
+        "id": "7fda-f9cc-66fe-6ca8",
+        "hidden": false
+      },
+      {
+        "name": "Battlements ",
+        "id": "3b5c-2d12-59cb-61cd",
+        "hidden": false,
+        "description": "Battlements are treated as an Access Point for their Building, meaning a unit inside the building can disembark onto the Battlements, or vice versa. Note that buildings without Transport Capacity that have battlements may still not be entered, although units can use their battlements.\n\n\nEnemy Units may also be placed onto Battlements if there is space and is a eligible move; even if the Building itself is embarked with a Friendly Unit."
+      },
+      {
+        "name": "Firing Points",
+        "id": "dd3b-6219-a2c1-7951",
+        "hidden": false,
+        "description": "A Building with this special rule and a transport capacity can have it's embarked unit(s) perform shooting actions, measuring and drawing line of sight from any point on this model. They can do this even if there is an Enemy within Melee Range."
+      },
+      {
+        "name": "Dangerous Terrain",
+        "id": "c036-777d-bd6a-7456",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "Very Dangerous Terrain",
+        "id": "1f60-bf59-5222-22fd",
+        "hidden": false,
+        "description": "The Initiative Value of Units within this terrain feature is reduced to 1. \nCharges cannot be done through this terrain feature, even if you can clearly see the enemy unit and the move is eligible; you can only charge into units within Very Dangerous Terrain."
+      },
+      {
+        "name": "Building Damage Table",
+        "id": "2c56-15de-9e40-bcbe",
+        "hidden": false,
+        "description": "1-3:Building Shaken: The Building and any Embarked units or units on the Building's Battlements can only fire Snap Shots until the end of the next turn.\n4:Structural Tremor: The Building and any Embarked units or units on the Building's Battlements can only fire Snap Shots until the end of its next turn. If the Building is occupied, the occupying unit suffers an additional D6 Strength 6 AP- Hits with the Ignores Cover special rule.\n5:Weapon Destroyed: One of the Building's weapons (chosen by the controlling player) is destroyed - including any combi- or built-in weapons. This can include Building upgrades that are weapons, such as Pintle Mounted weapons and missiles. Do not count single shot weapons that have already been used to attack. If a Building has no weapons left, treat this result as a Catastrophic Breach result instead.\n6:Catastrophic Breach: The Building and any Embarked units or units on the Building's Battlements may not make Shooting Attacks until the end of its next turn. No units may Embark or Disembark from the Building until the end of the controlling player's next turn. If the Building is occupied, the occupying unit suffers an additional 2D6 Strength 6 AP- Hits with the Ignores Cover special rule.\n7+:Total Collapse!: The Building is destroyed. All weapons and upgrades on the Building are destroyed. Each unit on the Battlements suffer 2D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately make a 6\" move in order to move off the Battlements are removed as casualties. If the Building is occupied , the occupying unit suffers 4D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately Disembark from the Building , performing an Emergency Disembarkation if necessary (survivors cannot Disembark to the Battlements). Any model that cannot Disembark are removed as casualties. Assuming they were not destroyed, units that were on the Battlements and those who have Disembarked must then take a Pinning test. The Building is then removed and replaced with an area of Ruins or a Crater roughly the same size if possible."
+      },
+      {
+        "name": "Medium Fortification ",
+        "id": "19ec-06bf-fd3e-e479",
+        "hidden": false,
+        "description": "This Fortification may be destroyed and when it is destroyed, use the table below on a d10 for every unit within. When this Fortification is destroyed, it is removed from play.\n\n1-3:All Models within this Fortification suffer 1 Damage; which can be saved but the save is worsened by 1; treated as whatever weapon type they can save against.\n4-6:The Fortification is destroyed, all units within perform a fall back action away from the Fortification and must take a Suppression Test, worsening the test result by 1; losing an action for their next activation.\n7-9:The Fortification is destroyed, all units within perform a standard movement action away from the Fortification; losing an action for their next activation.\n10: The Building holds together somehow! Instead of being destroyed, it is placed at 1 HP."
+      },
+      {
+        "name": "Heavy Fortication",
+        "id": "5bbc-ad3a-1829-917b",
+        "hidden": false,
+        "description": "This Fortification may be destroyed and when it is destroyed, use the table below on a d10 for every unit within. When this Fortification is destroyed, it is removed from play and in it's place, a Pile of Rubble Terrain Feature is left.\n\n1-3:All Models within this Fortification suffer 1 Damage; which cannot be saved.\n4-6:The Fortification is destroyed, all units within perform a fall back action away from the Fortification and must take a Stunned Test, worsening the test by 1; losing an action for their next activation.\n7-9:The Fortification is destroyed, all units within perform a standard movement action away from the Fortification; losing an action for their next activation.\n10: The Building holds together somehow! Instead of being destroyed, it is placed at 1 HP."
+      },
+      {
+        "name": "Building Test",
+        "id": "f4b7-e235-9fb4-67e9",
+        "hidden": false,
+        "description": "This Building may be destroyed and when it is destroyed, use the table below on a d10 for every unit within. When this Building is destroyed, it is removed from play and in it's place, a Pile of Rubble Terrain Feature is left.\n\n1-3:All Models within this Building suffer 1 Damage; which can be saved; treated as whatever weapon type they can save against.\n4-6:The Building is destroyed, all units within perform a fall back action away from the Fortification and must take a Suppression Test; losing an action for their next activation.\n7-9:The Fortification is destroyed, all units within perform a standard movement action away from the Fortification; losing an action for their next activation.\n10: The Building holds together somehow! Instead of being destroyed, it is placed at 1 HP."
+      }
+    ]
+  }
+}
