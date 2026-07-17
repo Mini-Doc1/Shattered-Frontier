@@ -5,7 +5,7 @@
     "name": "Star Clans",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 54,
-    "revision": 4,
+    "revision": 5,
     "battleScribeVersion": "2.03",
     "rules": [
       {
@@ -900,11 +900,11 @@
                         "entryLinks": [
                           {
                             "import": true,
-                            "name": "Clan Rifle",
+                            "name": "Weapon:Assault Rifle",
                             "hidden": false,
                             "id": "d131-e825-c8b9-c7a6",
                             "type": "selectionEntry",
-                            "targetId": "7b7b-eefe-177d-575f"
+                            "targetId": "eacc-5f5b-0226-6aa6"
                           }
                         ]
                       }

@@ -1279,7 +1279,7 @@
         "hidden": false
       },
       {
-        "description": "A Submachine Gun has the Moving Fire(1) rule.This weapon fills 1 Ranged Weapon Option on a model.This weapon fills 1 Ranged Weapon Slot on a model.",
+        "description": "A Submachine Gun has the Moving Fire(1) rule.",
         "name": "Submachine Gun",
         "id": "415e-a0f6-f497-854b",
         "hidden": false
@@ -2312,7 +2312,7 @@
               {
                 "name": "Abilities",
                 "typeId": "cfcb-ec22-834e-7336",
-                "$text": "Automatic, Sub-Machine Gun, Ballistic"
+                "$text": "Automatic, Sub-Machine Gun, Ballistic,Moving Fire (1)"
               },
               {
                 "name": "WPN Dice",
@@ -3478,7 +3478,7 @@
               {
                 "name": "Abilities",
                 "typeId": "cfcb-ec22-834e-7336",
-                "$text": "Rifle, Ballistic"
+                "$text": "Rifle, Ballistic, Moving Fire(2)"
               },
               {
                 "name": "WPN Dice",
@@ -3507,6 +3507,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "09f0-5941-f550-9a12"
+          },
+          {
+            "name": "Moving Fire(X)",
+            "id": "11da-4ffe-29d2-37e1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ceeb-ed5b-73cd-7445"
           }
         ]
       },
@@ -5931,7 +5938,7 @@
     "id": "sys-3396-9326-565c-5fb6",
     "name": "EUWG 3.0",
     "battleScribeVersion": 2.03,
-    "revision": 59,
+    "revision": 60,
     "type": "gameSystem",
     "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema"
   }

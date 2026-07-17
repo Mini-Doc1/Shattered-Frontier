@@ -5,7 +5,7 @@
     "name": "Vireskian Forces",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 39,
-    "revision": 15,
+    "revision": 16,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntryGroups": [
@@ -93,7 +93,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -174,7 +175,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 2
           },
           {
             "type": "upgrade",
@@ -255,7 +257,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ]
       },
@@ -352,7 +355,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 1
           },
           {
             "type": "upgrade",
@@ -447,7 +451,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -542,7 +547,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 2
           },
           {
             "type": "upgrade",
@@ -644,7 +650,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 4
           }
         ]
       },
@@ -748,7 +755,8 @@
                 "type": "rule",
                 "targetId": "cbf2-b359-5294-412d"
               }
-            ]
+            ],
+            "sortIndex": 2
           },
           {
             "type": "upgrade",
@@ -831,7 +839,8 @@
                 "type": "rule",
                 "targetId": "8adf-eb89-d866-8059"
               }
-            ]
+            ],
+            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -914,7 +923,8 @@
                 "type": "rule",
                 "targetId": "cbf2-b359-5294-412d"
               }
-            ]
+            ],
+            "sortIndex": 1
           },
           {
             "type": "upgrade",
@@ -1023,7 +1033,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 4
           }
         ]
       },
@@ -1255,7 +1266,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 1
           },
           {
             "import": true,
@@ -1270,7 +1282,8 @@
                 "typeId": "points",
                 "value": 3
               }
-            ]
+            ],
+            "sortIndex": 6
           },
           {
             "import": true,
@@ -1285,7 +1298,8 @@
                 "typeId": "points",
                 "value": 1
               }
-            ]
+            ],
+            "sortIndex": 2
           },
           {
             "import": true,
@@ -1300,7 +1314,8 @@
                 "typeId": "points",
                 "value": 3
               }
-            ]
+            ],
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -1315,7 +1330,8 @@
                 "typeId": "points",
                 "value": 2
               }
-            ]
+            ],
+            "sortIndex": 3
           },
           {
             "import": true,
@@ -1330,7 +1346,8 @@
                 "typeId": "points",
                 "value": 3
               }
-            ]
+            ],
+            "sortIndex": 4
           },
           {
             "import": true,
@@ -1345,7 +1362,8 @@
                 "typeId": "points",
                 "value": 5
               }
-            ]
+            ],
+            "sortIndex": 7
           }
         ]
       },
@@ -1376,7 +1394,7 @@
                   {
                     "name": "S",
                     "typeId": "6997-f9f2-6f9b-ef3c",
-                    "$text": "User"
+                    "$text": "User+1"
                   },
                   {
                     "name": "AP",
@@ -1433,7 +1451,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -1514,7 +1533,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 4
           },
           {
             "type": "upgrade",
@@ -1602,7 +1622,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 1
           },
           {
             "type": "upgrade",
@@ -1626,7 +1647,7 @@
                   {
                     "name": "S",
                     "typeId": "6997-f9f2-6f9b-ef3c",
-                    "$text": "User+1"
+                    "$text": "User"
                   },
                   {
                     "name": "AP",
@@ -1646,7 +1667,7 @@
                   {
                     "name": "WPN Dice",
                     "typeId": "0255-21c0-4ef7-efa2",
-                    "$text": "2"
+                    "$text": "3"
                   },
                   {
                     "name": "BS/MS",
@@ -1683,7 +1704,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 5
           },
           {
             "type": "upgrade",
@@ -1767,7 +1789,8 @@
                 "typeId": "ff33-0eb3-3b78-7829",
                 "value": 0
               }
-            ]
+            ],
+            "sortIndex": 2
           }
         ]
       },
