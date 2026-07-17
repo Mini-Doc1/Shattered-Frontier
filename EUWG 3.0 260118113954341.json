@@ -91,6 +91,18 @@
       {
         "categoryLinks": [
           {
+            "name": "Faction Special Rules",
+            "hidden": false,
+            "id": "ebeb-61f9-5482-d179",
+            "targetId": "e4c8-5238-f1d0-f461"
+          },
+          {
+            "name": "Reference Guide",
+            "hidden": false,
+            "id": "b99a-78e4-f846-2cee",
+            "targetId": "0498-9b29-311f-4058"
+          },
+          {
             "constraints": [
               {
                 "type": "max",
@@ -325,12 +337,6 @@
             "hidden": false,
             "id": "2264-3042-a345-caec",
             "targetId": "2a8a-af91-1767-2a1a"
-          },
-          {
-            "name": "Reference Guide",
-            "hidden": false,
-            "id": "b99a-78e4-f846-2cee",
-            "targetId": "0498-9b29-311f-4058"
           }
         ],
         "constraints": [
@@ -355,23 +361,6 @@
         "name": "Organisation Chart",
         "hidden": false,
         "id": "default-force"
-      },
-      {
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "forces",
-            "scope": "roster",
-            "shared": true,
-            "id": "1f46-d166-5416-40f9",
-            "includeChildSelections": false,
-            "includeChildForces": false
-          }
-        ],
-        "name": "RPG Organisation Chart",
-        "hidden": false,
-        "id": "fd3b-a4e6-37fb-367b"
       },
       {
         "categoryLinks": [
@@ -454,274 +443,6 @@
         "name": "Terrain Chart",
         "hidden": false,
         "id": "69f8-1eca-8d04-1f1e"
-      },
-      {
-        "categoryLinks": [
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 9,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "71df-9913-362a-dc34",
-                "includeChildSelections": true
-              },
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "ecf9-c93c-69e0-a488",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Core Troops",
-            "hidden": false,
-            "id": "9109-640a-0bb5-b177",
-            "targetId": "04c8-7927-d0d3-1be4"
-          },
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 4,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "7096-78f1-6a3c-e305",
-                "includeChildSelections": true
-              },
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "c11a-d46f-570f-121c",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Elite Troops",
-            "hidden": false,
-            "id": "e03b-b538-bc31-f04e",
-            "targetId": "7ccd-248d-ed09-ff2d"
-          },
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "6831-68d7-741e-a9fc",
-                "includeChildSelections": true
-              },
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "614a-9ef8-2635-9b04",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Headquarters",
-            "hidden": false,
-            "id": "cb4e-f372-6589-e893",
-            "targetId": "abc8-6d5d-69ac-e959"
-          },
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "2060-6297-9d71-4692",
-                "includeChildSelections": true
-              },
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "7360-9d4a-62bc-afb8",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Infantry Support",
-            "hidden": false,
-            "id": "efa5-c520-1da7-a295",
-            "targetId": "cca7-d1e3-4cb5-7821"
-          },
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "eee8-60cf-ca65-d658",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              },
-              {
-                "type": "max",
-                "value": 5,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "ba62-cc4f-604d-ec73",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "name": "Recon",
-            "hidden": false,
-            "id": "6603-ee2b-a197-2713",
-            "targetId": "93e2-e365-9264-104b"
-          },
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "dbcf-7fbc-874b-72fe",
-                "includeChildSelections": true
-              },
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "6af5-2ce0-f6d9-d96f",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Vehicles",
-            "hidden": false,
-            "id": "3448-14e8-3a85-eaac",
-            "targetId": "813f-262b-7300-cdb5"
-          },
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "373f-969d-5941-9bd6",
-                "includeChildSelections": true
-              },
-              {
-                "type": "max",
-                "value": 5,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "7c90-058c-42b5-59dd",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Transports",
-            "hidden": false,
-            "id": "a08d-7ba9-885b-4712",
-            "targetId": "2165-0890-2d9d-cc2e"
-          },
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "b50c-9cc5-dd3d-bdb2",
-                "includeChildSelections": true
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "3cdc-eb70-32e6-e9b0",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Heavy Vehicles",
-            "hidden": false,
-            "id": "5a78-2b8c-4a68-76c0",
-            "targetId": "0fe7-9352-51e1-360e"
-          },
-          {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "eb94-5789-a37c-3bb4",
-                "includeChildSelections": true
-              },
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "4b3c-9848-9acd-a157",
-                "includeChildSelections": true
-              }
-            ],
-            "name": "Specialists",
-            "hidden": false,
-            "id": "e71f-e683-7209-7e16",
-            "targetId": "2a8a-af91-1767-2a1a"
-          },
-          {
-            "name": "Reference Guide",
-            "hidden": false,
-            "id": "3cb1-f1f2-447c-3a78",
-            "targetId": "0498-9b29-311f-4058"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "forces",
-            "scope": "roster",
-            "shared": true,
-            "id": "fb07-2c26-f422-47d9",
-            "includeChildSelections": false,
-            "includeChildForces": false
-          }
-        ],
-        "costs": [
-          {
-            "name": "Pts",
-            "typeId": "4cac-02ae-2c1a-c056",
-            "value": 0
-          }
-        ],
-        "name": "Skirmish Organization Chart",
-        "hidden": false,
-        "id": "2d01-621d-01c3-282e"
       },
       {
         "name": "Objectives",
@@ -1247,14 +968,6 @@
             "id": "36f6-a14d-1670-f31d"
           },
           {
-            "name": "RWS",
-            "id": "db0e-ca2f-9e5e-e143"
-          },
-          {
-            "name": "MWS",
-            "id": "424d-378d-20be-20d3"
-          },
-          {
             "name": "DISC",
             "id": "e083-adac-81c6-46ab"
           },
@@ -1491,6 +1204,41 @@
         "name": "Map Feature",
         "id": "cd80-0960-0624-8eba",
         "hidden": false
+      },
+      {
+        "name": "Walker",
+        "id": "5da1-8da0-77a0-311b",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "UT",
+            "id": "c454-746b-84cb-08d7"
+          },
+          {
+            "name": "HP",
+            "id": "67d8-d981-9d1f-75a2"
+          },
+          {
+            "name": "DEF",
+            "id": "371f-24df-7f70-5d7b"
+          },
+          {
+            "name": "BS",
+            "id": "2f41-8522-c841-8acf"
+          },
+          {
+            "name": "MS",
+            "id": "9333-60bd-5cb6-9167"
+          },
+          {
+            "name": "M",
+            "id": "4cd6-fdf1-a747-9330"
+          },
+          {
+            "name": "Pilot(s)",
+            "id": "cf93-5233-901f-e074"
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -1867,7 +1615,7 @@
         "hidden": false
       },
       {
-        "description": "Walker Unit-type:\n• The Poison and Bleed Special Rule is negated against models of the Walker Unit Type.\n• A vehicle may use all of it's (BS) Weapons in a single attack action.\n• An Walker may ignore any special rules on it's equipped weapons that would reduce any of it's characteristics.\n• Walker Models/Units do not have to take Willpower or Discipline Tests.\n• No model that is not also of the Walker Unit Type may join a unit that includes a Walker model.",
+        "description": "Walker Unit-type:\n• The Poison and Bleed Special Rule is negated against models of the Walker Unit Type.\n• A Walker may use all of it's (BS) Weapons in a single attack action.\n• An Walker may ignore any special rules on it's equipped weapons that would reduce any of it's characteristics.\n• Any Mental Tests put onto a Walker Model uses it's Pilot's Mental Values.\n• No model that is not also of the Walker Unit Type may join a unit that includes a Walker model.",
         "name": "Unit Type:Walker",
         "id": "01b4-d0dc-aded-d9fa",
         "hidden": false
@@ -2164,6 +1912,18 @@
         "id": "3879-3c53-6690-3907",
         "hidden": false,
         "description": "Rather than targeting an enemy unit, you instead target a place on the Map that is within range and line of sight. When you use this weapon/equipment, you only proceed with the \"To-Hit\" process, rolling equal or below to the model's Ballistic Skill. Then place a 25/28mm token where you chose to hit. \n\n\nThat Token has a Radius equal to the (X) Value. No Line of sight or Shooting Actions can be done through the Radius and units wholly within the radius cannot be targeted. Any charges that go through this Radius or any Melee Attacks that occur within the Radius happens at Initiative 1. \n\n\nAt the start of the each round, roll a d6, on a roll of a 1-2, remove the Smoke Cloud token, 3-4, it is removed by next round, 5-6 it remains in play for next round.\n\n\n\n\nA Unit that is armed with multiple weapons or equipment with the Smoke Cloud(X) can only use one out of all weapons and equipment per action. \n\n\nExample: A 10-model strong unit has 1 Smoke Grenade each. However, only one member can use their grenade per action."
+      },
+      {
+        "name": "Distrusted Allies",
+        "id": "41ca-91ac-bc09-9fda",
+        "hidden": false,
+        "description": "A Unit with this special rule cannot gain benefit from any variant of the Headquarters:COMMAND Special Rule, and cannot be the target of any friendly Unit's special rules or abilities. They can only be targeted by other Distrusted Ally's special rules/abilities of the same type.\n\n\n\nEx: Pioneers and Clan Kilroy Units have the Distrusted Allies special rule in a Alliance Regiment Organization Chart, however they are not related as one is a Star Clan Unit(s) and the other is a Pioneer Unit(s), and thus, cannot be the target of any special rules or abilities of one another."
+      },
+      {
+        "name": "Unit Type:Mech",
+        "id": "81a5-f22a-44d4-6cfc",
+        "hidden": false,
+        "description": "• The Poison and Bleed Special Rule is negated against models of the Walker Unit Type.\n• A Mech may ignore any special rules on it's equipped weapons that would reduce any of it's characteristics.\n\n• Walker Models/Units do not have to take Willpower or Discipline Tests.\n•Mechs are two separate Units represented as one model; The Mech itself and the Pilot. A pilot may leave the"
       }
     ],
     "sharedSelectionEntries": [
@@ -4063,22 +3823,12 @@
               {
                 "name": "MS",
                 "typeId": "3f4d-38e9-9633-76a1",
-                "$text": "4"
+                "$text": "5"
               },
               {
                 "name": "BS",
                 "typeId": "36f6-a14d-1670-f31d",
-                "$text": "4"
-              },
-              {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
+                "$text": "5"
               },
               {
                 "name": "DISC",
@@ -4173,22 +3923,12 @@
               {
                 "name": "MS",
                 "typeId": "3f4d-38e9-9633-76a1",
-                "$text": "5"
+                "$text": "6"
               },
               {
                 "name": "BS",
                 "typeId": "36f6-a14d-1670-f31d",
-                "$text": "5"
-              },
-              {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
+                "$text": "6"
               },
               {
                 "name": "DISC",
@@ -4291,16 +4031,6 @@
                 "$text": "7"
               },
               {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
-              },
-              {
                 "name": "DISC",
                 "typeId": "e083-adac-81c6-46ab",
                 "$text": "8"
@@ -4399,16 +4129,6 @@
                 "name": "BS",
                 "typeId": "36f6-a14d-1670-f31d",
                 "$text": "4"
-              },
-              {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
               },
               {
                 "name": "DISC",
@@ -4511,16 +4231,6 @@
                 "$text": "5"
               },
               {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
-              },
-              {
                 "name": "DISC",
                 "typeId": "e083-adac-81c6-46ab",
                 "$text": "5"
@@ -4619,16 +4329,6 @@
                 "name": "BS",
                 "typeId": "36f6-a14d-1670-f31d",
                 "$text": "7"
-              },
-              {
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143",
-                "$text": "1"
-              },
-              {
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3",
-                "$text": "1"
               },
               {
                 "name": "DISC",
@@ -5583,16 +5283,6 @@
                     "$text": "4"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": "6"
@@ -5693,16 +5383,6 @@
                     "$text": "5"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": "7"
@@ -5801,16 +5481,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "7"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -5932,16 +5602,6 @@
                     "$text": "4"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": "4"
@@ -6042,16 +5702,6 @@
                     "$text": "5"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": "5"
@@ -6150,16 +5800,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "7"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -6291,7 +5931,7 @@
     "id": "sys-3396-9326-565c-5fb6",
     "name": "EUWG 3.0",
     "battleScribeVersion": 2.03,
-    "revision": 54,
+    "revision": 59,
     "type": "gameSystem",
     "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema"
   }

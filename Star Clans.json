@@ -1,0 +1,1264 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "bfdb-0437-cb53-78ba",
+    "name": "Star Clans",
+    "gameSystemId": "sys-3396-9326-565c-5fb6",
+    "gameSystemRevision": 54,
+    "revision": 4,
+    "battleScribeVersion": "2.03",
+    "rules": [
+      {
+        "name": "Warriors of the Star-Clan",
+        "id": "d524-fe19-f255-0447",
+        "hidden": false,
+        "description": "A Unit with this Special Rule gains several benefits from performing combat actions:\n•This unit and the target of their Melee Attack or Charge does not suffer any Mental Statuses/Tests if they were to suffer any after the end of that action and neither unit can leave Melee Combat until one unit is completely destroyed;excluding the one caused by Overwhelming Assault.\n•If this Unit has equal or more models than the unit targeted by their Melee Attack or Charge, they gain the Overwhelming Assault Special Rule until the end of the attack action.\n•If this unit had an amount of WPN Dice during the Wound Step that is equal or more than to the amount of models in that targeted unit prior to any models being removed in that unit, that unit suffers from Suppressive Fire(1)."
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Clan Grenadiers",
+        "hidden": false,
+        "id": "154d-218d-2617-a931",
+        "type": "selectionEntry",
+        "targetId": "4693-4575-c002-6783"
+      },
+      {
+        "import": true,
+        "name": "Clan Infantry Squad",
+        "hidden": false,
+        "id": "5dc0-a58b-bfb1-300e",
+        "type": "selectionEntry",
+        "targetId": "b160-a5fc-2536-3013",
+        "categoryLinks": [
+          {
+            "targetId": "04c8-7927-d0d3-1be4",
+            "id": "e213-fa82-b38a-289d",
+            "primary": true,
+            "name": "Core Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Clan Mechanical",
+        "hidden": false,
+        "id": "7156-5afa-ff25-9e1e",
+        "type": "selectionEntry",
+        "targetId": "5bfb-ae02-4ecb-3427",
+        "categoryLinks": [
+          {
+            "targetId": "7ccd-248d-ed09-ff2d",
+            "id": "8c9f-542f-b6a5-3aae",
+            "primary": true,
+            "name": "Elite Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Clan Officer",
+        "hidden": false,
+        "id": "6ed8-f89e-9c2f-a119",
+        "type": "selectionEntry",
+        "targetId": "9418-4a30-eaf4-0bc9",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "0632-fbce-d241-5bde",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Star Clan Identity",
+        "hidden": false,
+        "id": "1519-f14b-ad9a-c280",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "769b-9b4e-479e-3d3d-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "769b-9b4e-479e-3d3d-max"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "New Group",
+            "id": "ecd3-0176-10b7-5380",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Kilroy",
+                "hidden": false,
+                "id": "6513-835b-cc41-21d7",
+                "profiles": [
+                  {
+                    "name": "Alliance Clan Kilroy",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "c57f-a40c-7a51-42e2",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "Clan Kilroy has it's history rooted in the criminal undergrounds of the Valerius system with indomitable control over the market of Walkers and Mechanicals, it was until the days of the full reconstruction of Valerius Prime where they fought against the fledgling Alliance Regiments. However, due to the sheer number of them underneath Lady Kilroy's control, the Alliance requested a place to allocate them; and the Star Clans answered. Kilroy and her underlings were given a Clan World to carve and make their own, earning their keep by both the Star Clans and the Alliance alike whilst keeping their \"individuality\" and \"Unique\" culture."
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Tactics of Clan Kilroy",
+                    "id": "a344-3330-17c9-509d",
+                    "hidden": false,
+                    "description": "When a STAR CLAN KILROY Infantry Unit fights in Melee Combat, they may \n\n\nWhen a STAR CLAN KILROY Mec\n---ALLIANCE REGIMENT ALLIES--\nThis army organization chart may be the allied organization chart to a Alliance Regiment Organization Chart, however, All CLAN KILROY Units gain the Distrusted Allies Special Rule."
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Generic Star Clan",
+                "hidden": false,
+                "id": "1031-81b1-11ed-83d2",
+                "rules": [
+                  {
+                    "name": "Star Clans",
+                    "id": "d0b4-e538-380f-bf18",
+                    "hidden": false,
+                    "description": "Star Clans being pockets of Human Colonist separated from the original source of Humans in the Universe; the Valerius Alliance. \n\n\nEarning the title Star Clans due to their numbers and separation from Humanity, they possessed advanced technologies and societal structure due to their lower population count and initial isolation upon their Clan Worlds; Planets the sizes of dwarves or Moons solely inhabited by them and wildlife. Due to their advanced technology and isolation, these Star Clans would practice warfare against their own planets in controlled environments or even against each other, simulating small or grand scale warfare; making them unmatched in combat either on foot or inside their personal mechanizations."
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Star Clan Khogal",
+                "hidden": false,
+                "id": "86b9-87dc-3f7d-b930",
+                "profiles": [
+                  {
+                    "name": "Star Clan Khogal",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "1a64-3de8-0dd9-d2e2",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "Clan Khogal's thirst for war-games and extreme conditioning began from the very beginning, thought to be one of the very first Clans to be made, as they were routed in harsh conditions and mechanized warfare, which was made up of Colonists that had divided themselves into their own tribes upon the Clan-world. Clan Khogal is noted for their near-psychopathic joy in combat(Even more than other Star Clans) and the ability to weather whatever environment they fight in."
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Tactics of Clan Khogal",
+                    "id": "f409-6001-f553-dc4b",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Star Clan Wolf",
+                "hidden": false,
+                "id": "bc32-af6c-f0b2-7998",
+                "profiles": [
+                  {
+                    "name": "Star Clan Wolf",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "f374-34bc-8845-a5af",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "Clan Wolf was the first Clan to join the Valerius Alliance and stood alongside it during it's fledgling years. Clan Wolf contributes officers of it's clan to the Alliance Regiments to guide training, many of these officers are given the highest respects as their training is a step-above most others. Clan Wolf's greatest and most decisive action was their full trust of the Pioneers, as unlike other Clans, they welcomed them with open arms; even refusing to teach Regiments that refused adoption or proper care of the Pioneers. However the ever-defiant Clan has ignored the pleas and bribes of many, and those Regiments that are taught alongside the Pioneers now see greater success than ever before."
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Tactics of Clan Wolf",
+                    "id": "eeab-5a19-345c-9ef5",
+                    "hidden": false,
+                    "description": "All STAR CLAN Models in this Army Organization Chart gain +1 to their Discipline and Willpower. Anytime a Model/Unit is forced to take a Fall Back Movement, instead they take a Discipline Test and if they succeed, they ignore it.\n\n---ALLIANCE REGIMENT ALLIES--\nThis army organization chart may be the allied organization chart to a Alliance Regiment Organization Chart, any PIONEER Units in that Alliance Regiment chart ignore the Distrusted Ally Special Rule for Star Clan Headquarters Unit.\n---PIONEER COMPANY ALLIES--\nPioneer Company army organization chart may be the allied organization chart to a Star Clan Wolf Army Organization Chart, all PIONEER Units in that Pioneer Company chart ignore the Distrusted Ally Special Rule and gain benefit to the Tactics of Clan Wolf Special Rule."
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5d8c-bdb2-359b-7b76"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c828-5d99-62ab-2830"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Clan Armor",
+        "id": "5492-2513-bd19-a3b6",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Light Clan Armor",
+            "hidden": false,
+            "id": "b207-c5fa-602b-6d12",
+            "rules": [
+              {
+                "name": "Light Clan Armor",
+                "id": "4e82-a8ea-0ce4-78ca",
+                "hidden": false,
+                "description": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Clan Wolf Armory",
+        "id": "1679-ad13-558d-c84a",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Clan Wolf Infantry Melee Arsenal",
+            "id": "7fb3-ddef-52ac-c09c",
+            "hidden": false
+          },
+          {
+            "name": "Clan Wolf Infantry Ranged Arsenal",
+            "id": "5bc7-595b-d370-8e8e",
+            "hidden": false
+          },
+          {
+            "name": "Clan Wolf's Mechs",
+            "id": "8be8-9b9b-dc94-b282",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Ulviger MK-1",
+                "hidden": false,
+                "id": "a3c4-08b6-e28a-55fc",
+                "profiles": [
+                  {
+                    "name": "Ulviger MK-1",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "7b07-9b6a-59ea-be0d",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The Ulviger Mark-1 is denoted for it's advanced portable communications relay that acts as the equivalent of a network router for other friendly squads and mechs that do not possess the same(or any) level of communications so that they may send out their communications farther and more powerful than they would normally be able to."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ulviger MK-1",
+                    "typeId": "5da1-8da0-77a0-311b",
+                    "typeName": "Walker",
+                    "hidden": false,
+                    "id": "29ff-cb6e-92e2-c957",
+                    "characteristics": [
+                      {
+                        "name": "UT",
+                        "typeId": "c454-746b-84cb-08d7",
+                        "$text": "STAR CLAN, MECH, CLAN WOLF, WALKER"
+                      },
+                      {
+                        "name": "HP",
+                        "typeId": "67d8-d981-9d1f-75a2",
+                        "$text": ""
+                      },
+                      {
+                        "name": "DEF",
+                        "typeId": "371f-24df-7f70-5d7b",
+                        "$text": ""
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "2f41-8522-c841-8acf",
+                        "$text": ""
+                      },
+                      {
+                        "name": "MS",
+                        "typeId": "9333-60bd-5cb6-9167",
+                        "$text": ""
+                      },
+                      {
+                        "name": "M",
+                        "typeId": "4cd6-fdf1-a747-9330",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Pilot(s)",
+                        "typeId": "cf93-5233-901f-e074",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Ulviger Communications Relay",
+                    "hidden": false,
+                    "id": "0d0e-f870-4883-9726",
+                    "rules": [
+                      {
+                        "name": "Advanced Communications",
+                        "id": "f27a-0638-4011-30b6",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Clan Armory",
+        "id": "72cb-51e8-1f2b-784d",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Clan Infantry Melee Arsenal",
+            "id": "24a8-a697-6f27-068b",
+            "hidden": false
+          },
+          {
+            "name": "Clan Infantry Ranged Arsenal",
+            "id": "e32a-ee77-8357-d4b3",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Rifle",
+                "hidden": false,
+                "id": "99f9-1f4d-a074-c330",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Weapon:Rifle",
+                    "hidden": false,
+                    "id": "d7cb-6dd1-67bb-e954",
+                    "type": "selectionEntry",
+                    "targetId": "e3ec-1a2d-b79e-f8b0",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "32b6-c3d0-3258-316f"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7ffe-51a3-e2f3-a616"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Weapon:Bayonet",
+                    "hidden": false,
+                    "id": "a4a9-cee4-796b-39ed",
+                    "type": "selectionEntry",
+                    "targetId": "62ce-7a6c-e6cc-5895",
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clan Mechs",
+            "id": "46cf-d569-9771-6750",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Light Mech",
+                "hidden": false,
+                "id": "51b4-f0e4-fa70-cb21",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 25
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Medium Mech",
+                "hidden": false,
+                "id": "18fc-ff75-ff35-3def",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 35
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Heavy Mech",
+                "hidden": false,
+                "id": "a9bc-4585-9da4-f63d",
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 50
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Clan Kilroy",
+        "id": "148b-aef4-bcc5-a70d",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Clan Kilroy Mechs",
+            "id": "9d71-e670-668f-fb8e",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Rustler",
+                "hidden": false,
+                "id": "2276-d546-d304-2a4a",
+                "profiles": [
+                  {
+                    "name": "Rustler",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "02b0-36d6-dcc5-5dd5",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The namesake of the mech speaks for itself. Created in the pits of the criminal underworld, the Rustler was built for rumbling, tumbling and not playing fair by any metric in the rings or the warzone. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clan Kilroy Infantry Melee Arsenal",
+            "id": "e530-3aa8-5ea2-d137",
+            "hidden": false
+          },
+          {
+            "name": "Clan Kilroy Infantry Ranged Arsenal",
+            "id": "291b-cb5a-a29b-75d3",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Clan Khogal",
+        "id": "28a5-70b2-f1f5-87e7",
+        "hidden": false,
+        "selectionEntryGroups": [
+          {
+            "name": "Clan Khogal Infantry Melee Arsenal",
+            "id": "6f68-878c-cdda-cab1",
+            "hidden": false
+          },
+          {
+            "name": "Clan Khogal Infantry Ranged Arsenal",
+            "id": "d03f-551e-b891-e528",
+            "hidden": false
+          },
+          {
+            "name": "Clan Khogal's Mechs",
+            "id": "a706-2f61-5ecd-df0d",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Nuntach MK-1",
+                "hidden": false,
+                "id": "f878-ca80-8b64-1154",
+                "profiles": [
+                  {
+                    "name": "Nuntach MK-1",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "b703-69e4-2e70-b824",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The Nuntach Mark-1 was designed to do one thing and to do it good enough(Until it could get back to the repair bay) and that was to weather any storm that it must walk through. The harsh warfare and the harsher conditions of Regol made these mechs a mix of a diver's suit and several fridges worth of armor."
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Regol's Weathering",
+                    "id": "947e-d45a-0cda-13c8",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Clan Officer",
+        "hidden": false,
+        "id": "9418-4a30-eaf4-0bc9",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Star Clan Officer",
+            "id": "137e-ed14-457c-8a00",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Khogal Officer",
+                "hidden": false,
+                "id": "7a21-8e2c-c1c5-77b9",
+                "profiles": [
+                  {
+                    "name": "Khogal Officer",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "0c64-1f1c-83b8-28a0",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "Khogal Officers on Regol, like many clans, earn their title via trials; Proving of Khogal. An officer must brave the elements of Regol from a drop-off point and travel on-foot to the Clan World's Capital of Zovkhayen. They will encounter many hardships as the original colonists and nomads of Regol once did, remembering their past and the qualities that make them what they are."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "86b9-87dc-3f7d-b930",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Star Clan Khogal"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Star Clan Officer",
+                "hidden": false,
+                "id": "2388-3c85-2b5f-b07e",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "1031-81b1-11ed-83d2",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "childName": "Generic Star Clan"
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Clan Officer",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "5c56-d62a-d935-6d32",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The title of Officer in Star Clans is a faux-title as instead of the traditional meaning of the rank, it is instead to denote one who earned it by respect through a variety of means: Winning against unfavorable odds, promise shown in training, displaying the traits of \"true brethren of the clan\" and many more."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Kilroy's \"Tophat\" (Officer)",
+                "hidden": false,
+                "id": "1995-3199-6c7b-a710",
+                "profiles": [
+                  {
+                    "name": "Kilroy's \"Tophat\" (Officer)",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "6b16-0d04-a2a8-773b",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "Those under Lady Kilroy's control on Kilroy's Paradise are not seen in any rank whatsoever, either simple gangers or those of note, however due to the societal norms set up by the Star Clans, the most brash or most confident are put in control to be officers, joked to be Top-Hats; due to their stolen caps and medals. There is little fanfare, honors and awards for a Top-Hat, as the real reward is the brawl, either with allies or their enemies; a philosophy beloved by the Star clans."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Wolf Officer",
+                "hidden": false,
+                "id": "8ebb-a0d0-9faa-7962",
+                "profiles": [
+                  {
+                    "name": "Clan Wolf Officer",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "9c3f-76dc-e38d-c367",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The Clan's officers are crass, brutally honest, and experienced to the letter, as Clan Wolf's officers lead the training drills no matter their rank or position, their service and advice is unmatched when advising a force. The Valerius Alliance would employ their services after the Star-Clan Pact was signed to better train their own regiments. Clan Wolf Officers train their minds around the clock, preparing themselves for any scenario for themselves or their force.\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c923-e4e8-790d-4315"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3409-d6ec-8302-90c8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Clan Infantry Squad",
+        "hidden": false,
+        "id": "b160-a5fc-2536-3013",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Clan Infantry",
+            "id": "8484-0511-3f0c-b04d",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Star Clan Infantry",
+                "hidden": false,
+                "id": "5f16-4e99-da91-3eba",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Clan Infantrymen",
+                    "hidden": false,
+                    "id": "9a40-fa63-737d-a954",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 5,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "924f-1bc4-382c-362d"
+                      },
+                      {
+                        "type": "max",
+                        "value": 10,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "bd67-2597-59f7-704a"
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Tier Level",
+                        "id": "d299-2087-7e47-89b0",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Regular",
+                            "hidden": false,
+                            "id": "45eb-3b96-1717-ded3",
+                            "type": "selectionEntry",
+                            "targetId": "485d-2cd7-4d79-8cc0"
+                          },
+                          {
+                            "import": true,
+                            "name": "Inexperienced",
+                            "hidden": false,
+                            "id": "45eb-977c-8063-bd3c",
+                            "type": "selectionEntry",
+                            "targetId": "a64a-41ce-4a1c-8c91"
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "47ad-0474-c824-06c0"
+                          },
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "5ccd-518e-075d-7bd4"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Ranged Loadout",
+                        "id": "106d-54d6-a570-8072",
+                        "hidden": false,
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "d6ab-b77d-6c66-64c5"
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "a746-8883-87ee-4eee"
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Clan Rifle",
+                            "hidden": false,
+                            "id": "d131-e825-c8b9-c7a6",
+                            "type": "selectionEntry",
+                            "targetId": "7b7b-eefe-177d-575f"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Khogal Infantry",
+                "hidden": false,
+                "id": "15c3-d4ac-3e81-5213",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "86b9-87dc-3f7d-b930",
+                        "shared": true,
+                        "childName": "Star Clan Khogal",
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Kilroy Infantry",
+                "hidden": false,
+                "id": "1af3-d55d-4331-f23d",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "6513-835b-cc41-21d7",
+                        "shared": true,
+                        "childName": "Clan Kilroy",
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Clan Wolf Infantry",
+                "hidden": false,
+                "id": "3404-fef4-edd4-b33b",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "bc32-af6c-f0b2-7998",
+                        "shared": true,
+                        "childName": "Star Clan Wolf",
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8306-2380-a583-c55b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8306-2380-a583-c55b-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Warriors of the Star-Clan",
+                "id": "1609-26d7-98b8-56e3",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d524-fe19-f255-0447"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Clan Grenadiers",
+        "hidden": false,
+        "id": "4693-4575-c002-6783",
+        "modifiers": [
+          {
+            "type": "set-primary",
+            "value": "7ccd-248d-ed09-ff2d",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "86b9-87dc-3f7d-b930",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Star Clan Khogal"
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "bc32-af6c-f0b2-7998",
+                "shared": true,
+                "childName": "Star Clan Wolf",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              },
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "86b9-87dc-3f7d-b930",
+                "shared": true,
+                "childName": "Star Clan Khogal",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              },
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1031-81b1-11ed-83d2",
+                "shared": true,
+                "childName": "Generic Star Clan",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set-primary",
+            "value": "04c8-7927-d0d3-1be4",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "bc32-af6c-f0b2-7998",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Star Clan Wolf"
+              }
+            ]
+          },
+          {
+            "type": "set-primary",
+            "value": "7ccd-248d-ed09-ff2d",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1031-81b1-11ed-83d2",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Generic Star Clan"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Regolithian El-Ghuls",
+            "id": "1acf-0ee9-2d9a-2e91",
+            "hidden": false,
+            "profiles": [
+              {
+                "name": "Regolithian El-Ghuls",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "6d22-c43c-c1c7-ee0f",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "The Regolithian El-Ghuls or \"Sand Ghouls\" or \"Sand Devils\" are veterans of Clan Khogal that have become too engulfed into warfare and their surrounding environments. These Elite Clanners "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Star Clan Grenadiers",
+            "id": "f875-c36b-1c16-c2d7",
+            "hidden": false,
+            "profiles": [
+              {
+                "name": "Star Clan Grenadiers",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "4c44-ad8f-375a-2956",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "Star Clan Grenadiers are the equivalent of a Veteran Infantry unit of the Alliance Regiments. Decorated, skilled, and most of all, consistent, these Grenadiers exemplify their Clan's doctrine and traits."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kilroy's Jackhammers",
+            "id": "a8d3-70bd-8830-aa00",
+            "hidden": false,
+            "rules": [
+              {
+                "name": "Kilroy's Jackhammers",
+                "id": "ea6e-7144-ec2a-c69e",
+                "hidden": false,
+                "description": "The Jackhammers of Clan Kilroy earn their namesake by their custom weaponry that are not only heavily modified, but also have been seen and noted in reports by other forces. These custom weapons were once advanced energy weaponry, taken or earned in combat against other Clans, and converted until unwieldly monstrosities that fire projectiles of both energy and lead. Despite earning the name by wielding the weapons and being veterans of the Clan,  \"Jack Hammer\" is named after the weapon itself, due to it's insanely loud noise and moving parts."
+              }
+            ]
+          },
+          {
+            "name": "Forillaen Veterans",
+            "id": "6aaf-897c-25f1-e83b",
+            "hidden": false,
+            "rules": [
+              {
+                "name": "Forillaen Veterans",
+                "id": "d10e-b5d2-4318-81e4",
+                "hidden": false,
+                "description": "Forillaen Veterans of Clan Wolf are those who've refused the rank of Officer, wishing to fight on the ground alongside their fellow Infantrymen. They keep the order of troops when Officers cannot, and offer aid to take down difficult targets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Clan Mechanical",
+        "hidden": false,
+        "id": "5bfb-ae02-4ecb-3427",
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Specialized Clan Unit",
+        "hidden": false,
+        "id": "32bc-92d7-496b-b4c7",
+        "selectionEntryGroups": [
+          {
+            "name": "Regolithian Nomads",
+            "id": "e077-bb7d-9768-1361",
+            "hidden": false,
+            "profiles": [
+              {
+                "name": "Regolithian Nomads",
+                "typeId": "0d83-d584-6c16-6b6f",
+                "typeName": "Lore",
+                "hidden": false,
+                "id": "d57c-66e4-a11e-aed1",
+                "characteristics": [
+                  {
+                    "name": "Lore",
+                    "typeId": "8f51-2099-f67c-300e",
+                    "$text": "Regolithian Nomads are named after the formation of warriors from history long ago and their ancient lifestyle. The Planet Regol-their Clan World- was once teeming with Warlords and unproper \n\n\nRegolithian Nomads are always the 1st squad of Mechanized veterans assembled in a formation. They carry the names of the tribals of their Clan-World Regol.\n\n\nTo be a part of a Regolithian Nomad unit is a great honor, as the history of the Nomads date far back before the creation of the clan itself. It is said these warriors were veterans of many events across the planet and died as they lived"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}

@@ -2,10 +2,10 @@
   "catalogue": {
     "library": false,
     "id": "f534-15a3-1da4-4519",
-    "name": "Sarpenton",
+    "name": "Sarpenton Conglomerate",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 34,
-    "revision": 5,
+    "revision": 6,
     "battleScribeVersion": "2.03",
     "sharedSelectionEntryGroups": [
       {
@@ -2901,6 +2901,29 @@
                 "value": 0
               }
             ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sarpenton Add. Plated Armor",
+            "hidden": false,
+            "id": "dab6-e924-2f3c-7443",
+            "profiles": [
+              {
+                "name": "Sarpenton Add. Plated Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "22b4-ddc5-2e39-7a78",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8",
+                    "$text": "This armor provides a 7+ Primary Save against Melee and Ballistic Weapons, however the model equipped suffers a -1 to their Initiative."
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4852,6 +4875,102 @@
             "typeId": "ff33-0eb3-3b78-7829",
             "value": 1
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Sarpenton Officer",
+            "id": "73a9-5672-a9d5-be89",
+            "hidden": false,
+            "selectionEntryGroups": [
+              {
+                "name": "Command Tier Level",
+                "id": "5e1d-1d0c-4d95-b04c",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Command:Regular",
+                    "hidden": false,
+                    "id": "e871-ee3e-2a13-33ed",
+                    "type": "selectionEntry",
+                    "targetId": "31ff-b038-c62d-d648"
+                  },
+                  {
+                    "import": true,
+                    "name": "Command:Veteran",
+                    "hidden": false,
+                    "id": "994f-ff71-1f63-2e9b",
+                    "type": "selectionEntry",
+                    "targetId": "d004-4f21-86f3-b26b"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d835-93f6-8f9c-9484"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1690-ca70-f9ae-0bd4"
+                  }
+                ]
+              },
+              {
+                "name": "New Group",
+                "id": "2a50-edda-4812-6878",
+                "hidden": false
+              },
+              {
+                "name": "Armor",
+                "id": "097f-c70e-ffde-4005",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "430b-dc7b-3707-6e0c"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Sarpenton Mesh Armor",
+                    "hidden": false,
+                    "id": "0fea-256b-e918-0849",
+                    "type": "selectionEntry",
+                    "targetId": "371a-3b06-1045-b28a"
+                  },
+                  {
+                    "import": true,
+                    "name": "Sarpenton Mesh Medium Armor",
+                    "hidden": false,
+                    "id": "f6d3-3899-01cc-aa04",
+                    "type": "selectionEntry",
+                    "targetId": "7ffd-9aef-40b2-cbeb"
+                  },
+                  {
+                    "import": true,
+                    "name": "Sarpenton Add. Plated Armor",
+                    "hidden": false,
+                    "id": "39e2-b26c-3455-f91b",
+                    "type": "selectionEntry",
+                    "targetId": "dab6-e924-2f3c-7443"
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4910,29 +5029,36 @@
             "type": "selectionEntryGroup",
             "targetId": "c513-169f-4320-52a8"
           }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Pee Poo",
-        "hidden": false,
-        "id": "7b79-6bd7-2c1f-839c",
+        ],
         "modifiers": [
           {
             "type": "set",
-            "value": false,
+            "value": true,
             "field": "hidden",
             "conditions": [
               {
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1,
                 "field": "selections",
                 "scope": "parent",
-                "childId": "any",
-                "shared": true
+                "childId": "70a3-801a-ce8b-688f",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true,
+                "childName": "Sarpenton Conflict: Early"
               }
             ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "21e2-3cf1-d990-8b86",
+            "includeChildSelections": true
           }
         ]
       }
@@ -5021,7 +5147,23 @@
                 "import": true,
                 "name": "Custom",
                 "hidden": false,
-                "id": "676d-7fd3-748a-1da8"
+                "id": "676d-7fd3-748a-1da8",
+                "profiles": [
+                  {
+                    "name": "Army of Sarpenta",
+                    "typeId": "0d83-d584-6c16-6b6f",
+                    "typeName": "Lore",
+                    "hidden": false,
+                    "id": "159c-17b2-6edc-8966",
+                    "characteristics": [
+                      {
+                        "name": "Lore",
+                        "typeId": "8f51-2099-f67c-300e",
+                        "$text": "The Sarpenton Army at the time of the First Pioneer War was the most technologically advanced militaries in the Myrian System. Every squad could be armed with dangerous energy weapons of various types that only the Elite of Societies or other Militaries could wield. Due to the abundance of resource, business and trade, the average riflemen was better educated, trained and drilled than any other.\n"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "upgrade",
@@ -5040,11 +5182,18 @@
                       {
                         "name": "Lore",
                         "typeId": "8f51-2099-f67c-300e",
-                        "$text": "In the Year of 150, the Sarpenton Conglomerate were nothing more but experienced at civil strife, expansion and above all else; warfare. Due to the pact made between the Dynasties of Sarpenton and the Sarpenton Industries, a standing army was created, formed from members of both parties, trained and overseen by the officers of old and even the Dynasties. Their arsenal matched their training, as they utilized the energy-charged crystals mined from Marandak to supply their troops; to the point where every soldier was armed with an Energy-Based Weapon.\n\n"
+                        "$text": "In the Year of 150, the Sarpenton Conglomerate were nothing more but experienced at civil strife, expansion and above all else; warfare. Due to the pact made between the Dynasties of Sarpenton and the Sarpenton Industries, a standing army was created, formed from members of both parties, trained and overseen by the officers of old and even the Dynasties. Their arsenal matched their training, as they utilized the energy-charged crystals mined from Marandak to supply their troops; to the point where every soldier was armed with an Energy-Based Weapon.\n\nThis force was present at: First Battle of Marandak, Skapgos, Rinnfield, Sarpenton Colony-12, as well as any open planet territory before the First Battle of Marandak.."
                       }
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sarpenton Conflict:Scouting Force",
+                "hidden": false,
+                "id": "3576-2dac-abd6-31e0"
               }
             ],
             "constraints": [
@@ -5065,6 +5214,89 @@
                 "id": "fd7a-1e89-4775-b08a"
               }
             ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "e4c8-5238-f1d0-f461",
+            "id": "446a-1adf-6574-b5d3",
+            "primary": true,
+            "name": "Faction Special Rules"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "9f4f-1a94-1afc-e0ae"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "577c-4223-9db5-7eba"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Sarpenta's Guidance",
+        "hidden": false,
+        "id": "beda-dde7-64be-fe10",
+        "profiles": [
+          {
+            "name": "Sarpenta's Guidance",
+            "typeId": "0d83-d584-6c16-6b6f",
+            "typeName": "Lore",
+            "hidden": false,
+            "id": "d738-382b-e701-0aef",
+            "characteristics": [
+              {
+                "name": "Lore",
+                "typeId": "8f51-2099-f67c-300e",
+                "$text": "Those in leadership positions are encourage through many means to take charge and be independent in the battlefield, which added to their overall effectiveness. Due to the loose grip of high command, Sarpenton Officers are able to command their troops effectively and offer on-the-fly tactical knowledge. Even if a Sarpenton Officer is no longer present, a Sarpenton formation will follow suit in their leader's footsteps as they too try and mimic such tactical improvisation."
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Sarpenta's Guidance",
+            "id": "d009-b197-4b30-514e",
+            "hidden": false,
+            "description": "For every OFFICER, VETERAN OFFICER, DYNASTY OFFICER and CORPO-MARSHALL, LEAD SERGEANT, do the following:\n\n\nAt the start of the round, select one unit that is within true line of sight of a Officer/Officer Variant, which then takes an Intelligence Check, if they succeed, that selected unit gains +1 to Ballistic Skill, Melee Skill and Initiative until end of the round.\n\n\n\n\nHowever, if no Officer/Officer Variants are present, at the start of the round, select one INFANTRY Unit, which then takes an Intelligence Check, if they succeed, that selected unit gains +1 to Ballistic Skill, Melee Skill and Initiative until end of the round."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "43ab-2fed-f4f6-4715"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "50bd-2b55-3e27-a739"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "e4c8-5238-f1d0-f461",
+            "id": "2787-7944-8d2a-09d3",
+            "primary": true,
+            "name": "Faction Special Rules"
           }
         ]
       }

@@ -5,7 +5,7 @@
     "name": "Vireskian Forces",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 39,
-    "revision": 14,
+    "revision": 15,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntryGroups": [
@@ -1376,7 +1376,7 @@
                   {
                     "name": "S",
                     "typeId": "6997-f9f2-6f9b-ef3c",
-                    "$text": "User+1"
+                    "$text": "User"
                   },
                   {
                     "name": "AP",
@@ -1426,7 +1426,7 @@
               {
                 "name": "Pts",
                 "typeId": "points",
-                "value": 2
+                "value": 3
               },
               {
                 "name": "Requisition",
@@ -1457,12 +1457,12 @@
                   {
                     "name": "S",
                     "typeId": "6997-f9f2-6f9b-ef3c",
-                    "$text": "User+1"
+                    "$text": "User"
                   },
                   {
                     "name": "AP",
                     "typeId": "8c5e-9516-a499-63f5",
-                    "$text": "1"
+                    "$text": "0"
                   },
                   {
                     "name": "D",
@@ -1507,7 +1507,7 @@
               {
                 "name": "Pts",
                 "typeId": "points",
-                "value": 3
+                "value": 4
               },
               {
                 "name": "Requisition",
@@ -1631,7 +1631,7 @@
                   {
                     "name": "AP",
                     "typeId": "8c5e-9516-a499-63f5",
-                    "$text": "1"
+                    "$text": "0"
                   },
                   {
                     "name": "D",
@@ -1641,12 +1641,12 @@
                   {
                     "name": "Abilities",
                     "typeId": "cfcb-ec22-834e-7336",
-                    "$text": "Melee, Duelist(2)"
+                    "$text": "Melee, Duelist(1)"
                   },
                   {
                     "name": "WPN Dice",
                     "typeId": "0255-21c0-4ef7-efa2",
-                    "$text": "3"
+                    "$text": "2"
                   },
                   {
                     "name": "BS/MS",
@@ -1676,7 +1676,7 @@
               {
                 "name": "Pts",
                 "typeId": "points",
-                "value": 3
+                "value": 4
               },
               {
                 "name": "Requisition",
@@ -1760,7 +1760,7 @@
               {
                 "name": "Pts",
                 "typeId": "points",
-                "value": 1
+                "value": 2
               },
               {
                 "name": "Requisition",
@@ -7273,16 +7273,6 @@
                             "$text": "8"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": "8"
@@ -7406,16 +7396,6 @@
                             "name": "BS",
                             "typeId": "36f6-a14d-1670-f31d",
                             "$text": "7"
-                          },
-                          {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
                           },
                           {
                             "name": "DISC",
@@ -11688,16 +11668,6 @@
                         "$text": "7"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -12356,16 +12326,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "7"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -13433,16 +13393,6 @@
                         "$text": "7"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": "7"
@@ -13607,16 +13557,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "8"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -13852,16 +13792,6 @@
                         "$text": "7"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": "7"
@@ -14052,16 +13982,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "8"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -14295,16 +14215,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "7"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",

@@ -5,7 +5,7 @@
     "name": "Alliance Regiments",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 35,
-    "revision": 17,
+    "revision": 22,
     "battleScribeVersion": "2.03",
     "sharedSelectionEntryGroups": [
       {
@@ -379,9 +379,21 @@
                   {
                     "name": "Description",
                     "typeId": "7494-924d-d974-76f8",
-                    "$text": "This armor provides a 10+ Primary Save against Ballistic Weapons, improve this to an 8+ when you have benefit of Cover and grants +1 to Initiative and Movement Characteristic."
+                    "$text": "This armor provides a 10+ Primary Save against Melee Weapons and Ballistic Weapons, improve the Ballistic Save to an 8+ when you have benefit of Cover. This armor also grants +1 to Initiative and Movement Characteristic."
                   }
                 ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
               }
             ]
           },
@@ -402,9 +414,39 @@
                   {
                     "name": "Description",
                     "typeId": "7494-924d-d974-76f8",
-                    "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
+                    "$text": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
                   }
                 ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "762a-b57a-3c07-2ea2-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "762a-b57a-3c07-2ea2-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
               }
             ]
           },
@@ -451,6 +493,41 @@
                     "$text": "This armor provides a 7+ Primary Save against Melee and Ballistic Weapons, however the model equipped suffers a -1 to their Initiative."
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Alliance Ecologist Armor",
+            "hidden": false,
+            "id": "0b5d-b371-b8a7-e50a",
+            "profiles": [
+              {
+                "name": "Alliance Ecologist Armor",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "b156-2631-b055-7307",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8",
+                    "$text": "This armor provides a 9+ Primary Save against Melee Weapons and Ballistic Weapons. A model equipped with this armor ignores any damage taken by Poison(X) and Burning(X) Special Rules."
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
               }
             ]
           }
@@ -1604,100 +1681,6 @@
     "type": "catalogue",
     "sharedSelectionEntries": [
       {
-        "type": "upgrade",
-        "import": true,
-        "name": "Alliance Clan Cane",
-        "hidden": false,
-        "id": "6a62-f32d-8c20-10ff",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "1050-583e-fea6-8b83"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "House Cane",
-            "typeId": "db54-88f2-eb1c-6770",
-            "typeName": "Abilities",
-            "hidden": false,
-            "id": "4d63-8b87-9432-916d",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "56ac-09e6-a6ce-498c",
-                "$text": "Clan Cane's Training: All INFANTRY Models in this Army Organization Chart gain +1 to their Discipline and Willpower. Anytime a Model/Unit is forced to take a Fall Back Movement, instead they take a Discipline Test and if they succeed, they ignore it.\n\n\nPIONEER Infantry Units ignores the Distrusted Ally Special Rule.\n"
-              }
-            ]
-          },
-          {
-            "name": "House Cane",
-            "typeId": "0d83-d584-6c16-6b6f",
-            "typeName": "Lore",
-            "hidden": false,
-            "id": "cb56-e4ac-0495-0893",
-            "characteristics": [
-              {
-                "name": "Lore",
-                "typeId": "8f51-2099-f67c-300e",
-                "$text": "Clan Cane was the first Clan to join the Valerius Alliance and stood alongside it during it's fledgling years. Clan Cane contributes officers of it's clan to the Alliance Regiments to guide training, many of these officers are given the highest respects as their training is a step-above most others. Clan Cane's greatest and most decisive action was their full trust of the Pioneers, as unlike other Clans, they welcomed them with open arms; even refusing to teach Regiments that refused adoption or proper care of the Pioneers. However the ever-defiant Clan has ignored the pleas and bribes of many, and those Regiments that are taught alongside the Pioneers now see greater success than ever before."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Alliance Clan Kilroy",
-        "hidden": false,
-        "id": "0ffb-70d6-b6d9-3e5b",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "e172-014b-4eec-7e00"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Alliance Clan Kilroy",
-            "typeId": "0d83-d584-6c16-6b6f",
-            "typeName": "Lore",
-            "hidden": false,
-            "id": "bd3c-5926-35d5-5707",
-            "characteristics": [
-              {
-                "name": "Lore",
-                "typeId": "8f51-2099-f67c-300e",
-                "$text": "Clan Kilroy has it's history rooted in the criminal undergrounds of the Valerius system with indomitable control over the market of Walkers and Mechanicals, it was until the days of the full reconstruction of Valerius Prime where they fought against the fledgling Alliance Regiments. However, unlike other criminal organizations and empires crushed, the Kilroy Under-Empire was found to be a potential ally as their understanding and specialization into Walkers and Mechanicals was a rare skill amongst the forming Clans, and thus, were offered a proper chance of life as an Alliance Clan.\n\n\nClan Kilroy now provides their services for anything to do with Walkers and Mechanicals: Mechanics, Pilots, Strategists, even serving as frontline leaders, the adrenaline of which is said to match their days of criminal-hood."
-              }
-            ]
-          },
-          {
-            "name": "Alliance Clan Kilroy",
-            "typeId": "db54-88f2-eb1c-6770",
-            "typeName": "Abilities",
-            "hidden": false,
-            "id": "0c54-ac62-fd8c-ae10",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "56ac-09e6-a6ce-498c",
-                "$text": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
         "type": "unit",
         "import": true,
         "name": "AM-Support Carrier",
@@ -1751,451 +1734,6 @@
               }
             ],
             "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Alliance Armor Squad(Early-War)",
-                "hidden": false,
-                "id": "efd0-4ac5-91a5-635b",
-                "selectionEntryGroups": [
-                  {
-                    "name": "Alliance Riflemen",
-                    "id": "98f4-38fe-c9c2-7fe8",
-                    "hidden": false,
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Alliance Rifleman",
-                        "hidden": false,
-                        "id": "fd72-0875-fc46-2031",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Rifles",
-                            "hidden": false,
-                            "id": "8378-525e-c9b7-3de2",
-                            "type": "selectionEntryGroup",
-                            "targetId": "63d2-d9a8-68e0-0bd4",
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "fb7e-ce82-5ed7-6d1d"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "6db0-654c-d009-c116"
-                              }
-                            ]
-                          }
-                        ],
-                        "costs": [
-                          {
-                            "name": "Pts",
-                            "typeId": "points",
-                            "value": -1
-                          },
-                          {
-                            "name": "Requisition",
-                            "typeId": "ff33-0eb3-3b78-7829",
-                            "value": 0
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "90b6-a679-6c91-2276"
-                          },
-                          {
-                            "type": "max",
-                            "value": 9,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "7266-c3a8-e9f5-2281"
-                          }
-                        ],
-                        "profiles": [
-                          {
-                            "name": "Alliance Light Armor",
-                            "typeId": "85c6-4a1e-d9b1-8d7f",
-                            "typeName": "Wargear Item",
-                            "hidden": false,
-                            "id": "64ec-8d47-e8e7-3e20",
-                            "characteristics": [
-                              {
-                                "name": "Description",
-                                "typeId": "7494-924d-d974-76f8",
-                                "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                              }
-                            ]
-                          }
-                        ],
-                        "selectionEntryGroups": [
-                          {
-                            "name": "Tier Level",
-                            "id": "26b3-875d-e64e-9973",
-                            "hidden": false,
-                            "entryLinks": [
-                              {
-                                "import": true,
-                                "name": "Inexperienced",
-                                "hidden": false,
-                                "id": "ea70-d4e6-9d06-01b0",
-                                "type": "selectionEntry",
-                                "targetId": "a64a-41ce-4a1c-8c91"
-                              },
-                              {
-                                "import": true,
-                                "name": "Regular",
-                                "hidden": false,
-                                "id": "8cd9-e82d-165c-0def",
-                                "type": "selectionEntry",
-                                "targetId": "485d-2cd7-4d79-8cc0"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "8d22-e7f7-5f66-3125"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "aa0f-8336-df34-af03"
-                              }
-                            ]
-                          }
-                        ],
-                        "selectionEntries": [
-                          {
-                            "type": "upgrade",
-                            "import": true,
-                            "name": "Alliance Light Armor",
-                            "hidden": false,
-                            "id": "d4e2-5e8a-ac0f-d64e",
-                            "profiles": [
-                              {
-                                "name": "Alliance Light Armor",
-                                "typeId": "85c6-4a1e-d9b1-8d7f",
-                                "typeName": "Wargear Item",
-                                "hidden": false,
-                                "id": "f418-5695-ef3b-7864",
-                                "characteristics": [
-                                  {
-                                    "name": "Description",
-                                    "typeId": "7494-924d-d974-76f8",
-                                    "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                                  }
-                                ]
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "6e1d-e2d0-339f-414d"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "e514-0231-907d-5df3"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "5812-c1a9-7e26-12a2"
-                              }
-                            ],
-                            "costs": [
-                              {
-                                "name": "Pts",
-                                "typeId": "points",
-                                "value": 1
-                              },
-                              {
-                                "name": "Requisition",
-                                "typeId": "ff33-0eb3-3b78-7829",
-                                "value": 0
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "collapsible": true
-                  },
-                  {
-                    "name": "Alliance Sergeant",
-                    "id": "8618-42d8-b231-e456",
-                    "hidden": false,
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Alliance Sergeant",
-                        "hidden": false,
-                        "id": "0efe-49b4-f2de-f9b0",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Rifles",
-                            "hidden": false,
-                            "id": "74b0-ad1a-8388-3169",
-                            "type": "selectionEntryGroup",
-                            "targetId": "63d2-d9a8-68e0-0bd4",
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "c73c-401e-b71d-600a"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "b4de-4e60-83b4-46c5"
-                              }
-                            ]
-                          }
-                        ],
-                        "costs": [
-                          {
-                            "name": "Pts",
-                            "typeId": "points",
-                            "value": -1
-                          },
-                          {
-                            "name": "Requisition",
-                            "typeId": "ff33-0eb3-3b78-7829",
-                            "value": 0
-                          }
-                        ],
-                        "infoLinks": [
-                          {
-                            "name": "NCO",
-                            "id": "29bb-2978-d069-3ffe",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "4ac7-2231-2a58-b508"
-                          }
-                        ],
-                        "selectionEntryGroups": [
-                          {
-                            "name": "Tier Level",
-                            "id": "f852-c24a-4638-0ee2",
-                            "hidden": false,
-                            "entryLinks": [
-                              {
-                                "import": true,
-                                "name": "Inexperienced",
-                                "hidden": false,
-                                "id": "83a9-c745-7c6f-4e48",
-                                "type": "selectionEntry",
-                                "targetId": "a64a-41ce-4a1c-8c91"
-                              },
-                              {
-                                "import": true,
-                                "name": "Regular",
-                                "hidden": false,
-                                "id": "fcaa-1c91-3a08-59f0",
-                                "type": "selectionEntry",
-                                "targetId": "485d-2cd7-4d79-8cc0"
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "e267-88b6-036a-414a"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "0ebb-3eb1-9936-e84b"
-                              }
-                            ]
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "15da-4556-26d4-a96a"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "fc26-a4e3-c93e-4c6c"
-                          }
-                        ],
-                        "selectionEntries": [
-                          {
-                            "type": "upgrade",
-                            "import": true,
-                            "name": "Alliance Light Armor",
-                            "hidden": false,
-                            "id": "be1f-e19e-78bf-cd7a",
-                            "profiles": [
-                              {
-                                "name": "Alliance Light Armor",
-                                "typeId": "85c6-4a1e-d9b1-8d7f",
-                                "typeName": "Wargear Item",
-                                "hidden": false,
-                                "id": "eb18-376c-adc0-b716",
-                                "characteristics": [
-                                  {
-                                    "name": "Description",
-                                    "typeId": "7494-924d-d974-76f8",
-                                    "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                                  }
-                                ]
-                              }
-                            ],
-                            "constraints": [
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "4db4-b1f9-88b0-4228"
-                              },
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "e16e-bdcb-e542-0665"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "a261-7e1f-94ae-0701"
-                              }
-                            ],
-                            "costs": [
-                              {
-                                "name": "Pts",
-                                "typeId": "points",
-                                "value": 1
-                              },
-                              {
-                                "name": "Requisition",
-                                "typeId": "ff33-0eb3-3b78-7829",
-                                "value": 0
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "collapsible": true
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Pts",
-                    "typeId": "points",
-                    "value": 0
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": false,
-                    "field": "hidden",
-                    "conditions": [
-                      {
-                        "type": "greaterThan",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "4984-7e33-8a39-dc2d",
-                        "shared": true,
-                        "includeChildForces": false,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Alliance Infantry Squad(Early-War)",
-                    "typeId": "0d83-d584-6c16-6b6f",
-                    "typeName": "Lore",
-                    "hidden": false,
-                    "id": "e369-2da8-6043-ad7b",
-                    "characteristics": [
-                      {
-                        "name": "Lore",
-                        "typeId": "8f51-2099-f67c-300e",
-                        "$text": "The Early-War units of the Alliance Regiments were ill-equipped for the various environments that laid before them. They had modest training to the standards set previous to the conflict and were taught more about exploration and environmental safety due to the path forward completely unknown to them.\n\n\nAll were equipped with rifles, as the need for mass specialized weapons and loadouts were not evident until they went past the open planet territories and into the territories of the Sarpenton Conglomerate."
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d2b4-7fb4-b38b-3f8c"
-                  }
-                ],
-                "collapsible": true
-              },
               {
                 "type": "upgrade",
                 "import": true,
@@ -2333,16 +1871,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -2461,7 +1989,17 @@
                 "collapsible": true
               }
             ],
-            "collapsible": true
+            "collapsible": true,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Alliance Infantry Squad(Early-War)",
+                "hidden": false,
+                "id": "0839-1268-6543-951d",
+                "type": "selectionEntry",
+                "targetId": "9f2d-1b88-a680-8726"
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -2774,6 +2312,14 @@
                         "id": "9801-a9bb-4b70-76c5-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "997e-dfd8-9e2e-d31a",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ]
               }
@@ -2866,6 +2412,32 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "b019-4826-0f62-fd13"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Ecologist Armor",
+                    "hidden": false,
+                    "id": "422a-158a-06b4-115c",
+                    "type": "selectionEntry",
+                    "targetId": "0b5d-b371-b8a7-e50a",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7ec1-65ae-a3b2-9105-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7ec1-65ae-a3b2-9105-max"
                       }
                     ]
                   }
@@ -3138,7 +2710,8 @@
                 "childId": "815e-c635-f10b-a055",
                 "shared": true,
                 "includeChildSelections": true,
-                "childName": "Custom"
+                "childName": "Custom",
+                "includeChildForces": true
               }
             ]
           }
@@ -3157,119 +2730,6 @@
                 "$text": "Field Ecologists were gathered from all sorts of budding scientists, from veterans of their craft to the young perky apprentice, with the sole goal of investigating and checking the environment around them for any anomalies; studying any that they got into contact with."
               }
             ]
-          }
-        ],
-        "costs": [
-          {
-            "name": "Pts",
-            "typeId": "points",
-            "value": 0
-          },
-          {
-            "name": "Requisition",
-            "typeId": "ff33-0eb3-3b78-7829",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Alliance Field Ecologist Escort",
-        "hidden": false,
-        "id": "fdb2-d35b-e5d8-6621",
-        "selectionEntryGroups": [
-          {
-            "name": "Field Ecologist Group",
-            "id": "b179-5f8a-67cf-ef67",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "model",
-                "import": true,
-                "name": "Field Ecologist",
-                "hidden": false,
-                "id": "ddba-70be-1e45-9bcf",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d4ea-b4cb-2c1a-a35f"
-                  },
-                  {
-                    "type": "max",
-                    "value": 5,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "fbfa-49a5-4059-a9ce"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Tier Level",
-                    "hidden": false,
-                    "id": "1500-0201-3e4e-4e77",
-                    "type": "selectionEntryGroup",
-                    "targetId": "e87c-43dd-ae66-d973"
-                  },
-                  {
-                    "import": true,
-                    "name": "Sidearms",
-                    "hidden": false,
-                    "id": "08f8-11e6-a3ce-1a19",
-                    "type": "selectionEntryGroup",
-                    "targetId": "5b38-ad25-5e72-c6fb"
-                  }
-                ],
-                "selectionEntryGroups": [
-                  {
-                    "name": "Field Equipment",
-                    "id": "6ce2-5125-25b2-5dcb",
-                    "hidden": false,
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Anomaly Radial Detector Mk.2",
-                        "hidden": false,
-                        "id": "4221-0d52-947b-35d1",
-                        "rules": [
-                          {
-                            "name": "New Rule",
-                            "id": "0380-8ce4-0cc6-80c8",
-                            "hidden": false,
-                            "description": "When using the Anomaly Radial Detector Special Rule, the range is instead double of the Highest Intelligence Value in the Unit rather"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "collapsible": true
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "3c61-33b1-60d2-f681"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden"
           }
         ],
         "costs": [
@@ -3329,6 +2789,14 @@
                         "id": "d24a-e557-f72b-0546"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "5ca2-d802-9d3f-bb1f",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "costs": [
@@ -3354,22 +2822,6 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "c8ce-950e-1abd-790c"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Alliance Light Armor",
-                    "typeId": "85c6-4a1e-d9b1-8d7f",
-                    "typeName": "Wargear Item",
-                    "hidden": false,
-                    "id": "c116-7c1e-f194-28fc",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "7494-924d-d974-76f8",
-                        "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                      }
-                    ]
                   }
                 ],
                 "selectionEntryGroups": [
@@ -3411,64 +2863,6 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "fc6e-d707-b479-3bf5"
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Alliance Light Armor",
-                    "hidden": false,
-                    "id": "6cad-a80d-a6d7-ea28",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "dd05-67e0-d909-c690",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "2f20-d5aa-540c-ae9c"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "348c-1599-41a7-e0d5-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "348c-1599-41a7-e0d5-max"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
                       }
                     ]
                   }
@@ -3515,6 +2909,14 @@
                         "id": "20a9-d656-f4bc-02d2"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "f61e-20a6-aaaa-afdf",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "costs": [
@@ -3593,64 +2995,6 @@
                     "shared": true,
                     "id": "869c-3a88-3563-d957-max"
                   }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Alliance Light Armor",
-                    "hidden": false,
-                    "id": "3469-759e-423b-741f",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "980b-37fe-c300-cd67",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "996d-042b-9a68-7d58"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7a09-7469-e546-5dd5-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7a09-7469-e546-5dd5-max"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
-                      }
-                    ]
-                  }
                 ]
               }
             ],
@@ -3673,18 +3017,19 @@
         "modifiers": [
           {
             "type": "set",
-            "value": false,
+            "value": true,
             "field": "hidden",
             "conditions": [
               {
-                "type": "greaterThan",
+                "type": "equalTo",
                 "value": 0,
                 "field": "selections",
                 "scope": "parent",
                 "childId": "4984-7e33-8a39-dc2d",
                 "shared": true,
-                "includeChildForces": false,
-                "includeChildSelections": true
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           }
@@ -3851,6 +3196,16 @@
                       }
                     ]
                   }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "9b59-0a41-c174-6e51",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
+                  }
                 ]
               },
               {
@@ -3903,6 +3258,14 @@
                         "id": "0b21-45fd-321c-bb7b"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "cd79-3374-a159-5fe0",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "selectionEntryGroups": [
@@ -3983,35 +3346,19 @@
         "modifiers": [
           {
             "type": "set",
-            "value": false,
+            "value": true,
             "field": "hidden",
             "conditions": [
               {
-                "type": "greaterThan",
+                "type": "equalTo",
                 "value": 0,
                 "field": "selections",
                 "scope": "parent",
                 "childId": "4984-7e33-8a39-dc2d",
                 "shared": true,
-                "includeChildForces": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "greaterThan",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "815e-c635-f10b-a055",
-                "shared": true,
-                "includeChildForces": false,
-                "includeChildSelections": true
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           }
@@ -4431,62 +3778,14 @@
                     "id": "7f89-0a47-2654-cefc-max"
                   }
                 ],
-                "selectionEntries": [
+                "entryLinks": [
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Alliance Light Armor",
                     "hidden": false,
-                    "id": "992d-e051-b165-ec93",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "3289-bdb4-a57a-0d75",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "02ad-c087-9324-e349"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "e5af-68fd-cc9a-f110"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "ea44-32fc-d617-63d6"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
-                      }
-                    ]
+                    "id": "b82d-92ea-9300-0f72",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ]
               }
@@ -4516,6 +3815,47 @@
             "name": "Requisition",
             "typeId": "ff33-0eb3-3b78-7829",
             "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Army Commander",
+            "hidden": false,
+            "id": "8b18-deb7-3721-86a3",
+            "type": "selectionEntry",
+            "targetId": "fe23-355a-9744-a453"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "4984-7e33-8a39-dc2d",
+                "shared": true,
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "815e-c635-f10b-a055",
+                "shared": true,
+                "childName": "Custom",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ]
       },
@@ -4661,47 +4001,14 @@
                     ]
                   }
                 ],
-                "selectionEntries": [
+                "entryLinks": [
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Alliance Recon Armor",
                     "hidden": false,
-                    "id": "b8d2-ab2b-a81a-7c7c",
-                    "profiles": [
-                      {
-                        "name": "Alliance Recon Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "6caa-895a-2d34-fa96",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 10+ Primary Save against Ballistic Weapons, improve this to an 8+ when you have benefit of Cover and grants +1 to Initiative and Movement Characteristic."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "0f50-b1a9-d780-2257"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "b6e3-ca39-6b60-88fd"
-                      }
-                    ]
+                    "id": "6a71-3ed8-51ef-6dc0",
+                    "type": "selectionEntry",
+                    "targetId": "39e2-6ef8-ad24-ee43"
                   }
                 ]
               }
@@ -4723,35 +4030,19 @@
         "modifiers": [
           {
             "type": "set",
-            "value": false,
+            "value": true,
             "field": "hidden",
             "conditions": [
               {
-                "type": "greaterThan",
+                "type": "equalTo",
                 "value": 0,
                 "field": "selections",
                 "scope": "parent",
                 "childId": "4984-7e33-8a39-dc2d",
                 "shared": true,
-                "includeChildForces": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "greaterThan",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "815e-c635-f10b-a055",
-                "shared": true,
-                "includeChildForces": false,
-                "includeChildSelections": true
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           }
@@ -4827,6 +4118,14 @@
                         "id": "c453-5f4c-6ddd-2e78"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "a27b-7cbd-36db-ddd2",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "selectionEntryGroups": [
@@ -5134,64 +4433,6 @@
                     ]
                   }
                 ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Alliance Light Armor",
-                    "hidden": false,
-                    "id": "73fa-1756-2510-64be",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "12a6-2ac1-c6fe-b4cc",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "a52c-a75d-e557-a018"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "3890-00ae-07ac-0951"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "3bc6-46df-6862-9c2d"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
-                      }
-                    ]
-                  }
-                ],
                 "costs": [
                   {
                     "name": "Pts",
@@ -5280,22 +4521,6 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "ee04-9749-bc7c-63fa"
-                      }
-                    ],
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "8e1b-bab5-2a2c-6319",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
                       }
                     ],
                     "selectionEntryGroups": [
@@ -5430,67 +4655,14 @@
                         ]
                       }
                     ],
-                    "selectionEntries": [
+                    "entryLinks": [
                       {
-                        "type": "upgrade",
                         "import": true,
                         "name": "Alliance Light Armor",
                         "hidden": false,
-                        "id": "ba2a-aa22-6cdd-59a6",
-                        "profiles": [
-                          {
-                            "name": "Alliance Light Armor",
-                            "typeId": "85c6-4a1e-d9b1-8d7f",
-                            "typeName": "Wargear Item",
-                            "hidden": false,
-                            "id": "81a5-b710-67b5-9026",
-                            "characteristics": [
-                              {
-                                "name": "Description",
-                                "typeId": "7494-924d-d974-76f8",
-                                "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                              }
-                            ]
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "7714-8e3a-439b-f477"
-                          },
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "75c8-0b28-49ae-5039"
-                          },
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e3aa-8218-82bf-2611"
-                          }
-                        ],
-                        "costs": [
-                          {
-                            "name": "Pts",
-                            "typeId": "points",
-                            "value": 1
-                          },
-                          {
-                            "name": "Requisition",
-                            "typeId": "ff33-0eb3-3b78-7829",
-                            "value": 0
-                          }
-                        ]
+                        "id": "f77a-b9bb-cea3-9e95",
+                        "type": "selectionEntry",
+                        "targetId": "7550-55f0-98bd-b8c9"
                       }
                     ]
                   }
@@ -5520,6 +4692,36 @@
             "name": "Requisition",
             "typeId": "ff33-0eb3-3b78-7829",
             "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Army Commander",
+            "hidden": false,
+            "id": "ff7c-263f-9eba-3716",
+            "type": "selectionEntry",
+            "targetId": "fe23-355a-9744-a453"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "4984-7e33-8a39-dc2d",
+                "shared": true,
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ]
       },
@@ -5860,52 +5062,17 @@
                         "id": "6867-46c8-af9b-9b7b"
                       }
                     ]
-                  }
-                ],
-                "collapsible": true,
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Alliance Light Armor",
                     "hidden": false,
-                    "id": "a399-0862-7de6-9de5",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "d12e-68f0-e14f-0a6f",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "cd18-e019-25d1-bcd4-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "cd18-e019-25d1-bcd4-max"
-                      }
-                    ]
+                    "id": "abe8-1d7d-8d39-bab3",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
+                "collapsible": true,
                 "infoLinks": [
                   {
                     "name": "Crewmen(X)",
@@ -5979,6 +5146,14 @@
                     "id": "d528-a4ec-87a9-4824",
                     "type": "selectionEntryGroup",
                     "targetId": "e87c-43dd-ae66-d973"
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "6573-42e2-e136-d8ed",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "selectionEntryGroups": [
@@ -6192,6 +5367,14 @@
                         "id": "e712-9ad6-7769-aaf7-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "302d-b0dd-e291-1a51",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "costs": [
@@ -6222,22 +5405,6 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "5896-706b-7cac-fb40"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Alliance Light Armor",
-                    "typeId": "85c6-4a1e-d9b1-8d7f",
-                    "typeName": "Wargear Item",
-                    "hidden": false,
-                    "id": "f6f0-de34-8e31-4501",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "7494-924d-d974-76f8",
-                        "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                      }
-                    ]
                   }
                 ],
                 "selectionEntryGroups": [
@@ -6295,56 +5462,6 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "fd5f-88f5-d365-b483"
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Alliance Light Armor",
-                    "hidden": false,
-                    "id": "826c-b362-af6a-74cf",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "00d7-235f-dd93-b516",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "cd1d-5767-bb41-f03f"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "cf07-07fa-3494-dc56"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
                       }
                     ]
                   }
@@ -6434,6 +5551,14 @@
                         "id": "9061-eebe-7ad4-0ba6-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "215c-be1b-42f8-4744",
+                    "type": "selectionEntry",
+                    "targetId": "7550-55f0-98bd-b8c9"
                   }
                 ],
                 "costs": [
@@ -6464,22 +5589,6 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "adf7-72cc-8694-d8b6-max"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Alliance Light Armor",
-                    "typeId": "85c6-4a1e-d9b1-8d7f",
-                    "typeName": "Wargear Item",
-                    "hidden": false,
-                    "id": "cc18-6e8a-f8e2-0d5a",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "7494-924d-d974-76f8",
-                        "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                      }
-                    ]
                   }
                 ],
                 "selectionEntryGroups": [
@@ -6549,56 +5658,6 @@
                     ]
                   }
                 ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Alliance Light Armor",
-                    "hidden": false,
-                    "id": "428f-aa0e-768a-268b",
-                    "profiles": [
-                      {
-                        "name": "Alliance Light Armor",
-                        "typeId": "85c6-4a1e-d9b1-8d7f",
-                        "typeName": "Wargear Item",
-                        "hidden": false,
-                        "id": "5f83-a2e0-e10a-1e50",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "7494-924d-d974-76f8",
-                            "$text": "This armor provides a 9+ Primary Save against Ballistic Weapons."
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "9f38-c667-285f-c03a"
-                      },
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "d5e5-cbe7-a3ac-69b9"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Requisition",
-                        "typeId": "ff33-0eb3-3b78-7829",
-                        "value": 0
-                      }
-                    ]
-                  }
-                ],
                 "infoLinks": [
                   {
                     "name": "NCO",
@@ -6611,7 +5670,17 @@
                 "sortIndex": 1
               }
             ],
-            "collapsible": true
+            "collapsible": true,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Alliance Light Armor",
+                "hidden": false,
+                "id": "b7e2-86d6-c527-3a56",
+                "type": "selectionEntry",
+                "targetId": "7550-55f0-98bd-b8c9"
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -6635,6 +5704,37 @@
             "hidden": false,
             "type": "rule",
             "targetId": "d45b-ae18-ed90-1486"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "4984-7e33-8a39-dc2d",
+                "shared": true,
+                "childName": "Early: Sarpenton Conflict",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "815e-c635-f10b-a055",
+                "shared": true,
+                "childName": "Custom",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ]
       }
@@ -6718,26 +5818,49 @@
                     "hidden": false,
                     "description": "This Army-Wide Special Rule only applies to this Army Organization You cannot have any allied organization charts in addition to this one."
                   }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Regiments of the Alliance",
-                    "id": "ae33-669a-266a-9415",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "1061-f111-a533-b15e"
-                  }
                 ]
               },
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Custom",
+                "name": "Custom Period",
                 "hidden": false,
                 "id": "815e-c635-f10b-a055",
                 "sortIndex": 1
               }
             ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "e4c8-5238-f1d0-f461",
+            "id": "9151-5963-eed4-b64a",
+            "primary": true,
+            "name": "Faction Special Rules"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Regiments of the Alliance",
+        "hidden": false,
+        "id": "d83e-6eb2-6ebf-ac49",
+        "infoLinks": [
+          {
+            "name": "Regiments of the Alliance",
+            "id": "7ee3-d5f8-24bf-9875",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1061-f111-a533-b15e"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "e4c8-5238-f1d0-f461",
+            "id": "992c-9ae2-733b-7d18",
+            "primary": true,
+            "name": "Faction Special Rules"
           }
         ]
       }
@@ -6750,22 +5873,6 @@
         "id": "4bff-0f60-58af-b2ef",
         "type": "selectionEntry",
         "targetId": "1b16-0aad-7c80-5020"
-      },
-      {
-        "import": true,
-        "name": "Alliance Field Ecologist Escort",
-        "hidden": false,
-        "id": "ab0b-9487-586a-52ac",
-        "type": "selectionEntry",
-        "targetId": "fdb2-d35b-e5d8-6621",
-        "categoryLinks": [
-          {
-            "targetId": "7ccd-248d-ed09-ff2d",
-            "id": "666c-c83e-aaed-e117",
-            "primary": true,
-            "name": "Elite Troops"
-          }
-        ]
       },
       {
         "import": true,

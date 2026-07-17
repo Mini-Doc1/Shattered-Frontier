@@ -325,19 +325,14 @@
                 "$text": "Fortification"
               },
               {
-                "name": "HP",
-                "typeId": "30d2-7ca6-8aa5-9bd3",
-                "$text": "10"
-              },
-              {
                 "name": "DEF",
                 "typeId": "5837-7ca6-f841-56f1",
                 "$text": "4"
               },
               {
-                "name": "T",
-                "typeId": "1149-443e-9dc2-b81b",
-                "$text": "6"
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "10"
               },
               {
                 "name": "Transport Capacity",
@@ -429,19 +424,14 @@
                 "$text": "Fortification"
               },
               {
-                "name": "HP",
-                "typeId": "30d2-7ca6-8aa5-9bd3",
-                "$text": "15"
-              },
-              {
                 "name": "DEF",
                 "typeId": "5837-7ca6-f841-56f1",
                 "$text": "6"
               },
               {
-                "name": "T",
-                "typeId": "1149-443e-9dc2-b81b",
-                "$text": "8"
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "15"
               },
               {
                 "name": "Transport Capacity",
@@ -533,19 +523,14 @@
                 "$text": "Fortification"
               },
               {
-                "name": "HP",
-                "typeId": "30d2-7ca6-8aa5-9bd3",
-                "$text": "20"
-              },
-              {
                 "name": "DEF",
                 "typeId": "5837-7ca6-f841-56f1",
                 "$text": "8"
               },
               {
-                "name": "T",
-                "typeId": "1149-443e-9dc2-b81b",
-                "$text": "10"
+                "name": "HP",
+                "typeId": "30d2-7ca6-8aa5-9bd3",
+                "$text": "20"
               },
               {
                 "name": "Transport Capacity",
@@ -991,7 +976,7 @@
       },
       {
         "import": true,
-        "name": "Destroyed Housing",
+        "name": "Ruined Housing",
         "hidden": false,
         "id": "21f7-f1e0-165a-59e8",
         "type": "selectionEntry",
@@ -1059,7 +1044,7 @@
     "name": "Terrain Features",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 9,
-    "revision": 5,
+    "revision": 6,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",

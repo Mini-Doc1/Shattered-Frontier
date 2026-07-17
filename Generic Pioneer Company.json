@@ -2,154 +2,226 @@
   "catalogue": {
     "sharedSelectionEntries": [
       {
-        "profiles": [
+        "type": "unit",
+        "import": true,
+        "name": "Pioneer Infantry Squad",
+        "hidden": false,
+        "id": "c182-1773-349e-eb97",
+        "selectionEntryGroups": [
           {
-            "characteristics": [
-              {
-                "$text": "INFANTRY",
-                "name": "UT",
-                "typeId": "d0c3-cd30-159c-41ee"
-              },
-              {
-                "$text": "1",
-                "name": "HP",
-                "typeId": "26e6-deb2-5052-a74f"
-              },
-              {
-                "$text": "1",
-                "name": "DEF",
-                "typeId": "7831-ff70-1145-ce60"
-              },
-              {
-                "name": "MOVE",
-                "typeId": "6199-ffd0-7221-bdc4",
-                "$text": ""
-              },
-              {
-                "$text": "5",
-                "name": "MS",
-                "typeId": "3f4d-38e9-9633-76a1"
-              },
-              {
-                "$text": "5",
-                "name": "BS",
-                "typeId": "36f6-a14d-1670-f31d"
-              },
-              {
-                "$text": "1",
-                "name": "RWS",
-                "typeId": "db0e-ca2f-9e5e-e143"
-              },
-              {
-                "$text": "1",
-                "name": "MWS",
-                "typeId": "424d-378d-20be-20d3"
-              },
-              {
-                "name": "DISC",
-                "typeId": "e083-adac-81c6-46ab",
-                "$text": ""
-              },
-              {
-                "name": "Wil",
-                "typeId": "4cfc-c1d7-c0ce-51b5",
-                "$text": ""
-              },
-              {
-                "name": "INT",
-                "typeId": "271c-7b8a-64f6-761d",
-                "$text": ""
-              },
-              {
-                "name": "INI",
-                "typeId": "6f83-1e0d-a424-78ac",
-                "$text": ""
-              },
-              {
-                "name": "S",
-                "typeId": "957c-620f-d78e-cf0d",
-                "$text": ""
-              },
-              {
-                "name": "T",
-                "typeId": "dc73-89e2-f866-86c8",
-                "$text": ""
-              }
-            ],
-            "name": "Pioneer",
-            "typeId": "a58b-8183-8b57-845c",
-            "typeName": "INFANTRY",
+            "name": "Pioneer Infantrymen",
+            "id": "80f9-d0a2-f7b8-ebf5",
             "hidden": false,
-            "id": "60f9-009e-a655-9e54"
+            "selectionEntries": [
+              {
+                "type": "model",
+                "import": true,
+                "name": "Pioneer",
+                "hidden": false,
+                "id": "8c97-aff5-c197-aac0",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "MK1 SAPPA",
+                    "hidden": false,
+                    "id": "3f02-e6b3-a1b0-1080",
+                    "type": "selectionEntry",
+                    "targetId": "70f9-a33e-98df-3b95",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fdfa-4fba-623a-a1d5-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fdfa-4fba-623a-a1d5-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Inexperienced",
+                    "hidden": false,
+                    "id": "b3e7-675b-4835-59a0",
+                    "type": "selectionEntry",
+                    "targetId": "a64a-41ce-4a1c-8c91",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c586-eff1-5c89-d325-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c586-eff1-5c89-d325-max"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dfa4-1824-903a-11d3"
+                  },
+                  {
+                    "type": "max",
+                    "value": 4,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e5c-586c-7ce7-d6bd"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Weapon Loadout",
+                    "id": "8f11-34ea-f9f6-948c",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Primary Weapons",
+                        "hidden": false,
+                        "id": "2e11-b29a-066b-d43e",
+                        "type": "selectionEntryGroup",
+                        "targetId": "7157-c6e4-5a2b-2e15",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "96bc-6f88-a382-3888"
+                          }
+                        ],
+                        "sortIndex": 2
+                      },
+                      {
+                        "import": true,
+                        "name": "Side-Arms",
+                        "hidden": false,
+                        "id": "2d71-dac8-47cc-15e6",
+                        "type": "selectionEntryGroup",
+                        "targetId": "9785-f88c-a187-4ba2",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "2fe4-7f66-d4dc-da2d"
+                          }
+                        ],
+                        "sortIndex": 3
+                      },
+                      {
+                        "import": true,
+                        "name": "Melee Weapons",
+                        "hidden": false,
+                        "id": "f294-63fa-292d-ba0a",
+                        "type": "selectionEntryGroup",
+                        "targetId": "221a-cbc1-5c39-9bee",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "b740-6edf-cab7-c715"
+                          }
+                        ],
+                        "sortIndex": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anomalous Way-Seers",
+                    "id": "1744-82ee-8ec6-db7d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8f6a-704f-89f5-f07b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
           }
         ],
-        "type": "upgrade",
-        "import": true,
-        "name": "Pioneer",
-        "hidden": false,
-        "id": "3431-c892-7bc6-c77c"
-      },
-      {
-        "profiles": [
+        "costs": [
           {
-            "characteristics": [
-              {
-                "$text": "MK1 SAPPA provides a +1 to Toughness, Strength and DEF. MK1 Sappa has a 7+ Primary Save against BALLISTIC weapons.",
-                "name": "Description",
-                "typeId": "7494-924d-d974-76f8"
-              }
-            ],
-            "name": "Mk1 SAPPA",
-            "typeId": "85c6-4a1e-d9b1-8d7f",
-            "typeName": "Wargear Item",
-            "hidden": false,
-            "id": "fc26-9f31-8761-1baf"
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
           }
         ],
-        "type": "upgrade",
-        "import": true,
-        "name": "MK-1 SAPPA Exo-Skeleton",
-        "hidden": false,
-        "id": "a187-fb3e-6bf1-cc4e"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Pioneer Pathfinders",
-        "hidden": false,
-        "id": "1cd6-a4c7-f446-96b4"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Pioneer Support Team",
-        "hidden": false,
-        "id": "5845-379f-5fe2-4027"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Pee Poo",
-        "hidden": false,
-        "id": "a77c-4043-a418-3ad3",
         "modifiers": [
           {
             "type": "set",
-            "value": false,
+            "value": true,
             "field": "hidden",
             "conditions": [
               {
-                "type": "greaterThan",
-                "value": 0,
+                "type": "equalTo",
+                "value": 1,
                 "field": "selections",
-                "scope": "self",
-                "childId": "7fea-3f45-9b5b-6c69",
+                "scope": "parent",
+                "childId": "6c10-54e9-5b5a-ae7f",
                 "shared": true,
-                "childName": "Poo Pee",
-                "includeChildSelections": true
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "childName": "Early War"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pioneer Ecologist Escort",
+        "hidden": false,
+        "id": "6111-6211-f544-cbae",
+        "modifiers": [
           {
             "type": "set",
             "value": true,
@@ -160,9 +232,917 @@
                 "value": 0,
                 "field": "selections",
                 "scope": "parent",
-                "childId": "7fea-3f45-9b5b-6c69",
+                "childId": "a68f-b067-599c-6921",
                 "shared": true,
-                "childName": "Poo Pee"
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "childName": "Alliance Ecologists Escorts"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Pioneer Ecologist Escort",
+            "id": "a100-682a-3038-cb57",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "model",
+                "import": true,
+                "name": "Pioneer Escorter",
+                "hidden": false,
+                "id": "3f14-3dc1-e92e-298d",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "MK1 SAPPA",
+                    "hidden": false,
+                    "id": "489a-8a06-8a25-d755",
+                    "type": "selectionEntry",
+                    "targetId": "70f9-a33e-98df-3b95",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "533e-1c5d-9a56-0401-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "533e-1c5d-9a56-0401-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Inexperienced",
+                    "hidden": false,
+                    "id": "4253-855c-b5dc-6703",
+                    "type": "selectionEntry",
+                    "targetId": "a64a-41ce-4a1c-8c91",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "af1b-3ce0-0267-308b-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "af1b-3ce0-0267-308b-max"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1043-305c-00e1-52f1"
+                  },
+                  {
+                    "type": "max",
+                    "value": 4,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0694-ec8b-34b0-10e6"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Weapon Loadout",
+                    "id": "b8ef-97e7-d2c3-307b",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Primary Weapons",
+                        "hidden": false,
+                        "id": "27ed-2d13-736e-13cd",
+                        "type": "selectionEntryGroup",
+                        "targetId": "7157-c6e4-5a2b-2e15",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "ad95-19ab-6def-33ba"
+                          }
+                        ],
+                        "sortIndex": 2,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Special Weapons",
+                            "hidden": false,
+                            "id": "7586-3bac-621f-e63b",
+                            "type": "selectionEntryGroup",
+                            "targetId": "071d-4ede-b3b1-b1bb"
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Side-Arms",
+                        "hidden": false,
+                        "id": "8e0a-fd2d-1aac-8c74",
+                        "type": "selectionEntryGroup",
+                        "targetId": "9785-f88c-a187-4ba2",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "aad6-5784-ce32-5fe1"
+                          }
+                        ],
+                        "sortIndex": 3
+                      },
+                      {
+                        "import": true,
+                        "name": "Melee Weapons",
+                        "hidden": false,
+                        "id": "57f6-f3fa-863b-ff49",
+                        "type": "selectionEntryGroup",
+                        "targetId": "221a-cbc1-5c39-9bee",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "6608-bbd3-8f1f-60e2"
+                          }
+                        ],
+                        "sortIndex": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anomalous Way-Seers",
+                    "id": "054b-31cf-c026-3ff5",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8f6a-704f-89f5-f07b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Pioneer Lead Path-Finder",
+        "hidden": false,
+        "id": "e0bd-8d94-c15c-6e25",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Lead Path-Finder",
+            "hidden": false,
+            "id": "7b29-2319-02c0-0631",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Army Commander",
+                "hidden": false,
+                "id": "74e8-b689-d5fb-67a2",
+                "type": "selectionEntry",
+                "targetId": "fe23-355a-9744-a453"
+              },
+              {
+                "import": true,
+                "name": "MK1 SAPPA",
+                "hidden": false,
+                "id": "5caa-b3b2-1de1-6ab6",
+                "type": "selectionEntry",
+                "targetId": "70f9-a33e-98df-3b95",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fd6f-65e3-0df1-ac5e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fd6f-65e3-0df1-ac5e-max"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapon Loadout",
+                "id": "d0ac-7c0d-55ba-2901",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Primary Weapons",
+                    "hidden": false,
+                    "id": "cd83-4030-6b27-b99f",
+                    "type": "selectionEntryGroup",
+                    "targetId": "7157-c6e4-5a2b-2e15",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f1cb-040d-74af-df14"
+                      }
+                    ],
+                    "sortIndex": 2
+                  },
+                  {
+                    "import": true,
+                    "name": "Side-Arms",
+                    "hidden": false,
+                    "id": "41b5-e3f9-1d8d-e32c",
+                    "type": "selectionEntryGroup",
+                    "targetId": "9785-f88c-a187-4ba2",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "189a-f241-2a27-e794"
+                      }
+                    ],
+                    "sortIndex": 3
+                  },
+                  {
+                    "import": true,
+                    "name": "Melee Weapons",
+                    "hidden": false,
+                    "id": "136b-5e1f-b14c-0066",
+                    "type": "selectionEntryGroup",
+                    "targetId": "221a-cbc1-5c39-9bee",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6b0f-98e0-771e-6995"
+                      }
+                    ],
+                    "sortIndex": 1
+                  }
+                ]
+              },
+              {
+                "name": "Command Tier Level",
+                "id": "d326-a361-4b75-7e12",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Command:Inexperienced",
+                    "hidden": false,
+                    "id": "238c-d5d1-00d0-df99",
+                    "type": "selectionEntry",
+                    "targetId": "6f53-b654-5a07-fee2"
+                  },
+                  {
+                    "import": true,
+                    "name": "Command:Regular",
+                    "hidden": false,
+                    "id": "66e0-6690-0622-9e22",
+                    "type": "selectionEntry",
+                    "targetId": "31ff-b038-c62d-d648"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3ae4-e0c3-2878-0199"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "abbd-6286-d2de-8c6e"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c161-617b-2a06-82b8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c161-617b-2a06-82b8-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Headquarters:Improvised Command",
+                "id": "6c38-7ed3-c13c-917e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d5da-fa4d-de71-f7d5"
+              },
+              {
+                "name": "Anomalous Way-Seers",
+                "id": "211b-8940-bf84-8118",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8f6a-704f-89f5-f07b"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 5
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "6c10-54e9-5b5a-ae7f",
+                "shared": true,
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "childName": "Early War"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Pioneer Infantry Squad(Early-War)",
+        "hidden": false,
+        "id": "203f-89f6-0018-978f",
+        "selectionEntryGroups": [
+          {
+            "name": "Pioneer Infantrymen",
+            "id": "4678-6954-db64-d455",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "model",
+                "import": true,
+                "name": "Pioneer",
+                "hidden": false,
+                "id": "ba52-0c0d-20c7-aa84",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Inexperienced",
+                    "hidden": false,
+                    "id": "67ac-7a9b-11c9-f42c",
+                    "type": "selectionEntry",
+                    "targetId": "a64a-41ce-4a1c-8c91",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c0df-2c94-16bb-adbf-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c0df-2c94-16bb-adbf-max"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e141-1544-f2e0-9f38"
+                  },
+                  {
+                    "type": "max",
+                    "value": 4,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a6b3-445f-4881-8d47"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Weapon Loadout",
+                    "id": "692b-6d3b-cc6f-48f6",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Primary Weapons",
+                        "hidden": false,
+                        "id": "bb63-fc1a-51d2-6eb1",
+                        "type": "selectionEntryGroup",
+                        "targetId": "7157-c6e4-5a2b-2e15",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "a1ae-92bd-c858-4ab9"
+                          }
+                        ],
+                        "sortIndex": 2
+                      },
+                      {
+                        "import": true,
+                        "name": "Side-Arms",
+                        "hidden": false,
+                        "id": "2462-8adb-156f-4d1d",
+                        "type": "selectionEntryGroup",
+                        "targetId": "9785-f88c-a187-4ba2",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "16e2-c1be-5f5d-36cd"
+                          }
+                        ],
+                        "sortIndex": 3
+                      },
+                      {
+                        "import": true,
+                        "name": "Melee Weapons",
+                        "hidden": false,
+                        "id": "85d5-68b8-79e5-dde0",
+                        "type": "selectionEntryGroup",
+                        "targetId": "221a-cbc1-5c39-9bee",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "ae5d-82d5-860a-665c"
+                          }
+                        ],
+                        "sortIndex": 1
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anomalous Way-Seers",
+                    "id": "bdd7-356f-e558-b019",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8f6a-704f-89f5-f07b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 5
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Alliance Light Armor",
+                    "hidden": false,
+                    "id": "b09f-1cac-cdbb-55a6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d748-5e8d-5fa7-0289-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d748-5e8d-5fa7-0289-max"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Alliance Light Armor",
+                        "typeId": "85c6-4a1e-d9b1-8d7f",
+                        "typeName": "Wargear Item",
+                        "hidden": false,
+                        "id": "d64a-1d91-5319-31e3",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "7494-924d-d974-76f8",
+                            "$text": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Pts",
+                        "typeId": "points",
+                        "value": 1
+                      },
+                      {
+                        "name": "Requisition",
+                        "typeId": "ff33-0eb3-3b78-7829",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 0
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 1
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "6c10-54e9-5b5a-ae7f",
+                "shared": true,
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "childName": "Early War"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Pioneer Lead Path-Finder(Early-War)",
+        "hidden": false,
+        "id": "c673-450a-324a-f5d8",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Lead Path-Finder(Early-War)",
+            "hidden": false,
+            "id": "7683-900f-81e9-727a",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Army Commander",
+                "hidden": false,
+                "id": "e45b-3e65-86a4-8778",
+                "type": "selectionEntry",
+                "targetId": "fe23-355a-9744-a453"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapon Loadout",
+                "id": "4bb8-2058-070f-f038",
+                "hidden": false,
+                "selectionEntryGroups": [
+                  {
+                    "name": "Primary Weapons",
+                    "id": "11a8-18f2-52b3-ed18",
+                    "hidden": false
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Primary Weapons",
+                    "hidden": false,
+                    "id": "b32f-27f4-5e78-8578",
+                    "type": "selectionEntryGroup",
+                    "targetId": "7157-c6e4-5a2b-2e15",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3f26-14b7-7607-1ac0"
+                      }
+                    ],
+                    "sortIndex": 2
+                  },
+                  {
+                    "import": true,
+                    "name": "Side-Arms",
+                    "hidden": false,
+                    "id": "4ecd-b514-e23f-f2bb",
+                    "type": "selectionEntryGroup",
+                    "targetId": "9785-f88c-a187-4ba2",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7396-69f2-9420-42ce"
+                      }
+                    ],
+                    "sortIndex": 3
+                  },
+                  {
+                    "import": true,
+                    "name": "Melee Weapons",
+                    "hidden": false,
+                    "id": "c9b9-8d0e-f830-ab53",
+                    "type": "selectionEntryGroup",
+                    "targetId": "221a-cbc1-5c39-9bee",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "367b-bb7d-1ed9-debd"
+                      }
+                    ],
+                    "sortIndex": 1
+                  }
+                ]
+              },
+              {
+                "name": "Command Tier Level",
+                "id": "79ac-0025-c576-3462",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Command:Inexperienced",
+                    "hidden": false,
+                    "id": "a18e-b07f-2718-0941",
+                    "type": "selectionEntry",
+                    "targetId": "6f53-b654-5a07-fee2"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d7e7-9ac9-40fa-d83f"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8eef-0b9c-eca7-d7a9"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "503c-8992-3192-5092-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "503c-8992-3192-5092-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Headquarters:Improvised Command",
+                "id": "d2eb-8df3-90b3-7a65",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d5da-fa4d-de71-f7d5"
+              },
+              {
+                "name": "Anomalous Way-Seers",
+                "id": "8781-57b9-144d-0aff",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8f6a-704f-89f5-f07b"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 5
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Alliance Light Armor",
+                "hidden": false,
+                "id": "7637-7995-f1cb-f255",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dcfd-4d65-9786-4e3a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dcfd-4d65-9786-4e3a-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Alliance Light Armor",
+                    "typeId": "85c6-4a1e-d9b1-8d7f",
+                    "typeName": "Wargear Item",
+                    "hidden": false,
+                    "id": "91da-80cf-0bb9-0d6b",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "7494-924d-d974-76f8",
+                        "$text": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Pts",
+                    "typeId": "points",
+                    "value": 1
+                  },
+                  {
+                    "name": "Requisition",
+                    "typeId": "ff33-0eb3-3b78-7829",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "6c10-54e9-5b5a-ae7f",
+                "shared": true,
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "childName": "Early War"
               }
             ]
           }
@@ -171,39 +1151,76 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Poo Pee",
+        "name": "Alliance Light Armor",
         "hidden": false,
-        "id": "7fea-3f45-9b5b-6c69"
+        "id": "ede2-79ab-54c3-91c5",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b896-4702-a3b7-219b-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b896-4702-a3b7-219b-max"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Alliance Light Armor",
+            "typeId": "85c6-4a1e-d9b1-8d7f",
+            "typeName": "Wargear Item",
+            "hidden": false,
+            "id": "06a7-65f7-2931-cc5e",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "7494-924d-d974-76f8",
+                "$text": "This armor provides a 9+ Primary Save against Ballistic and Melee Weapons."
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Pts",
+            "typeId": "points",
+            "value": 1
+          },
+          {
+            "name": "Requisition",
+            "typeId": "ff33-0eb3-3b78-7829",
+            "value": 0
+          }
+        ]
       }
     ],
     "sharedRules": [
       {
-        "name": "Pioneer",
-        "id": "9545-b474-3573-5f45",
+        "name": "Pioneers of the Alliance",
+        "id": "358a-d7cc-6ddc-eba4",
         "hidden": false
       },
       {
-        "name": "Pioneer Clan",
-        "id": "6725-dd59-2157-8f5a",
-        "hidden": false
-      },
-      {
-        "name": "Pioneer Company",
-        "id": "80c1-4a45-f44f-6b76",
-        "hidden": false
-      },
-      {
-        "name": "New Rule",
-        "id": "35af-dd3a-0138-5de6",
-        "hidden": false
+        "name": "Anomalous Way-Seers",
+        "id": "8f6a-704f-89f5-f07b",
+        "hidden": false,
+        "description": "Whenever this unit would enter the range of an Anomaly entity, it ignores any special rules or penalties that would be triggered.\n\n\nEx. The Flashing Dodger anomaly would not inflict 1 damage to any Pioneer models within it's 6 inch radius."
       }
     ],
     "library": false,
     "id": "3fe2-796a-7836-7bc6",
-    "name": "Generic Pioneer Company",
+    "name": "Pioneer Company",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 11,
-    "revision": 6,
+    "revision": 7,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
@@ -211,21 +1228,79 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "MK-1 SAPPA Exo-Skeleton",
+        "name": "War Period",
         "hidden": false,
-        "id": "746b-bf29-991f-9c95",
-        "profiles": [
+        "id": "2329-70cc-3fe6-b909",
+        "categoryLinks": [
           {
-            "name": "Mk1 SAPPA",
-            "typeId": "85c6-4a1e-d9b1-8d7f",
-            "typeName": "Wargear Item",
+            "targetId": "e4c8-5238-f1d0-f461",
+            "id": "1a3c-dcd5-58f9-140d",
+            "primary": true,
+            "name": "Faction Special Rules"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c273-4268-abd4-dd40-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c273-4268-abd4-dd40-max"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "War Period",
+            "id": "3f83-ed85-88af-44c6",
             "hidden": false,
-            "id": "b5c8-4977-457a-4ea9",
-            "characteristics": [
+            "constraints": [
               {
-                "$text": "MK1 SAPPA provides a +1 to Toughness, Strength and DEF. MK1 Sappa has a 7+ Primary Save against BALLISTIC weapons.",
-                "name": "Description",
-                "typeId": "7494-924d-d974-76f8"
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "47dd-a9d3-5d22-7f4b"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1ab7-0c52-4e14-d134"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Custom",
+                "hidden": false,
+                "id": "a08b-9804-d28a-4d42"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Alliance Ecologists Escorts",
+                "hidden": false,
+                "id": "a68f-b067-599c-6921"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Early War",
+                "hidden": false,
+                "id": "6c10-54e9-5b5a-ae7f"
               }
             ]
           }
@@ -235,19 +1310,1098 @@
     "entryLinks": [
       {
         "import": true,
-        "name": "Pee Poo",
+        "name": "Pioneer Infantry Squad",
         "hidden": false,
-        "id": "bbb4-e82d-b0a1-982a",
+        "id": "cf7f-96c3-2934-8b57",
         "type": "selectionEntry",
-        "targetId": "a77c-4043-a418-3ad3"
+        "targetId": "c182-1773-349e-eb97",
+        "categoryLinks": [
+          {
+            "targetId": "04c8-7927-d0d3-1be4",
+            "id": "f563-5f0b-b8ea-3b41",
+            "primary": true,
+            "name": "Core Troops"
+          }
+        ]
       },
       {
         "import": true,
-        "name": "Poo Pee",
+        "name": "Pioneer Lead Sergeant",
         "hidden": false,
-        "id": "4e34-ae61-f860-00e4",
+        "id": "64ea-f0f4-8fe4-bb63",
         "type": "selectionEntry",
-        "targetId": "7fea-3f45-9b5b-6c69"
+        "targetId": "e0bd-8d94-c15c-6e25",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "15ec-ac01-af27-e5b3",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Pioneer Ecologist Escort Squad",
+        "hidden": false,
+        "id": "0b32-70e2-1440-295c",
+        "type": "selectionEntry",
+        "targetId": "6111-6211-f544-cbae",
+        "categoryLinks": [
+          {
+            "targetId": "04c8-7927-d0d3-1be4",
+            "id": "f05a-cd5c-910f-a783",
+            "primary": true,
+            "name": "Core Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Pioneer Lead Path-Finder(Early-War)",
+        "hidden": false,
+        "id": "ad35-f86e-a996-5b5c",
+        "type": "selectionEntry",
+        "targetId": "c673-450a-324a-f5d8",
+        "categoryLinks": [
+          {
+            "targetId": "abc8-6d5d-69ac-e959",
+            "id": "d59b-e4cd-5ee0-c4ea",
+            "primary": true,
+            "name": "Headquarters"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Pioneer Infantry Squad(Early-War)",
+        "hidden": false,
+        "id": "f4f3-3010-4319-91f3",
+        "type": "selectionEntry",
+        "targetId": "203f-89f6-0018-978f",
+        "categoryLinks": [
+          {
+            "targetId": "04c8-7927-d0d3-1be4",
+            "id": "b00d-fcbd-5d1f-bb24",
+            "primary": true,
+            "name": "Core Troops"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Pioneer Armor",
+        "id": "587f-4e05-e842-1b7e",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "MK1 SAPPA",
+            "hidden": false,
+            "id": "70f9-a33e-98df-3b95",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 8
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "profiles": [
+              {
+                "name": "MK1 SAPPA",
+                "typeId": "85c6-4a1e-d9b1-8d7f",
+                "typeName": "Wargear Item",
+                "hidden": false,
+                "id": "5fda-36a9-c2e6-9c03",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "7494-924d-d974-76f8",
+                    "$text": "This armor provides the following benefits:\n•+1 DEF\n•8+ Primary Save against Ballistic and Melee Weapons.\n•+1 Toughness\n•+1 Strength with Melee Weapons"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Special Weapons",
+        "id": "071d-4ede-b3b1-b1bb",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Concussion Launcher",
+            "hidden": false,
+            "id": "b945-1f51-891d-3e8d",
+            "profiles": [
+              {
+                "name": "Concussion Launcher",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "37d5-b34d-34f5-294f",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Blast Radius(2), Pinning Fire(1), Heavy"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Blast Radius(X)",
+                "id": "32c9-742f-760c-17d5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d912-27fd-8843-4efa"
+              },
+              {
+                "name": "Pinning Fire(X)",
+                "id": "30e5-e1a0-d75a-1e2f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7f8a-4a15-5e47-bfe3"
+              },
+              {
+                "name": "Heavy",
+                "id": "e05b-65bb-4e9d-7fc7",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "621b-e546-879e-9c41"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Heavy Las-Auto Rifle",
+            "hidden": false,
+            "id": "96ca-f64c-4be9-947c",
+            "profiles": [
+              {
+                "name": "Heavy Las-Auto Rifle",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "62ef-561d-d56b-113f",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Overcharged(4),Energy"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "X"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Heavy",
+                "id": "a6ee-c59a-9d60-f2ec",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "621b-e546-879e-9c41"
+              },
+              {
+                "name": "Overcharged(X)",
+                "id": "2d56-0f97-1053-17a7",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1312-52ca-5a87-bd9e"
+              },
+              {
+                "name": "Energy",
+                "id": "7a34-09fe-dd72-9e7c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0f48-2fbf-a744-86f6"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 5
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Auto-Fed Machine Gun",
+            "hidden": false,
+            "id": "7a25-ce06-7259-6398",
+            "profiles": [
+              {
+                "name": "Auto-Fed Machine Gun",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "3c5d-60c5-68e1-b857",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "48"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "0"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Heavy, Ballistic, Suppressive Fire (2)"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "BS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Ballistic",
+                "id": "8f9b-b767-eeb1-3d97",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "09f0-5941-f550-9a12"
+              },
+              {
+                "name": "Suppressive Fire(X)",
+                "id": "9b3f-a428-c17d-a915",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8793-0569-5fad-8e67"
+              },
+              {
+                "name": "Heavy",
+                "id": "96af-5fd1-f26a-f555",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "621b-e546-879e-9c41"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 15
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Primary Weapons",
+        "id": "7157-c6e4-5a2b-2e15",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Carbine",
+            "hidden": false,
+            "id": "0ace-b4ba-0897-1cca",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Carbine",
+                "hidden": false,
+                "id": "d266-deae-fd1e-7ed5",
+                "type": "selectionEntry",
+                "targetId": "d7d3-057b-3ee5-1885",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6119-cc50-82f0-bd59-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6119-cc50-82f0-bd59-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Bayonet",
+                "hidden": false,
+                "id": "cdf1-7c70-0d5c-afbd",
+                "type": "selectionEntry",
+                "targetId": "62ce-7a6c-e6cc-5895",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2d58-b899-3fbb-e52e"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Rifle",
+            "hidden": false,
+            "id": "b579-1083-e2de-3ea0",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Rifle",
+                "hidden": false,
+                "id": "edf5-6e6e-2559-ef90",
+                "type": "selectionEntry",
+                "targetId": "e3ec-1a2d-b79e-f8b0",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3277-67b8-232b-f45e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3277-67b8-232b-f45e-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Bayonet",
+                "hidden": false,
+                "id": "fc03-38de-60e5-4278",
+                "type": "selectionEntry",
+                "targetId": "62ce-7a6c-e6cc-5895",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fcf1-abd7-d3b1-2052"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Shotgun",
+            "hidden": false,
+            "id": "57f1-70fd-d2f8-5203",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Shotgun",
+                "hidden": false,
+                "id": "86ed-0ea5-c114-5ed7",
+                "type": "selectionEntry",
+                "targetId": "da4a-e9ac-ce6e-fbd1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9c37-288f-9655-788d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9c37-288f-9655-788d-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 4
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Sub-Machine Gun",
+            "hidden": false,
+            "id": "df12-6cad-caaa-3730",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Sub-Machine Gun",
+                "hidden": false,
+                "id": "1fdb-1fa6-1ae6-75a2",
+                "type": "selectionEntry",
+                "targetId": "25a3-598d-e3c0-235e",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "669e-6b99-ec77-5527-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "669e-6b99-ec77-5527-max"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 5
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Auto-Carbine",
+            "hidden": false,
+            "id": "da88-fa3d-bc00-0603",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Infantry Auto-Carbine",
+                "hidden": false,
+                "id": "d755-cbed-96ca-ff1f",
+                "type": "selectionEntry",
+                "targetId": "449c-0efa-da3d-d237",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7992-92a2-bc73-0df6-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7992-92a2-bc73-0df6-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Bayonet",
+                "hidden": false,
+                "id": "2177-78a3-f081-f29c",
+                "type": "selectionEntry",
+                "targetId": "62ce-7a6c-e6cc-5895",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9282-0083-c2ca-fdf0"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 4
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 6
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Semi-Auto Rifle",
+            "hidden": false,
+            "id": "8270-9ffe-441e-1ced",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Semi-Auto Rifle",
+                "hidden": false,
+                "id": "9c48-ae57-8596-ad1f",
+                "type": "selectionEntry",
+                "targetId": "f4af-8190-c80a-9ec3",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3b07-3dc8-babd-22df-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3b07-3dc8-babd-22df-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Bayonet",
+                "hidden": false,
+                "id": "2ed6-6870-1559-829a",
+                "type": "selectionEntry",
+                "targetId": "62ce-7a6c-e6cc-5895",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1050-fec2-74d6-cfe3"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 3
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Standard-Issue Infantry Auto-Rifle",
+            "hidden": false,
+            "id": "7ca5-d730-d1fe-3f95",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Infantry Auto-Rifle",
+                "hidden": false,
+                "id": "7e21-3bc4-490d-c63e",
+                "type": "selectionEntry",
+                "targetId": "e4f4-78e1-2f4e-9f45",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf45-317d-696c-d172-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf45-317d-696c-d172-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Weapon:Bayonet",
+                "hidden": false,
+                "id": "7fd7-4e47-d961-936c",
+                "type": "selectionEntry",
+                "targetId": "62ce-7a6c-e6cc-5895",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b69f-fe1c-0887-ce33"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 5
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "sortIndex": 7
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Side-Arms",
+        "id": "9785-f88c-a187-4ba2",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Service Auto-Pistol",
+            "hidden": false,
+            "id": "0863-125c-fd06-ba8b",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Infantry Auto-Pistol",
+                "hidden": false,
+                "id": "a361-6f9a-e13c-8702",
+                "type": "selectionEntry",
+                "targetId": "634f-e5ea-5154-0a54",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5050-d540-0568-8e96"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7122-2476-8e6d-f18b"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Service Pistol ",
+            "hidden": false,
+            "id": "b3db-a9eb-2c5d-8068",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weapon:Pistol",
+                "hidden": false,
+                "id": "712e-3142-93e7-63e4",
+                "type": "selectionEntry",
+                "targetId": "2c52-e650-f82b-c9aa",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8ca7-a10a-ee12-384b"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d5e6-f697-c2e0-c49e"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 1
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "name": "Melee Weapons",
+        "id": "221a-cbc1-5c39-9bee",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hatchet",
+            "hidden": false,
+            "id": "b66d-23d8-c60e-1bb2",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hatchet",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "0f25-7926-df4c-78a4",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "User+1"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Crushing Blow, Melee"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "MS"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Crushing Blow",
+                "id": "8de8-b730-4602-c066",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5973-4ebd-6d2c-2666"
+              },
+              {
+                "name": "Melee",
+                "id": "a72c-6f80-4528-ebfe",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d484-a2b1-938d-1274"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Machete",
+            "hidden": false,
+            "id": "eb2d-5b06-d158-5e11",
+            "costs": [
+              {
+                "name": "Pts",
+                "typeId": "points",
+                "value": 2
+              },
+              {
+                "name": "Requisition",
+                "typeId": "ff33-0eb3-3b78-7829",
+                "value": 0
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Melee",
+                "id": "0e3b-fdab-bb07-6c93",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d484-a2b1-938d-1274"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Machete",
+                "typeId": "d233-0653-f762-e538",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "c4f5-9f39-c699-d1aa",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "b3c1-2707-e74d-88f6",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "6997-f9f2-6f9b-ef3c",
+                    "$text": "User"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "8c5e-9516-a499-63f5",
+                    "$text": "0"
+                  },
+                  {
+                    "name": "D",
+                    "typeId": "7f27-f5c3-9c54-de65",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Abilities",
+                    "typeId": "cfcb-ec22-834e-7336",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "WPN Dice",
+                    "typeId": "0255-21c0-4ef7-efa2",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "BS/MS",
+                    "typeId": "b356-3224-2f16-54c7",
+                    "$text": "MS"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "collapsible": true
       }
     ]
   }

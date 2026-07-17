@@ -186,16 +186,6 @@
                     "$text": "6"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -361,16 +351,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "6"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -548,16 +528,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "6"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -1545,16 +1515,6 @@
                     "typeId": "36f6-a14d-1670-f31d"
                   },
                   {
-                    "$text": "1",
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -1722,16 +1682,6 @@
                     "$text": "4",
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3"
                   },
                   {
                     "name": "DISC",
@@ -2118,16 +2068,6 @@
                         "typeId": "36f6-a14d-1670-f31d"
                       },
                       {
-                        "$text": "1",
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143"
-                      },
-                      {
-                        "$text": "1",
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -2277,16 +2217,6 @@
                         "typeId": "36f6-a14d-1670-f31d"
                       },
                       {
-                        "$text": "1",
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143"
-                      },
-                      {
-                        "$text": "1",
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -2418,16 +2348,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "4"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -2632,16 +2552,6 @@
                         "$text": "6"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -2766,16 +2676,6 @@
                         "$text": "7"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -2890,16 +2790,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "6"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -3026,16 +2916,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "6"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -3681,16 +3561,6 @@
                     "typeId": "36f6-a14d-1670-f31d"
                   },
                   {
-                    "$text": "1",
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -3832,16 +3702,6 @@
                     "$text": "4",
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143"
-                  },
-                  {
-                    "$text": "1",
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3"
                   },
                   {
                     "name": "DISC",
@@ -4056,16 +3916,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "6"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -5124,16 +4974,6 @@
                     "$text": "6"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -5797,16 +5637,6 @@
                         "$text": "4"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -6014,16 +5844,6 @@
                         "$text": "5"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -6229,16 +6049,6 @@
                         "name": "BS",
                         "typeId": "36f6-a14d-1670-f31d",
                         "$text": "5"
-                      },
-                      {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
                       },
                       {
                         "name": "DISC",
@@ -6858,16 +6668,6 @@
                     "$text": "6"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -7176,16 +6976,6 @@
                     "$text": "6"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -7426,16 +7216,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "6"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -7727,16 +7507,6 @@
                     "$text": "6"
                   },
                   {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
-                  },
-                  {
                     "name": "DISC",
                     "typeId": "e083-adac-81c6-46ab",
                     "$text": ""
@@ -8003,16 +7773,6 @@
                         "$text": "6"
                       },
                       {
-                        "name": "RWS",
-                        "typeId": "db0e-ca2f-9e5e-e143",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "MWS",
-                        "typeId": "424d-378d-20be-20d3",
-                        "$text": "1"
-                      },
-                      {
                         "name": "DISC",
                         "typeId": "e083-adac-81c6-46ab",
                         "$text": ""
@@ -8271,16 +8031,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "6"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -8758,16 +8508,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -8934,16 +8674,6 @@
                             "$text": "4"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -9108,16 +8838,6 @@
                             "name": "BS",
                             "typeId": "36f6-a14d-1670-f31d",
                             "$text": "5"
-                          },
-                          {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
                           },
                           {
                             "name": "DISC",
@@ -9541,16 +9261,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -9717,16 +9427,6 @@
                             "$text": "4"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -9891,16 +9591,6 @@
                             "name": "BS",
                             "typeId": "36f6-a14d-1670-f31d",
                             "$text": "5"
-                          },
-                          {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
                           },
                           {
                             "name": "DISC",
@@ -10289,16 +9979,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -10463,16 +10143,6 @@
                             "name": "BS",
                             "typeId": "36f6-a14d-1670-f31d",
                             "$text": "4"
-                          },
-                          {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
                           },
                           {
                             "name": "DISC",
@@ -10641,16 +10311,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -10782,16 +10442,6 @@
                     "name": "BS",
                     "typeId": "36f6-a14d-1670-f31d",
                     "$text": "7"
-                  },
-                  {
-                    "name": "RWS",
-                    "typeId": "db0e-ca2f-9e5e-e143",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "MWS",
-                    "typeId": "424d-378d-20be-20d3",
-                    "$text": "1"
                   },
                   {
                     "name": "DISC",
@@ -11492,16 +11142,6 @@
                             "$text": "5"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -11668,16 +11308,6 @@
                             "$text": "4"
                           },
                           {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
-                          },
-                          {
                             "name": "DISC",
                             "typeId": "e083-adac-81c6-46ab",
                             "$text": ""
@@ -11842,16 +11472,6 @@
                             "name": "BS",
                             "typeId": "36f6-a14d-1670-f31d",
                             "$text": "5"
-                          },
-                          {
-                            "name": "RWS",
-                            "typeId": "db0e-ca2f-9e5e-e143",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "MWS",
-                            "typeId": "424d-378d-20be-20d3",
-                            "$text": "1"
                           },
                           {
                             "name": "DISC",
@@ -13801,10 +13421,10 @@
     ],
     "library": false,
     "id": "3a2b-a423-8bf8-c751",
-    "name": "Sarpenton Conglomerate",
+    "name": "Sarpenton (Defunct)",
     "gameSystemId": "sys-3396-9326-565c-5fb6",
     "gameSystemRevision": 3,
-    "revision": 32,
+    "revision": 33,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema"
